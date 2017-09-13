@@ -1,0 +1,19 @@
+﻿<html>
+	<head>
+	  <meta http-equiv="content-language" content="pl" />
+	  
+      <meta name="author" content="Arkadiusz Włodarczyk" />
+	  <meta name="robots" content="index, follow" />
+		<title>Video Kurs - Video Kursy</title>
+	  <meta name="description" content="Video Kursy Tworzenia stron WWW oraz Video Kursy Programowania" />
+	  <meta name="keywords" content="video kurs, video kursy, video, kurs" />		
+		
+	</head>
+	<body style="background-color: rgb(255,235,205)">
+		<!-- bgcolor = backgroundcolor = kolor tła-->
+		<!-- p = paragraph = akapit -->
+		<p align="justify" title='Ten tekst został napisany przez "Arkadiusza Włodarczyka"'>Zacznijmy od tego, którą gałąź informatyki mam zamiar omawiać, ponieważ pojęcie "informatyka" jest bardzo wieloznaczne. W sumie to informatykiem w dzisiejszym skomputeryzowanym świecie może nazwać się prawie każdy - wystarczy, że potrafi się przetwarzać informację znajdujące się w naszych komputerach, czyli np. przeszukiwać zawartość internetu przy pomocy wyszukiwarki.</p>
+		
+		<p align="justify">Ja mam zamiar przekazać Ci tajniki w jaki sposób efektywnie uczyć się programować. Co to tak naprawdę oznacza słowo PROGRAMOWANIE? Programowanie oznacza pisanie kodu w jakimś języku, czyli czymś za pomocą czego możemy komunikować się z naszą można by rzec bez nas głupią (przynajmniej na razie) maszyną PC (Personal Computer). Czyli programowanie można by porównać do pisania tejże tutaj lekcji, przy pomocy której komunikuję się z Tobą w języku polskim. My skupimy się jednak na programowaniu w innym języku, a dokładniej będzie nim Java. Oznacza to, że przy pomocy Javy, będziemy pisać pewnego rodzaju artykuł w naszym wypadku będzie to kod źródłowy, który zostanie zamieniony na język zrozumiały przez naszą maszynę.</p> 
+	</body>	
+</html>
