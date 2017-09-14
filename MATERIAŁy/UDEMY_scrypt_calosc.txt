@@ -1,0 +1,1550 @@
+9  ATRYBUTY I KOLORY   -----------------------------------------------------------------------
+
+<html>
+	<head>
+		<title>To jest jakiś tytułek :-)</title>
+	</head>
+	<body style="background-color: rgb(255,235,205)">
+		<!-- bgcolor = backgroundcolor = kolor tła-->
+		<!-- p = paragraph = akapit -->
+		<p align="justify" title='Ten tekst został napisany przez "Arkadiusza Włodarczyka"'>Zacznijmy od tego, którą gałąź informatyki mam zamiar omawiać, ponieważ pojęcie "informatyka" jest bardzo wieloznaczne. W sumie to informatykiem w dzisiejszym skomputeryzowanym świecie może nazwać się prawie każdy - wystarczy, że potrafi się przetwarzać informację znajdujące się w naszych komputerach, czyli np. przeszukiwać zawartość internetu przy pomocy wyszukiwarki.</p>
+		
+		<p align="justify">Ja mam zamiar przekazać Ci tajniki w jaki sposób efektywnie uczyć się programować. Co to tak naprawdę oznacza słowo PROGRAMOWANIE? Programowanie oznacza pisanie kodu w jakimś języku, czyli czymś za pomocą czego możemy komunikować się z naszą można by rzec bez nas głupią (przynajmniej na razie) maszyną PC (Personal Computer). Czyli programowanie można by porównać do pisania tejże tutaj lekcji, przy pomocy której komunikuję się z Tobą w języku polskim. My skupimy się jednak na programowaniu w innym języku, a dokładniej będzie nim Java. Oznacza to, że przy pomocy Javy, będziemy pisać pewnego rodzaju artykuł w naszym wypadku będzie to kod źródłowy, który zostanie zamieniony na język zrozumiały przez naszą maszynę.</p> 
+	</body>	
+</html>
+
+10 META TAGI	-----------------------------------------------------------------------
+
+<html>
+	<head>
+	  <meta http-equiv="content-language" content="pl" />
+	  
+      <meta name="author" content="Arkadiusz Włodarczyk" />
+	  <meta name="robots" content="index, follow" />
+		<title>Video Kurs - Video Kursy</title>
+	  <meta name="description" content="Video Kursy Tworzenia stron WWW oraz Video Kursy Programowania" />
+	  <meta name="keywords" content="video kurs, video kursy, video, kurs" />		
+		
+	</head>
+	<body style="background-color: rgb(255,235,205)">
+		<!-- bgcolor = backgroundcolor = kolor tła-->
+		<!-- p = paragraph = akapit -->
+		<p align="justify" title='Ten tekst został napisany przez "Arkadiusza Włodarczyka"'>Zacznijmy od tego, którą gałąź informatyki mam zamiar omawiać, ponieważ pojęcie "informatyka" jest bardzo wieloznaczne. W sumie to informatykiem w dzisiejszym skomputeryzowanym świecie może nazwać się prawie każdy - wystarczy, że potrafi się przetwarzać informację znajdujące się w naszych komputerach, czyli np. przeszukiwać zawartość internetu przy pomocy wyszukiwarki.</p>
+		
+		<p align="justify">Ja mam zamiar przekazać Ci tajniki w jaki sposób efektywnie uczyć się programować. Co to tak naprawdę oznacza słowo PROGRAMOWANIE? Programowanie oznacza pisanie kodu w jakimś języku, czyli czymś za pomocą czego możemy komunikować się z naszą można by rzec bez nas głupią (przynajmniej na razie) maszyną PC (Personal Computer). Czyli programowanie można by porównać do pisania tejże tutaj lekcji, przy pomocy której komunikuję się z Tobą w języku polskim. My skupimy się jednak na programowaniu w innym języku, a dokładniej będzie nim Java. Oznacza to, że przy pomocy Javy, będziemy pisać pewnego rodzaju artykuł w naszym wypadku będzie to kod źródłowy, który zostanie zamieniony na język zrozumiały przez naszą maszynę.</p> 
+	</body>	
+</html>
+
+11 ENCJE	-----------------------------------------------------------------------
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+	<head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	  <meta http-equiv="content-language" content="pl" />
+	     
+      <meta name="author" content="Arkadiusz Włodarczyk" />
+	  <meta name="robots" content="index, follow" />
+		<title>Video Kurs - Video Kursy</title>
+	  <meta name="description" content="Video Kursy Tworzenia stron WWW oraz Video Kursy Programowania" />
+	  <meta name="keywords" content="video kurs, video kursy, video, kurs" />
+	</head>
+	<body style="background-color: rgb(255,235,205)">
+		<!--		
+			&lt;    Less than     <
+			&quot;  Quote         "
+			&apos;  Apostrophe    '
+			&amp;   Ampersand     &
+  -->
+  		<b><i><u> </u></i></b>
+		<p align="justify" title='Ten tekst został napisany przez "Arkadiusza Włodarczyka"'>Zacznijmy od tego, którą gałąź informatyki mam zamiar omawiać, ponieważ pojęcie &quot;informatyka&quot; jest bardzo wieloznaczne. W sumie to informatykiem w dzisiejszym skomputeryzowanym świecie może nazwać się prawie każdy - wystarczy, że potrafi się przetwarzać informację znajdujące się w naszych komputerach, czyli np. przeszukiwać zawartość internetu przy pomocy wyszukiwarki.</p>
+		
+		<p align="justify">Ja mam zamiar przekazać Ci tajniki w jaki sposób efektywnie uczyć się programować. Co to tak naprawdę oznacza słowo PROGRAMOWANIE? Programowanie oznacza pisanie kodu w jakimś języku, czyli czymś za pomocą czego możemy komunikować się z naszą można by rzec bez nas głupią (przynajmniej na razie) maszyną PC (Personal Computer). Czyli programowanie można by porównać do pisania tejże tutaj lekcji, przy pomocy której komunikuję się z Tobą w języku polskim. My skupimy się jednak na programowaniu w innym języku, a dokładniej będzie nim Java. Oznacza to, że przy pomocy Javy, będziemy pisać pewnego rodzaju artykuł w naszym wypadku będzie to kod źródłowy, który zostanie zamieniony na język zrozumiały przez naszą maszynę.</p>
+		
+		<p> &int;</p> 
+	</body>	
+</html>
+
+14 FORMATOWANIE TEKSTU	-----------------------------------------------------------------------
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+	<head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	  <meta http-equiv="content-language" content="pl" />
+	     
+      <meta name="author" content="Arkadiusz Włodarczyk" />
+	  <meta name="robots" content="index, follow" />
+		<title>Video Kurs - Video Kursy</title>
+	  <meta name="description" content="Video Kursy Tworzenia stron WWW oraz Video Kursy Programowania" />
+	  <meta name="keywords" content="video kurs, video kursy, video, kurs" />
+	</head>
+	<body style="background-color: rgb(255,235,205)">
+		<!--		
+			&lt;    Less than     <
+			&quot;  Quote         "
+			&apos;  Apostrophe    '
+			&amp;   Ampersand     &
+  -->
+  		<b><i><u> </u></i></b>
+		<p align="justify" title='Ten tekst został napisany przez "Arkadiusza Włodarczyka"'>Zacznijmy od tego, którą gałąź informatyki mam zamiar omawiać, ponieważ pojęcie &quot;informatyka&quot; jest bardzo wieloznaczne. W sumie to informatykiem w dzisiejszym skomputeryzowanym świecie może nazwać się prawie każdy - wystarczy, że potrafi się przetwarzać informację znajdujące się w naszych komputerach, czyli np. przeszukiwać zawartość internetu przy pomocy wyszukiwarki.</p>
+		
+		<p align="justify">Ja mam zamiar przekazać Ci tajniki w jaki sposób efektywnie uczyć się programować. Co to tak naprawdę oznacza słowo PROGRAMOWANIE? Programowanie oznacza pisanie kodu w jakimś języku, czyli czymś za pomocą czego możemy komunikować się z naszą można by rzec bez nas głupią (przynajmniej na razie) maszyną PC (Personal Computer). Czyli programowanie można by porównać do pisania tejże tutaj lekcji, przy pomocy której komunikuję się z Tobą w języku polskim. My skupimy się jednak na programowaniu w innym języku, a dokładniej będzie nim Java. Oznacza to, że przy pomocy Javy, będziemy pisać pewnego rodzaju artykuł w naszym wypadku będzie to kod źródłowy, który zostanie zamieniony na język zrozumiały przez naszą maszynę.</p>
+		
+	
+		<p> &int;</p> 
+		
+		<b>To jest pogrubiony tekst</b> <!-- b bold = pogrubienie--> <br /> <!-- br break = przerwać -->
+		<i>To jest tekst pochylony</i> <!-- i italic = pochylenie --><br />
+		<u>To jest podkreślony tekst</u> <!-- u underline = podkreślenie --><br />
+		<s>To jest przekreślony tekst</s> <!-- s strike through = przekreślenie --> <br />
+		
+		<b><i><u><s>To jest pogrubiony, pochylony, podkreślony, przekreślony tekst</s></u></i></b><br />
+		
+		<font size="15">To jest jakiś byczasty tekst :-)</font> <br />
+		<font color="blue">To jest niebieski tekst</font> <br /><br />
+		
+		<font face="Georgia, Arial">To jest tekst napisany inną czcionką.</font> <br />
+		<font face="Arial, Georgia">To jest tekst napisany czcionką Arial, jeżeli nie ma Arial to Georgia.</font> <br />
+		
+		<strong>To jest pogrubiony tekst, ale niesie on dodatkowo wartość semantyczną</strong> <br />
+		<em>To jest pochylony tekst, ale dodatkowo niesie ze sobą wartość semantyczną</em>	<!-- emphasis = nacisk, podkreślenie --><br />	
+		x<sup>2</sup> a <sub>1</sub>
+		
+		<sup>To jest tekst.</sup> To jest tekst. <sub>To jest tekst.</sub> <br />
+		
+		<!-- header = nagłówek -->
+		
+		<h1>To jest główny tytuł</h1>
+		<h2>To jest podtytuł głównego tytułu</h2>
+		<h3>to jest jakiś tekst</h3>
+		<h6>To jest najmniej ważny, ale ważny tytułek</h6>
+		<!-- ... h6 -->
+		<pre> <!-- pre od pre-formatted -->
+		<code>
+		#include &lt;iostream>
+			
+		using namespace std;
+		
+		int main()
+		{
+			cout &lt;&lt;&quot;To jest jakiś prosty tekst&quot;;
+			system(&quot;pause&quot;);
+			return 0;
+		}
+		</code>
+		</pre>
+		
+		&lt;pre> służy do pokazania pre-sformatowanego tekstu. <br />
+		
+		<var>int a; int b;</var> <!-- variable - zmienna -->
+		<br />
+		<cite>Albert Einstein</cite> <!-- cite - przytaczać -->
+		<blockquote cite="www.google.pl">
+		<p>
+			Wiadomo, że taki a taki pomysł jest nie do zrealizowania. Ale żyje sobie jakiś nieuk, który o tym nie wie. I on właśnie dokonuje tego wynalazku.
+		</p>
+		</blockquote>
+		
+		<dfn> <!-- dfn = define  = definiować = opisywać-->
+			To jest jakaś definicja :-)
+			
+		</dfn>
+		<pre>
+		<address>
+			Arkadiusz Włodarczyk,
+			32-700, Bochnia
+			ul. Proszowska 92
+		</address>
+		</pre>
+		
+		<acronym lang="en" title="World Wide Web Consortium">W3C</acronym>
+		<abbr title="profesor">prof.</abbr> <!-- abbreviation - skrót-->
+		<abbr title="doktor">dr</abbr>
+		
+	</body>	
+</html>
+
+
+15 WYKAZY LIST	-----------------------------------------------------------------------
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+	<head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	  <meta http-equiv="content-language" content="pl" />
+	     
+      <meta name="author" content="Arkadiusz Włodarczyk" />
+	  <meta name="robots" content="index, follow" />
+		<title>Video Kurs - Video Kursy</title>
+	  <meta name="description" content="Video Kursy Tworzenia stron WWW oraz Video Kursy Programowania" />
+	  <meta name="keywords" content="video kurs, video kursy, video, kurs" />
+	</head>
+	<body style="background-color: rgb(255,235,205)">
+		<ol type="I"> <!-- OL stands for ordered list - ponumerowana lista -->
+			<li> jakiś element </li> <!-- LI List Item - element listy -->
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to jest tekst &nbsp;&nbsp;&nbsp; </li> <!-- not breakable space-->
+			<li> inny </li>
+			<li> cosik </li>
+			<li> jakiś tam </li>
+		</ol> 
+		
+		<ul type="circle"> <!-- UL stands for Unordered list - nieponumerowana lista -->
+			<li> jakiś tam </li>
+			<li> jakiś tam </li>
+			<li> jakiś tam 124124</li>
+			<li> jakiś tam </li>
+			<li> jakiś tam </li>
+		</ul>
+		
+		<dl> <!-- definition list -->
+		  <dt> to jest definiowane pojęcie </dt>	 <!-- definition term -->
+		  <dd> opis definicji :-) </dd> <!-- definition data / description -->
+		</dl>
+		
+		<fieldset>
+			<legend>Opis</legend>
+			To jest opisowy opis z opisowym opisem ;-) To jest opisowy opis z opisowym opisem ;-) To jest opisowy opis z opisowym opisem ;-) To jest opisowy opis z opisowym opisem ;-) To jest opisowy opis z opisowym opisem ;-) 
+			To jest opisowy opis z opisowym opisem ;-) To jest opisowy opis z opisowym opisem ;-) To jest opisowy opis z opisowym opisem ;-) To jest opisowy opis z opisowym opisem ;-) 
+			To jest opisowy opis z opisowym opisem ;-) To jest opisowy opis z opisowym opisem ;-) To jest opisowy opis z opisowym opisem ;-) 
+		</fieldset>
+		<br /><br /><br /><br /><br />
+		
+		<hr width="40%" color="red" align="left" />
+		<hr width="40%" color="red" align="center" />
+		<hr width="40%" color="red" align="right" />
+	
+	</body>	
+</html>
+
+
+16 TABELKI	-----------------------------------------------------------------------
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+	<head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	  <meta http-equiv="content-language" content="pl" />
+	     
+      <meta name="author" content="Arkadiusz Włodarczyk" />
+	  <meta name="robots" content="index, follow" />
+		<title>Video Kurs - Video Kursy</title>
+	  <meta name="description" content="Video Kursy Tworzenia stron WWW oraz Video Kursy Programowania" />
+	  <meta name="keywords" content="video kurs, video kursy, video, kurs" />
+	</head>
+	<body style="background-color: rgb(255,235,205)">
+	<!--
+		<table border="1" cellspacing="0" cellpadding="10" >
+		  <caption>Video Kursy</caption>
+		  <thead bgcolor="gray">
+			  <tr><th>Nazwa: </th><th>Cena brutto (zł) </th></tr>
+		  </thead>
+		  <tfoot align="center" bgcolor="gray">
+		  	  <tr><td colspan="2">&copy; Arkadiusz Włodarczyk</td></tr>
+		  </tfoot>
+		  <tbody align="center" bgcolor="silver">
+			  <tr><td>Video Kurs C++ </td><td> 39 </td></tr>
+			  <tr><td>Video Kurs PHP </td><td> 29 </td></tr>
+			  <tr><td>Video Kurs Java </td><td> 39 </td></tr>
+			  <tr><td>Video Kurs JavaScript </td><td> 39 </td></tr>
+		  </tbody>		  
+		</table>
+	-->
+	<!--
+	  tr stands for Table Row - wiersz tabelki
+	  td stands for Table Data - informacja w tabelce, reprezentuje komórkę (cell) lub też po prostu rubrykę
+	  border - ramka
+	  cellpadding - wypełnienie komórki
+	  cellspacing - obszar pomiędzy komórkami
+	  th stands for Table Header - nagłówek tabelki
+	  align = wyrównanie dostępne opcje: left/center/right
+	  valign = vertical align = pionowe wyrównanie, dostępne opcje: top/middle/bottom
+	-->
+	<!--
+	<table border="1" cellpadding="10" cellspacing="0" height="600">
+	<caption>Nagłówek Główny tabelki</caption>
+		<thead bgcolor="gray">
+			<tr> 
+				<th> 1 </th>
+				<th> Nagłówek 2 </th>
+				<th> Nagłówek 3 </th>
+			</tr>
+		</thead>
+		<tfoot bgcolor="gray">
+			<tr>
+				<td> &nbsp; </td>
+				<td> &nbsp; </td>
+				<td> &nbsp; </td>
+			</tr>
+		</tfoot>
+		<tbody valign="top" bgcolor="silver">
+			<tr> 
+				<td> 1 </td>
+				<td align="center" valign="bottom"> 2 </td>
+				<td> 3 </td>
+			</tr>
+			<tr> 
+				<td> Informacja 1 </td>
+				<td> Informacja 2 </td>
+				<td> Informacja 3 </td>
+			</tr>	
+		</tbody>			
+	</table>	
+	-->
+	
+	<!--
+	 col column - kolumna
+	 span - rozpiętość
+	 colspan - rozpiętość kolumny
+	 
+	 rowspan - rozpiętość wiersza
+	-->
+	<!--
+	<table border="1" cellpadding="10" cellspacing="0">
+	<caption>Nagłówek Główny tabelki</caption>
+		<thead bgcolor="gray">
+			<tr> 
+				<th> 1 </th>
+				<th> Nagłówek 2 </th>
+				<th> Nagłówek 3 </th>
+			</tr>
+		</thead>
+		<tfoot bgcolor="gray" align="center">
+			<tr>
+				<td colspan="3"> Ja jestem rozpięta jak 3 komórki </td>
+
+			</tr>
+		</tfoot>
+		<tbody valign="top" bgcolor="silver">
+			<tr> 
+				<td> 1 </td>
+				<td align="center" valign="bottom"> 2 </td>
+				<td> 3 </td>
+			</tr>
+			<tr> 
+				<td> Informacja 1 </td>
+				<td> Informacja 2 </td>
+				<td> Informacja 3 </td>
+			</tr>	
+		</tbody>			
+	</table>	
+
+	<table border="1" cellpadding="10" cellspacing="0">
+		<tr>
+			<td colspan="2" align="center">1</td>
+		
+		</tr>
+		<tr>
+			<td>2</td>
+			<td rowspan="2" valign="top">2</td>
+		</tr>
+		<tr>
+			<td>3</td>
+	
+		</tr>
+	</table>
+-->
+	<table border="1" cellpadding="10" cellspacing="0" width="100%">
+		<tr>
+			<td colspan="2" align="center">BANER!!!</td>
+		</tr>
+		<tr height="500">
+			<td width="10%" valign="top" align="center"> MENU </td>
+			<td valign="top"> TREŚĆ </td>
+		</tr>		
+	</table>
+	
+	</body>	
+</html>
+
+17 OBRAZKI	-----------------------------------------------------------------------
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+	<head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	  <meta http-equiv="content-language" content="pl" />
+	     
+      <meta name="author" content="Arkadiusz Włodarczyk" />
+	  <meta name="robots" content="index, follow" />
+		<title>Video Kurs - Video Kursy</title>
+	  <meta name="description" content="Video Kursy Tworzenia stron WWW oraz Video Kursy Programowania" />
+	  <meta name="keywords" content="video kurs, video kursy, video, kurs" />
+		<!--[if lt IE 7.]>
+			<script defer type="text/javascript" src="pngfix.js"></script>
+		<![endif]-->
+	</head>
+	<body style="background-color: rgb(255,235,205)">
+		tekst<img src="logo-video-kurs-pl.png" alt="Video Kurs - Logo" border="0" width="242" height="64" />
+tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst 
+		
+		<!--<img src="images/bass.jpg" alt="Bass" />-->
+	</body>	
+</html>
+
+
+
+18 OSADZANIE PLIKOW NA STRONIE	-----------------------------------------------------------------------
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+	<head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	  <meta http-equiv="content-language" content="pl" />
+	     
+      <meta name="author" content="Arkadiusz Włodarczyk" />
+	  <meta name="robots" content="index, follow" />
+		<title>Video Kurs - Video Kursy</title>
+	  <meta name="description" content="Video Kursy Tworzenia stron WWW oraz Video Kursy Programowania" />
+	  <meta name="keywords" content="video kurs, video kursy, video, kurs" />
+
+	</head>
+	<body style="background-color: rgb(255,235,205)">
+		
+		<!--<embed src="czym-jest-xml.mov" width="812" height="676" 
+		       autostart="false" />-->
+			   
+		<object classid="CLSID:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B"
+				type="video/quicktime"
+	            width="812" height="676"
+	            codebase="http://www.apple.com/qtactivex/qtplugin.cab">
+	         <param name="src"        value="czym-jest-xml.mov" />
+	         <param name="autoplay"   value="false" />
+	         <param name="loop"       value="false" />                                                      
+	         <param name="controller" value="true" />       
+			                               
+	         <embed 
+	             pluginspage ="http://www.apple.com/quicktime/download/"
+	             src         ="czym-jest-xml.mov"
+	             autoplay    ="false"
+	             loop        ="false"
+	             controller  ="true"
+	             width       ="812"
+	             height      ="676">
+	         </embed>
+	    </object>
+		
+		
+		<!--<bgsound src="dzwiek.midi" loop="infinite" />-->
+		
+	</body>	
+</html>
+
+	
+19 LINKI	-----------------------------------------------------------------------
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+	<head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	  <meta http-equiv="content-language" content="pl" />
+	     
+      <meta name="author" content="Arkadiusz Włodarczyk" />
+	  <meta name="robots" content="index, follow" />
+		<title>Video Kurs - Video Kursy</title>
+	  <meta name="description" content="Video Kursy Tworzenia stron WWW oraz Video Kursy Programowania" />
+	  <meta name="keywords" content="video kurs, video kursy, video, kurs" />
+
+	</head>
+	<body style="background-color: rgb(255,235,205)">
+		<a name="top" href="#dol">Idź na sam dół strony</a>
+		<a href="http://videokurs.pl" title="Video Kursy Programowania i Tworzenia stron WWW">Video Kursy</a> Programowania i Tworzenia stron WWW
+		<br />
+		<a href="video-kurs-tworzenia-stron-www.html" title="Video Kurs XHTML i CSS">Xhtml i CSS</a>
+		<br /><br />
+		<!--
+			a stands for anchor
+			href = hypertext reference
+		-->
+		
+		<a href="mailto:armiksos@gmail.com">Napisz do mnie... a na pewno tego nie pożałujesz ;-)</a>
+		<br />
+		
+		nr gg: <a href="gg:10870365" title="Numer mojego gg :-)">10870365
+		<img border="0" src="http://status.gadu-gadu.pl/users/status.asp?id=10870365&amp;styl=3" alt="nr gg" /></a>
+		
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		<a name="5123525">POST</a>
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		
+		<a name="dol" href="#top">Idź do góry!</a>
+		
+	</body>	
+</html>
+
+
+21 FORMULARZE	-----------------------------------------------------------------------
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+	<head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	  <meta http-equiv="content-language" content="pl" />
+	     
+      <meta name="author" content="Arkadiusz Włodarczyk" />
+	  <meta name="robots" content="index, follow" />
+		<title>Video Kurs - Video Kursy</title>
+	  <meta name="description" content="Video Kursy Tworzenia stron WWW oraz Video Kursy Programowania" />
+	  <meta name="keywords" content="video kurs, video kursy, video, kurs" />
+
+	</head>
+	<body>
+		<form action="mailto:ddiabelekk@poczta.onet.pl?subject=Ankieta" method="post" enctype="text/plain" accept-charset="utf-8">
+			Imię: <input type="text" name="imie" size="10" maxlength="10" /><br />
+			Hasło: <input type="password" name="haslo" /><br />
+			
+			<fieldset>
+					<legend>Jakie jest Twoje hobby?</legend>
+				<input type="checkbox" name="hobby" value="plywanie" id="1" /> <label for="1">Pływanie</label> 
+				<input type="checkbox" name="hobby" value="gry_komputerowe" id="2" /> <label for="2">Gry komputerowe </label> 
+				<input type="checkbox" name="hobby" value="programowanie" id="3" /> <label for="3">Programowanie </label>
+			</fieldset>
+			
+			 
+			<br />
+			<fieldset>
+				<legend>Do jakiej kategori wiekowej należysz?</legend>
+					<input type="radio" name="kategoria_wiekowa" value="1-18" id="4" /><label for="4">1-18</label>
+					<input type="radio" name="kategoria_wiekowa" value="18-34" id="5" /><label for="5">18-34</label>
+					<input type="radio" name="kategoria_wiekowa" value="34+" id="6" /><label for="6">34+</label>
+			</fieldset>
+			<br />
+			<textarea cols="20" rows="10" disabled="disabled">
+				To jest treść nie do zmienienia
+				
+			</textarea>
+			<br />
+			<select name="kolory" multiple="multiple">
+				<option value="Zolty">Żółty </option>
+				<option value="Zielony">Zielony </option>
+				<option value="Czerwony">Czerwony </option>
+			</select>
+			
+			<br />
+			<input type="file" name="plik" />
+			<br />
+			<input type="hidden" name="data" value="27.11.2009" />
+			<br />
+			<button type="submit">
+				<table>
+					<tr><td>1</td><td>2</td></tr>
+					<tr><td>3</td><td>4</td></tr>
+				</table>
+			</button>
+			<br />
+			<input type="submit" value="Wyślij" /> <!-- enctype="multipart/form-data"-->
+			<br />
+			
+
+			<!--imie=Arkadiusz -->
+				
+		</form>
+	</body>
+</html>
+
+
+23 STYLE CSS	-----------------------------------------------------------------------
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+	<head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	  <meta http-equiv="content-language" content="pl" />
+	     
+      <meta name="author" content="Arkadiusz Włodarczyk" />
+	  <meta name="robots" content="index, follow" />
+		<title>Video Kurs - Video Kursy</title>
+	  <meta name="description" content="Video Kursy Tworzenia stron WWW oraz Video Kursy Programowania" />
+	  <meta name="keywords" content="video kurs, video kursy, video, kurs" />
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<style type="text/css">
+			/*<![CDATA[*/
+			
+			p b
+			{
+				color: green;
+				font-size: 30px;
+			}
+			/*]]>*/
+		</style>
+	</head>
+	<body>
+		<!-- CSS Cascading Style Sheet -->
+		<b>To jest pogrubiony tekst</b>
+		<p><b>To jest jakiś bardzo ciekawy tekst :-)</b></p>
+		<p>To jest jakiś bardzo ciekawy tekst :-)</p>
+		<p>To jest jakiś bardzo ciekawy tekst :-)</p>
+		<p>To jest jakiś bardzo ciekawy tekst :-)</p>
+		<p style="color: blue;">To jest jakiś bardzo ciekawy tekst :-)</p>
+		asd
+	</body>
+</html>
+
+
+24 CLASS I ID	-----------------------------------------------------------------------
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+	<head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	  <meta http-equiv="content-language" content="pl" />
+	     
+      <meta name="author" content="Arkadiusz Włodarczyk" />
+	  <meta name="robots" content="index, follow" />
+		<title>Video Kurs - Video Kursy</title>
+	  <meta name="description" content="Video Kursy Tworzenia stron WWW oraz Video Kursy Programowania" />
+	  <meta name="keywords" content="video kurs, video kursy, video, kurs" />	
+	  	
+		<style type="text/css">
+			/*<![CDATA[*/
+			p.definicja, b.definicja
+			{
+				color: green;
+			}
+			h1#nazwa1
+			{
+				color: #FFCC00;
+			}
+			/*]]>*/
+		</style>
+	</head>
+	<body>
+		<h1 id="nazwa1">To jest nagłówek</h1>
+		<h1 id="nazwa2">To jest nagłówek</h1>
+		<p>To jest jakiś zwykły tekst.</p>
+		<p class="definicja">To jest jakiś niezwykły tekst.</p>
+		<p>To jest jakiś zwykły tekst.</p>
+		<p class="definicja">To jest jakiś niezwykły tekst.</p>
+		
+		<b class="definicja">To jest pogrubiona definicja</b>
+	</body>
+</html>
+
+
+25 DIV SPAN		-----------------------------------------------------------------------
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+	<head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	  <meta http-equiv="content-language" content="pl" />
+	     
+      <meta name="author" content="Arkadiusz Włodarczyk" />
+	  <meta name="robots" content="index, follow" />
+		<title>Video Kurs - Video Kursy</title>
+	  <meta name="description" content="Video Kursy Tworzenia stron WWW oraz Video Kursy Programowania" />
+	  <meta name="keywords" content="video kurs, video kursy, video, kurs" />	
+	  	
+		<style type="text/css">
+			/*<![CDATA[*/
+			span
+			{
+				background-color: green;
+				text-align: justify;
+			}
+			div
+			{
+				background-color: purple;
+				text-align: justify;
+				width: 300px;
+			}
+			/*]]>*/
+		</style>
+	</head>
+	<body>
+		<span>
+			Zacznijmy od tego, którą gałąź informatyki mam zamiar omawiać, ponieważ pojęcie &quot;informatyka&quot;
+			jest bardzo wieloznaczne. W sumie to informatykiem w dzisiejszym skomputeryzowanym świecie 
+			może nazwać się prawie każdy - wystarczy, że potrafi się przetwarzać informację znajdujące się w naszych 
+			komputerach, czyli np. przeszukiwać zawartość internetu przy pomocy wyszukiwarki.
+		</span>
+		<div>
+			Zacznijmy od tego, którą gałąź informatyki mam zamiar omawiać, ponieważ pojęcie &quot;informatyka&quot;
+			jest bardzo wieloznaczne. W sumie to informatykiem w dzisiejszym skomputeryzowanym świecie 
+			może nazwać się prawie każdy - wystarczy, że potrafi się przetwarzać informację znajdujące się w naszych 
+			komputerach, czyli np. przeszukiwać zawartość internetu przy pomocy wyszukiwarki.
+		</div>
+		<div>
+		Zacznijmy od tego, którą gałąź informatyki mam zamiar omawiać, ponieważ pojęcie &quot;informatyka&quot;
+		jest bardzo wieloznaczne. W sumie to informatykiem w dzisiejszym skomputeryzowanym świecie 
+		może nazwać się prawie każdy - wystarczy, że potrafi się przetwarzać informację znajdujące się w naszych 
+		komputerach, czyli np. przeszukiwać zawartość internetu przy pomocy wyszukiwarki.
+		</div>   
+		<p>         									
+		Zacznijmy od tego, którą gałąź informatyki mam zamiar omawiać, ponieważ pojęcie &quot;informatyka&quot;
+		jest bardzo wieloznaczne. W sumie to informatykiem w dzisiejszym skomputeryzowanym świecie 
+		może nazwać się prawie każdy - wystarczy, że potrafi się przetwarzać informację znajdujące się w naszych 
+		komputerach, czyli np. przeszukiwać zawartość internetu przy pomocy wyszukiwarki.
+		</p>
+		<div>
+			To jest krótki tekst
+		</div>
+	
+	</body>
+</html>
+
+26 linki		-----------------------------------------------------------------------
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+	<head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	  <meta http-equiv="content-language" content="pl" />
+	     
+      <meta name="author" content="Arkadiusz Włodarczyk" />
+	  <meta name="robots" content="index, follow" />
+		<title>Video Kurs - Video Kursy</title>
+	  <meta name="description" content="Video Kursy Tworzenia stron WWW oraz Video Kursy Programowania" />
+	  <meta name="keywords" content="video kurs, video kursy, video, kurs" />	
+	  	
+		<style type="text/css">
+			/*<![CDATA[*/
+				div.menu_linki a:link, div.menu_linki a:visited
+				{
+					color: green;
+					text-decoration: none;
+				}
+				div.menu_linki a:hover, div.menu_linki a:active
+				{
+					color: black;
+					background-color: #008000;
+				}
+			/*]]>*/
+		</style>
+	</head>
+	<body>
+		<div class="menu_linki">
+			<a href="http://videokurs.pl">Video Kursy</a><br />
+			<a href="http://czescidozaluzji.pl">Części do Żaluzji</a><br />
+			<a href="http://eskoal.pl">Esko-Al</a><br />
+		</div>
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<div>
+			<a href="http://eskoal.pl">Esko-Al</a><br />
+		</div>
+	</body>
+</html>
+
+
+27 FORMATOWANIE TEKSTU		-----------------------------------------------------------------------
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+	<head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	  <meta http-equiv="content-language" content="pl" />
+	     
+      <meta name="author" content="Arkadiusz Włodarczyk" />
+	  <meta name="robots" content="index, follow" />
+		<title>Video Kurs - Video Kursy</title>
+	  <meta name="description" content="Video Kursy Tworzenia stron WWW oraz Video Kursy Programowania" />
+	  <meta name="keywords" content="video kurs, video kursy, video, kurs" />	
+	  	
+		<style type="text/css">
+			/*<![CDATA[*/
+			body
+			{
+				font-size: 16px;
+			}
+			div.tescior
+			{
+				color: #630084;
+				line-height: 140%;
+				text-indent: 20px;
+				letter-spacing: 0.2em;
+				/*
+				 * pt in cm mm
+				 */
+				
+			}
+			
+			/*
+			 * text-decoration:
+			 * none - wylaczyc
+			 * underline - podkreslic
+			 * line-through - przekreslic
+			 * overline - linia nad
+			 * inherit - odziedziczyc
+			 * text-transform:
+			 * capitalize - wszystkie pierwsze literki sa duze
+			 * lowercase - male literki
+			 * uppercase- duze literki
+			 * text-align:
+			 * left
+			 * right
+			 * center
+			 * justify
+			 * 
+			 * word-spacing: odległość pomiędzy słowami
+			 * letter-spacing: przestrzeń pomiędzy literkami
+			 * text-indent: wcięcie tekstu
+			 * line-height: wysokość między jedną a drugą linią
+			 * 
+			 * white-space:
+			 * normal
+			 * nowrap bez zawijania
+			 * pre     pre formatted
+			 */ 
+			/*]]>*/
+		</style>
+	</head>
+	<body>
+		<div class="tescior">
+			To jest jakiś przeciekawy tekst :-) To jest jakiś przeciekawy tekst :-) To jest jakiś przeciekawy tekst :-) To jest jakiś przeciekawy tekst :-) To jest jakiś przeciekawy tekst :-) To jest jakiś przeciekawy tekst :-) To jest jakiś przeciekawy tekst :-) 
+		</div>
+		<div class="tescior">
+			To jest jakiś przeciekawy tekst :-) To jest jakiś przeciekawy tekst :-) To jest jakiś przeciekawy tekst :-) To jest jakiś przeciekawy tekst :-) To jest jakiś przeciekawy tekst :-) To jest jakiś przeciekawy tekst :-) To jest jakiś przeciekawy tekst :-) 
+		</div>
+		<div class="tescior">
+			To jest jakiś przeciekawy tekst :-) To jest jakiś przeciekawy tekst :-) To jest jakiś przeciekawy tekst :-) To jest jakiś przeciekawy tekst :-) To jest jakiś przeciekawy tekst :-) To jest jakiś przeciekawy tekst :-) To jest jakiś przeciekawy tekst :-) 
+		</div>				
+	</body>
+</html>
+
+
+28 CZCIONKI		-----------------------------------------------------------------------
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+	<head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	  <meta http-equiv="content-language" content="pl" />
+	     
+      <meta name="author" content="Arkadiusz Włodarczyk" />
+	  <meta name="robots" content="index, follow" />
+		<title>Video Kurs - Video Kursy</title>
+	  <meta name="description" content="Video Kursy Tworzenia stron WWW oraz Video Kursy Programowania" />
+	  <meta name="keywords" content="video kurs, video kursy, video, kurs" />	
+	  	
+		<style type="text/css">
+			/*<![CDATA[*/
+			body
+			{
+				font-size: 10px;	
+			}
+			div.przyklad
+			{
+				/*font-size: 3em;
+				font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+				font-style: italic;
+				font-weight: bold;
+				font-variant: small-caps;*/
+				font: italic small-caps bold 3em Verdana, Geneva, Arial, Helvetica, sans-serif;
+			}
+			/*]]>*/
+		</style>
+	</head>
+	<body>
+		<div class="przyklad">To jest przykładowy tekst. </div>
+	</body>
+</html>
+
+
+29 TŁA		-----------------------------------------------------------------------
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+	<head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	  <meta http-equiv="content-language" content="pl" />
+	     
+      <meta name="author" content="Arkadiusz Włodarczyk" />
+	  <meta name="robots" content="index, follow" />
+		<title>Video Kurs - Video Kursy</title>
+	  <meta name="description" content="Video Kursy Tworzenia stron WWW oraz Video Kursy Programowania" />
+	  <meta name="keywords" content="video kurs, video kursy, video, kurs" />	
+	  	
+		<style type="text/css">
+			/*<![CDATA[*/
+			body
+			{
+				/*background-color: black;
+				background-image: url('logo-video-kurs-pl.png');
+				background-repeat: no-repeat;
+				background-position: 50% 50%;
+				background-attachment: fixed;*/
+				font-size: 10px;
+				
+				background: black url('logo-video-kurs-pl.png') no-repeat fixed 50% 50%;
+			}
+			div.przyklad
+			{
+				background-image: url('tlo.jpg');
+				background-repeat: no-repeat;
+				background-position: center;
+				font-family: Verdana;
+				background-color: #001f2d;
+				color: #0098a8;
+				text-decoration: none;
+				word-spacing: normal;
+				text-align: justify;
+				letter-spacing: 0;
+				line-height: 1.6em;
+				font-size: 1em;
+				
+				
+			}
+			div.przyklad2
+			{
+				font-family: Verdana;
+				background-color: #001f2d;
+				color: #0098a8;
+				text-decoration: none;
+				word-spacing: normal;
+				text-align: justify;
+				letter-spacing: 0;
+				line-height: 1.6em;
+				font-size: 1em;
+				
+			}			
+			/*]]>*/
+		</style>
+	</head>
+	<body>
+		<div class="przyklad">
+			To jest przykładowy tekst.
+			<br /><br /><br /><br /><br />
+			<br /><br /><br /><br /><br />
+			<br /><br /><br /><br /><br />
+		</div>
+				<div class="przyklad2">
+			To jest przykładowy tekst.
+			<br /><br /><br /><br /><br />
+			<br /><br /><br /><br /><br />
+			<br /><br /><br /><br /><br />
+		</div>
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+	</body>
+</html>
+
+
+30 OBRAMOWANIE		-----------------------------------------------------------------------
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+	<head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	  <meta http-equiv="content-language" content="pl" />
+	     
+      <meta name="author" content="Arkadiusz Włodarczyk" />
+	  <meta name="robots" content="index, follow" />
+		<title>Video Kurs - Video Kursy</title>
+	  <meta name="description" content="Video Kursy Tworzenia stron WWW oraz Video Kursy Programowania" />
+	  <meta name="keywords" content="video kurs, video kursy, video, kurs" />	
+	  	
+		<style type="text/css">
+			/*<![CDATA[*/
+			p.przyklad
+			{
+				/*border-style: solid dotted groove dashed;
+				
+				border-width: 10px;
+				border-top-color: red;
+				border-top-width: 50px;*/
+				border: 1px solid black;
+				border-top: 5px dotted blue;
+			}
+			/*
+			 * border-top-style
+			 * border-right-style
+			 * border-bottom-style
+			 * border-left-style
+			 * 
+			 * border-style: 1 wart;
+			 * border-style: 1wart 2 wart;
+			 * 1wart. = gora i dol
+			 * 2 wart. = lewa i prawa
+			 * border-style: 1wart 2wart 3wart 4wart;
+			 * 1 wart = gora
+			 * 2 wart = prawa
+			 * 3 wart = dol
+			 * 4 wart = lewa
+			 * 
+			 * border-top-width
+			 * border-right-width
+			 * border-bottom-width
+			 * border-left-width
+			 * 
+			 * border-width: 1 wart;
+			 * border-width: 1wart 2 wart;
+			 * 1wart. = gora i dol
+			 * 2 wart. = lewa i prawa
+			 * border-width: 1wart 2wart 3wart 4wart;
+			 * 1 wart = gora
+			 * 2 wart = prawa
+			 * 3 wart = dol
+			 * 4 wart = lewa
+			 * 
+			 * border-top-color
+			 * border-right-color
+			 * border-bottom-color
+			 * border-left-color
+			 * 
+			 * border-color: 1 wart;
+			 * border-color: 1wart 2 wart;
+			 * 1wart. = gora i dol
+			 * 2 wart. = lewa i prawa
+			 * border-color: 1wart 2wart 3wart 4wart;
+			 * 1 wart = gora
+			 * 2 wart = prawa
+			 * 3 wart = dol
+			 * 4 wart = lewa
+			 */
+		
+			/*]]>*/
+		</style>
+	</head>
+	<body>
+		<p class="przyklad">To jest jakiś przykładowy tekst o niczym ;-)</p>
+	</body>
+</html>
+
+
+31 TABELKI		-----------------------------------------------------------------------
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+	<head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	  <meta http-equiv="content-language" content="pl" />
+	     
+      <meta name="author" content="Arkadiusz Włodarczyk" />
+	  <meta name="robots" content="index, follow" />
+		<title>Video Kurs - Video Kursy</title>
+	  <meta name="description" content="Video Kursy Tworzenia stron WWW oraz Video Kursy Programowania" />
+	  <meta name="keywords" content="video kurs, video kursy, video, kurs" />	
+	  	
+		<style type="text/css">
+			/*<![CDATA[*/
+			table.test
+			{
+				width: 100%;
+				height: 500px;
+				border: 1px dotted green;
+				border-collapse: collapse;
+			}
+			table.test td
+			{
+				border: 1px dotted green;
+				padding: 10px;
+				text-align: left;
+				vertical-align: top;
+				background-color: blue;
+				color: #FFCC00;
+			}
+			/*]]>*/
+		</style>
+	</head>
+	<body>
+		<table class="test" cellspacing="0">		
+			<tr>
+				<td> 1 </td> <td> 2 </td>
+			</tr>
+			<tr>
+				<td> 3 </td> <td> 4 </td>
+			</tr>	
+		</table>
+	</body>
+</html>
+
+
+32 WYKAZY LIST		-----------------------------------------------------------------------
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+	<head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	  <meta http-equiv="content-language" content="pl" />
+	     
+      <meta name="author" content="Arkadiusz Włodarczyk" />
+	  <meta name="robots" content="index, follow" />
+		<title>Video Kurs - Video Kursy</title>
+	  <meta name="description" content="Video Kursy Tworzenia stron WWW oraz Video Kursy Programowania" />
+	  <meta name="keywords" content="video kurs, video kursy, video, kurs" />	
+	  	
+		<style type="text/css">
+			/*<![CDATA[*/
+			ul
+			{
+				list-style-type: square;
+				list-style-position: inside;
+				
+			}
+			ol
+			{
+				list-style-type: lower-roman;
+				list-style-image: url('ol.gif');
+			}
+
+			/*]]>*/
+		</style>
+	</head>
+	<body>
+		<ul>
+		  <li> To jest jakiś pierwszy dziwny tekst o niczym, który będzie się powtarzał tak długo aż pokaże to co chcę właśnie pokazać ;-) To jest jakiś pierwszy dziwny tekst o niczym, który będzie się powtarzał tak długo aż pokaże to co chcę właśnie pokazać ;-) </li>
+		  <li> To jest jakiś pierwszy dziwny tekst o niczym, który będzie się powtarzał tak długo aż pokaże to co chcę właśnie pokazać ;-) To jest jakiś pierwszy dziwny tekst o niczym, który będzie się powtarzał tak długo aż pokaże to co chcę właśnie pokazać ;-) </li>
+		</ul>
+		<ol>
+		  <li> To jest jakiś pierwszy dziwny tekst o niczym, który będzie się powtarzał tak długo aż pokaże to co chcę właśnie pokazać ;-) To jest jakiś pierwszy dziwny tekst o niczym, który będzie się powtarzał tak długo aż pokaże to co chcę właśnie pokazać ;-) </li>
+		  <li> To jest jakiś pierwszy dziwny tekst o niczym, który będzie się powtarzał tak długo aż pokaże to co chcę właśnie pokazać ;-) To jest jakiś pierwszy dziwny tekst o niczym, który będzie się powtarzał tak długo aż pokaże to co chcę właśnie pokazać ;-) </li>
+		  <li> To jest jakiś pierwszy dziwny tekst o niczym, który będzie się powtarzał tak długo aż pokaże to co chcę właśnie pokazać ;-) To jest jakiś pierwszy dziwny tekst o niczym, który będzie się powtarzał tak długo aż pokaże to co chcę właśnie pokazać ;-) </li>
+		  <li> To jest jakiś pierwszy dziwny tekst o niczym, który będzie się powtarzał tak długo aż pokaże to co chcę właśnie pokazać ;-) To jest jakiś pierwszy dziwny tekst o niczym, który będzie się powtarzał tak długo aż pokaże to co chcę właśnie pokazać ;-) </li>
+		  <li> To jest jakiś pierwszy dziwny tekst o niczym, który będzie się powtarzał tak długo aż pokaże to co chcę właśnie pokazać ;-) To jest jakiś pierwszy dziwny tekst o niczym, który będzie się powtarzał tak długo aż pokaże to co chcę właśnie pokazać ;-) </li>
+		  <li> To jest jakiś pierwszy dziwny tekst o niczym, który będzie się powtarzał tak długo aż pokaże to co chcę właśnie pokazać ;-) To jest jakiś pierwszy dziwny tekst o niczym, który będzie się powtarzał tak długo aż pokaże to co chcę właśnie pokazać ;-) </li>
+		  <li> To jest jakiś pierwszy dziwny tekst o niczym, który będzie się powtarzał tak długo aż pokaże to co chcę właśnie pokazać ;-) To jest jakiś pierwszy dziwny tekst o niczym, który będzie się powtarzał tak długo aż pokaże to co chcę właśnie pokazać ;-) </li>
+		  <li> To jest jakiś pierwszy dziwny tekst o niczym, który będzie się powtarzał tak długo aż pokaże to co chcę właśnie pokazać ;-) To jest jakiś pierwszy dziwny tekst o niczym, który będzie się powtarzał tak długo aż pokaże to co chcę właśnie pokazać ;-) </li>
+		</ol>		
+	</body>
+</html>
+
+
+33 ZMIANA KURSORA MYSZKI		-----------------------------------------------------------------------
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+	<head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	  <meta http-equiv="content-language" content="pl" />
+	     
+      <meta name="author" content="Arkadiusz Włodarczyk" />
+	  <meta name="robots" content="index, follow" />
+		<title>Video Kurs - Video Kursy</title>
+	  <meta name="description" content="Video Kursy Tworzenia stron WWW oraz Video Kursy Programowania" />
+	  <meta name="keywords" content="video kurs, video kursy, video, kurs" />	
+	  	
+		<style type="text/css">
+			/*<![CDATA[*/
+			body
+			{
+				margin: 0px;
+				padding: 0px;
+			}
+			.help
+			{
+				cursor:wait;
+			}
+			/*]]>*/
+		</style>
+	</head>
+	<body>
+		<span class="help" title="ee what?">Help me</span>
+	</body>
+</html>
+
+
+34 PRZEZROCZYSTOSC		-----------------------------------------------------------------------
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+	<head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	  <meta http-equiv="content-language" content="pl" />
+	     
+      <meta name="author" content="Arkadiusz Włodarczyk" />
+	  <meta name="robots" content="index, follow" />
+		<title>Video Kurs - Video Kursy</title>
+	  <meta name="description" content="Video Kursy Tworzenia stron WWW oraz Video Kursy Programowania" />
+	  <meta name="keywords" content="video kurs, video kursy, video, kurs" />	
+	  	
+		<style type="text/css">
+			/*<![CDATA[*/
+			body
+			{
+				margin: 0px;
+				padding: 0px;
+			}
+			img
+			{
+				opacity: 0.6;
+				filter: alpha(opacity=60);
+				border: 0;
+			}
+			/*]]>*/
+		</style>
+	</head>
+	<body>
+		<a href="http://videokurs.pl" target="_blank">
+		<img src="kursy_mini/c.jpg" alt="Video Kurs C++" 
+			onmouseover="this.style.opacity=1; this.filters.alpha.opacity=100"
+			onmouseout="this.style.opacity=0.6; this.filters.alpha.opacity=60"
+		/>	
+		</a>	
+		<img src="kursy_mini/c-algorytmy.jpg" alt="Video Kurs C++ - Algorytmy" 
+			onmouseover="this.style.opacity=1; this.filters.alpha.opacity=100"
+			onmouseout="this.style.opacity=0.6; this.filters.alpha.opacity=60"		
+		/>
+		<img src="kursy_mini/c-pliki.jpg" alt="Video Kurs C++ - Obsługa Plików" 
+			onmouseover="this.style.opacity=1; this.filters.alpha.opacity=100"
+			onmouseout="this.style.opacity=0.6; this.filters.alpha.opacity=60"		
+		/>
+		<img src="kursy_mini/java-aplikacje.jpg" alt="Video Kurs Java - Tworzenie Aplikacji" 
+			onmouseover="this.style.opacity=1; this.filters.alpha.opacity=100"
+			onmouseout="this.style.opacity=0.6; this.filters.alpha.opacity=60"		
+		/>
+	</body>
+</html>
+
+
+35 MARGINESY, WYPELENIENIA, BOX MODEL		-----------------------------------------------------------------------
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+	<head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	  <meta http-equiv="content-language" content="pl" />
+	     
+      <meta name="author" content="Arkadiusz Włodarczyk" />
+	  <meta name="robots" content="index, follow" />
+		<title>Video Kurs - Video Kursy</title>
+	  <meta name="description" content="Video Kursy Tworzenia stron WWW oraz Video Kursy Programowania" />
+	  <meta name="keywords" content="video kurs, video kursy, video, kurs" />	
+	  	
+		<style type="text/css">
+			/*<![CDATA[*/
+			body
+			{
+				margin: 0px;
+				
+				
+			}
+			div.tekst
+			{
+				background-color: gray;
+				padding: 50px; /* padding-left: 50px; padding-right: 50px; padding-bottom: 50px; padding-top: 50px*/
+				text-align: justify;
+				margin: 40px;
+				border: 3px solid black;
+				width: 200px; /* SZEROKOŚĆ TREŚĆI */
+			}
+			div#opakowanie
+			{
+				width: 386px; /* 200px + 50px + 50px + 3px + 3px + 40px + 40px*/
+				border: 1px dotted green;
+				
+			}
+			/*]]>*/
+		</style>
+	</head>
+	<body>
+	<div id="opakowanie">
+		<div class="tekst">To jest jakiś bardzo ciekawy tekścik ;-) To jest jakiś bardzo ciekawy tekścik ;-) To jest jakiś bardzo ciekawy tekścik ;-) To jest jakiś bardzo ciekawy tekścik ;-) To jest jakiś bardzo ciekawy tekścik ;-) To jest jakiś bardzo ciekawy tekścik ;-) To jest jakiś bardzo ciekawy tekścik ;-) To jest jakiś bardzo ciekawy tekścik ;-) To jest jakiś bardzo ciekawy tekścik ;-) To jest jakiś bardzo ciekawy tekścik ;-) To jest jakiś bardzo ciekawy tekścik ;-) To jest jakiś bardzo ciekawy tekścik ;-) To jest jakiś bardzo ciekawy tekścik ;-)</div>
+		
+	</div>
+	
+	asdfasdf
+	</body>
+</html>
+
+
+36 PŁUWANIE ELEMENTÓW		-----------------------------------------------------------------------
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+	<head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	  <meta http-equiv="content-language" content="pl" />
+	     
+      <meta name="author" content="Arkadiusz Włodarczyk" />
+	  <meta name="robots" content="index, follow" />
+		<title>Video Kurs - Video Kursy</title>
+	  <meta name="description" content="Video Kursy Tworzenia stron WWW oraz Video Kursy Programowania" />
+	  <meta name="keywords" content="video kurs, video kursy, video, kurs" />	
+	  	
+		<style type="text/css">
+			/*<![CDATA[*/
+			body
+			{
+				margin: 0px;
+				
+				
+			}
+			div.tekst
+			{
+				background-color: gray;
+				padding: 50px; /* padding-left: 50px; padding-right: 50px; padding-bottom: 50px; padding-top: 50px*/
+				text-align: justify;
+				margin: 40px;
+				border: 3px solid black;
+				width: 200px; /* SZEROKOŚĆ TREŚĆI */
+			}
+			div#opakowanie
+			{
+				width: 386px; /* 200px + 50px + 50px + 3px + 3px + 40px + 40px*/
+				border: 1px dotted green;
+				float: left;
+			}
+			div#kontener
+			{
+				width: 776px;
+			}
+			/*]]>*/
+		</style>
+	</head>
+	<body>
+	<div id="kontener">
+		<div id="opakowanie">
+			<div class="tekst">To jest jakiś bardzo ciekawy tekścik ;-) To jest jakiś bardzo ciekawy tekścik ;-) To jest jakiś bardzo ciekawy tekścik ;-) To jest jakiś bardzo ciekawy tekścik ;-) To jest jakiś bardzo ciekawy tekścik ;-) To jest jakiś bardzo ciekawy tekścik ;-) To jest jakiś bardzo ciekawy tekścik ;-) To jest jakiś bardzo ciekawy tekścik ;-) To jest jakiś bardzo ciekawy tekścik ;-) To jest jakiś bardzo ciekawy tekścik ;-) To jest jakiś bardzo ciekawy tekścik ;-) To jest jakiś bardzo ciekawy tekścik ;-) To jest jakiś bardzo ciekawy tekścik ;-)</div>
+			
+		</div>
+		<div id="opakowanie">
+			<div class="tekst">To jest jakiś bardzo ciekawy tekścik ;-) To jest jakiś bardzo ciekawy tekścik ;-) To jest jakiś bardzo ciekawy tekścik ;-) To jest jakiś bardzo ciekawy tekścik ;-) To jest jakiś bardzo ciekawy tekścik ;-) To jest jakiś bardzo ciekawy tekścik ;-) To jest jakiś bardzo ciekawy tekścik ;-) To jest jakiś bardzo ciekawy tekścik ;-) To jest jakiś bardzo ciekawy tekścik ;-) To jest jakiś bardzo ciekawy tekścik ;-) To jest jakiś bardzo ciekawy tekścik ;-) To jest jakiś bardzo ciekawy tekścik ;-) To jest jakiś bardzo ciekawy tekścik ;-)</div>
+			
+		</div>	
+	</div>
+	
+	<div style="clear: both;"></div>
+			asdf
+		as
+		dfas
+		df
+	
+	</body>
+</html>
+
+
+37 POZYCJONOWANIE		-----------------------------------------------------------------------
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+	<head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	  <meta http-equiv="content-language" content="pl" />
+	     
+      <meta name="author" content="Arkadiusz Włodarczyk" />
+	  <meta name="robots" content="index, follow" />
+		<title>Video Kurs - Video Kursy</title>
+	  <meta name="description" content="Video Kursy Tworzenia stron WWW oraz Video Kursy Programowania" />
+	  <meta name="keywords" content="video kurs, video kursy, video, kurs" />	
+	  	
+		<style type="text/css">
+			/*<![CDATA[*/
+			body
+			{
+				margin: 0px;
+				padding: 0px;
+			}
+			span.data
+			{
+				position: absolute;
+				/*
+				 * 
+				 * top - od gory
+				 * bottom - od dolu
+				 * right - od prawej
+				 * left - od lewej
+				 */
+				right: 10px;
+				top: 1px;
+	
+			}
+			div.menu_dolne
+			{
+				position: fixed;
+				width: 100%;
+				height: 20px;
+				background-color: gray;
+				bottom: 0px;
+			}
+			div.news
+			{
+				position: relative;
+				margin: 0px auto;
+				width: 300px;
+				background-color: gray;
+				
+			}
+			/*]]>*/
+		</style>
+	</head>
+	<body>
+	<div class="news">lalalaas dasd asd as	<span class="data">10.12.2009r</span></div> 
+	<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+	<div class="menu_dolne"></div>
+	</body>
+</html>
+
+
+38 WARSTWY Z-INDEX		-----------------------------------------------------------------------
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+	<head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	  <meta http-equiv="content-language" content="pl" />
+	     
+      <meta name="author" content="Arkadiusz Włodarczyk" />
+	  <meta name="robots" content="index, follow" />
+		<title>Video Kurs - Video Kursy</title>
+	  <meta name="description" content="Video Kursy Tworzenia stron WWW oraz Video Kursy Programowania" />
+	  <meta name="keywords" content="video kurs, video kursy, video, kurs" />	
+	  	
+		<style type="text/css">
+			/*<![CDATA[*/
+			body
+			{
+				margin: 0px;
+				padding: 0px;
+			}
+			.kwadracik
+			{
+				position: absolute;
+				left: 0px;
+				width: 100px;
+				height: 100px;
+			}
+
+			/*]]>*/
+		</style>
+	</head>
+	<body>
+		To jest jakiś tekst.
+		<div class="kwadracik" style="background-color: green; top: 0px; z-index: -1;"> </div>
+		<div class="kwadracik" style="background-color: yellow; top: 20px; z-index: -2;"> </div>
+		<div class="kwadracik" style="background-color: red; top: 40px; z-index: -3;"> </div>
+	</body>
+</html>
+
+
+39 OVERFLOW		-----------------------------------------------------------------------
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+	<head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	  <meta http-equiv="content-language" content="pl" />
+	     
+      <meta name="author" content="Arkadiusz Włodarczyk" />
+	  <meta name="robots" content="index, follow" />
+		<title>Video Kurs - Video Kursy</title>
+	  <meta name="description" content="Video Kursy Tworzenia stron WWW oraz Video Kursy Programowania" />
+	  <meta name="keywords" content="video kurs, video kursy, video, kurs" />	
+	  	
+		<style type="text/css">
+			/*<![CDATA[*/
+			body
+			{
+				margin: 0px;
+				padding: 0px;
+			}
+			.tekst
+			{
+				width: 300px;
+				height: 300px;
+				background-color: red;
+				overflow: auto;
+			}
+
+			/*]]>*/
+		</style>
+	</head>
+	<body>
+		<div class="tekst">
+			To jest jakiś ciekawy tekst.  
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst.		To jest jakiś ciekawy tekst.  
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst.		To jest jakiś ciekawy tekst.  
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst.		To jest jakiś ciekawy tekst.  
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst.		To jest jakiś ciekawy tekst.  
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst.		To jest jakiś ciekawy tekst.  
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst.		To jest jakiś ciekawy tekst.  
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst.		To jest jakiś ciekawy tekst.  
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst.		To jest jakiś ciekawy tekst.  
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst.		To jest jakiś ciekawy tekst.  
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst.		To jest jakiś ciekawy tekst.  
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst.		To jest jakiś ciekawy tekst.  
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst.		To jest jakiś ciekawy tekst.  
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst.		To jest jakiś ciekawy tekst.  
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst.		To jest jakiś ciekawy tekst.  
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst.		To jest jakiś ciekawy tekst.  
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst.		To jest jakiś ciekawy tekst.  
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst.		To jest jakiś ciekawy tekst.  
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst.		To jest jakiś ciekawy tekst.  
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst.		To jest jakiś ciekawy tekst.  
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst.		To jest jakiś ciekawy tekst.  
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst.		To jest jakiś ciekawy tekst.  
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst.		To jest jakiś ciekawy tekst.  
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst. 
+			To jest jakiś ciekawy tekst. 
+		</div>
+	</body>
+</html>
+
