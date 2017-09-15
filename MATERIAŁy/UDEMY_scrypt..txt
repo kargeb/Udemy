@@ -5,8 +5,20 @@
 		<title>To jest jakiś tytułek :-)</title>
 	</head>
 	<body style="background-color: rgb(255,235,205)">
+	
+		<!-- KOLORY:
+				- słowam
+				- rgb(255,235,205)
+				- heksadecymalny  #BBBBBB
+		-->
+	
 		<!-- bgcolor = backgroundcolor = kolor tła-->
 		<!-- p = paragraph = akapit -->
+		<!-- align = wyrówanie 
+					- justify, left, right, center
+		-->
+		<!-- title - w dokumencie opis konkretnego elementu  -->
+		
 		<p align="justify" title='Ten tekst został napisany przez "Arkadiusza Włodarczyka"'>Zacznijmy od tego, którą gałąź informatyki mam czyli np. przeszukiwać zawartość internetu przy pomocy wyszukiwarki.</p>
 
 	</body>	
@@ -16,74 +28,31 @@
 
 <html>
 	<head>
-	  <meta http-equiv="content-language" content="pl" />
-	  
-      <meta name="author" content="Arkadiusz Włodarczyk" />
-	  <meta name="robots" content="index, follow" />
+		<meta charset="utf-8">
+      <meta name="author" content="Arkadiusz Włodarczyk" />		
 		<title>Video Kurs - Video Kursy</title>
-	  <meta name="description" content="Video Kursy Tworzenia stron WWW oraz Video Kursy Programowania" />
-	  <meta name="keywords" content="video kurs, video kursy, video, kurs" />		
-		
+	  <meta name="description" content="Video Kursy Tworzenia stron WWW oraz Video Kursy Programowania" />	
 	</head>
-	<body style="background-color: rgb(255,235,205)">
-		<!-- bgcolor = backgroundcolor = kolor tła-->
-		<!-- p = paragraph = akapit -->
-	</body>	
 </html>
 
 11 ENCJE	-----------------------------------------------------------------------
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
-	<head>
-	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	  <meta http-equiv="content-language" content="pl" />
-	     
-      <meta name="author" content="Arkadiusz Włodarczyk" />
-	  <meta name="robots" content="index, follow" />
-		<title>Video Kurs - Video Kursy</title>
-	  <meta name="description" content="Video Kursy Tworzenia stron WWW oraz Video Kursy Programowania" />
-	  <meta name="keywords" content="video kurs, video kursy, video, kurs" />
-	</head>
-	<body style="background-color: rgb(255,235,205)">
+	Po to żeby robić np twarde spacje i wstawiać znaki które normalnie interpretuje HTML
+
 		<!--		
 			&lt;    Less than     <
 			&quot;  Quote         "
 			&apos;  Apostrophe    '
 			&amp;   Ampersand     &
   -->
-  		<b><i><u> </u></i></b>
+  
+	ZAJEBISTĄ sprawą żeby wstawiać na strone elementy HTML bez ich interpetacji jest danie ich
+	w tag, interpretuje on tez wszystkie biale znaki jak entery aby i spacje !
+		<!-- <pre>  -->      
 		
-		<p> &int;</p> 
-	</body>	
-</html>
 
 14 FORMATOWANIE TEKSTU	-----------------------------------------------------------------------
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
-	<head>
-	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	  <meta http-equiv="content-language" content="pl" />
-	     
-      <meta name="author" content="Arkadiusz Włodarczyk" />
-	  <meta name="robots" content="index, follow" />
-		<title>Video Kurs - Video Kursy</title>
-	  <meta name="description" content="Video Kursy Tworzenia stron WWW oraz Video Kursy Programowania" />
-	  <meta name="keywords" content="video kurs, video kursy, video, kurs" />
-	</head>
-	<body style="background-color: rgb(255,235,205)">
-		<!--		
-			&lt;    Less than     <
-			&quot;  Quote         "
-			&apos;  Apostrophe    '
-			&amp;   Ampersand     &
-  -->
-	
-		<p> &int;</p> 
-		
 		<b>To jest pogrubiony tekst</b> <!-- b bold = pogrubienie--> <br /> <!-- br break = przerwać -->
 		<i>To jest tekst pochylony</i> <!-- i italic = pochylenie --><br />
 		<u>To jest podkreślony tekst</u> <!-- u underline = podkreślenie --><br />
@@ -99,9 +68,13 @@
 		
 		<strong>To jest pogrubiony tekst, ale niesie on dodatkowo wartość semantyczną</strong> <br />
 		<em>To jest pochylony tekst, ale dodatkowo niesie ze sobą wartość semantyczną</em>	<!-- emphasis = nacisk, podkreślenie --><br />	
-		x<sup>2</sup> a <sub>1</sub>
-		
-		<sup>To jest tekst.</sup> To jest tekst. <sub>To jest tekst.</sub> <br />
+		x
+	
+			INDEX GÓRNY
+		<sup>To jest tekst.</sup> To jest tekst.
+
+			INDEX DOLNY !
+		<sub>To jest tekst.</sub> <br />
 		
 		<!-- header = nagłówek -->
 		
@@ -110,25 +83,29 @@
 		<h3>to jest jakiś tekst</h3>
 		<h6>To jest najmniej ważny, ale ważny tytułek</h6>
 		<!-- ... h6 -->
-		<pre> <!-- pre od pre-formatted -->
-		<code>
-		#include &lt;iostream>
-			
-		using namespace std;
 		
-		int main()
-		{
-			cout &lt;&lt;&quot;To jest jakiś prosty tekst&quot;;
-			system(&quot;pause&quot;);
-			return 0;
-		}
-		</code>
+		NALEPSZY SPOSOB NA WKLEJENIE KODU NA STRONE, lub tekstu formatoewanego ja kw  wordzie
+		<pre> <!-- pre od pre-formatted -->
+			<code>
+			#include &lt;iostream>
+				
+			using namespace std;
+			
+			int main()
+			{
+				cout &lt;&lt;&quot;To jest jakiś prosty tekst&quot;;
+				system(&quot;pause&quot;);
+				return 0;
+			}
+			</code>
 		</pre>
 		
-		&lt;pre> służy do pokazania pre-sformatowanego tekstu. <br />
-		
-		<var>int a; int b;</var> <!-- variable - zmienna -->
 		<br />
+		
+			Są  u dołu kurwa niby te jakies znaczniki ale czy się z nich korzysta to chuj wie, 
+			po prostu narazie wiedz za takie sa a czy sa przypadne to watpie 
+		
+		
 		<cite>Albert Einstein</cite> <!-- cite - przytaczać -->
 		<blockquote cite="www.google.pl">
 		<p>
@@ -137,7 +114,7 @@
 		</blockquote>
 		
 		<dfn> <!-- dfn = define  = definiować = opisywać-->
-			To jest jakaś definicja :-)
+			To jest jakaś definicja :-)		
 			
 		</dfn>
 		<pre>
@@ -158,19 +135,6 @@
 
 15 WYKAZY LIST	-----------------------------------------------------------------------
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
-	<head>
-	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	  <meta http-equiv="content-language" content="pl" />
-	     
-      <meta name="author" content="Arkadiusz Włodarczyk" />
-	  <meta name="robots" content="index, follow" />
-		<title>Video Kurs - Video Kursy</title>
-	  <meta name="description" content="Video Kursy Tworzenia stron WWW oraz Video Kursy Programowania" />
-	  <meta name="keywords" content="video kurs, video kursy, video, kurs" />
-	</head>
 	<body style="background-color: rgb(255,235,205)">
 		<ol type="I"> <!-- OL stands for ordered list - ponumerowana lista -->
 			<li> jakiś element </li> <!-- LI List Item - element listy -->
@@ -193,12 +157,16 @@
 		  <dd> opis definicji :-) </dd> <!-- definition data / description -->
 		</dl>
 		
+			to to juz chuj wie co to jest
+		
 		<fieldset>
 			<legend>Opis</legend>
 			To jest opisowy opis z opisowym opisem ;-) To jest opisowy opis z opisowym opisem ;-) To jest opisowy opis z opisowym opisem 
 			To jest opisowy opis z opisowym opisem ;-) To jest opisowy opis z opisowym opisem ;-) To jest opisowy opis z opisowym opisem ;-) 
 		</fieldset>
 		<br /><br /><br /><br /><br />
+		
+		HR mozna sobie regulowac dlugosc i kolor
 		
 		<hr width="40%" color="red" align="left" />
 		<hr width="40%" color="red" align="center" />
@@ -210,21 +178,37 @@
 
 16 TABELKI	-----------------------------------------------------------------------
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
-	<head>
-	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	  <meta http-equiv="content-language" content="pl" />
-	     
-      <meta name="author" content="Arkadiusz Włodarczyk" />
-	  <meta name="robots" content="index, follow" />
-		<title>Video Kurs - Video Kursy</title>
-	  <meta name="description" content="Video Kursy Tworzenia stron WWW oraz Video Kursy Programowania" />
-	  <meta name="keywords" content="video kurs, video kursy, video, kurs" />
-	</head>
+
 	<body style="background-color: rgb(255,235,205)">
-	<!--
+	
+	
+	w tabelach:
+		
+			<caption> - nagłówek tabeli
+		
+		Można podzielić tabele na nagłówki, stopkę i ciało i wtedy nadawac im poszczególne wartości
+		
+			<thead> - łep
+				No i tutaj zamiast tworzyc komorki przez <td> to ROBIMY <th> !!
+			<tbody> - ciało
+			<tfoot> - stopka
+			
+			
+		-bgcolor - kolor tła komórki tabeli
+		- align - tez funkcjnuje
+		
+		UWaga jest też VALIGN które wyrównuje w PIONIE ! top center lub bottom
+		
+		- CELLSPACING  -  Odstęp między poszczególnymi KOMÓRKAMI
+		- CELLPADDING	-	Odstęp zawartości komórki od jej krawędzi
+		
+		- border - wiadomo
+		
+		
+		
+		
+	
+	
 		<table border="1" cellspacing="0" cellpadding="10" >
 		  <caption>Video Kursy</caption>
 		  <thead bgcolor="gray">
@@ -240,8 +224,8 @@
 			  <tr><td>Video Kurs JavaScript </td><td> 39 </td></tr>
 		  </tbody>		  
 		</table>
-	-->
-	<!--
+	
+	
 	  tr stands for Table Row - wiersz tabelki
 	  td stands for Table Data - informacja w tabelce, reprezentuje komórkę (cell) lub też po prostu rubrykę
 	  border - ramka
@@ -249,9 +233,14 @@
 	  cellspacing - obszar pomiędzy komórkami
 	  th stands for Table Header - nagłówek tabelki
 	  align = wyrównanie dostępne opcje: left/center/right
-	  valign = vertical align = pionowe wyrównanie, dostępne opcje: top/middle/bottom
-	-->
-	<!--
+
+		<td valign="center" align="center"> TREŚĆ </td>	 - idealnie po srodku
+
+	 valign = vertical align = pionowe wyrównanie, dostępne opcje: top/middle/bottom
+
+	  
+	
+	
 	<table border="1" cellpadding="10" cellspacing="0" height="600">
 	<caption>Nagłówek Główny tabelki</caption>
 		<thead bgcolor="gray">
@@ -281,16 +270,19 @@
 			</tr>	
 		</tbody>			
 	</table>	
-	-->
 	
-	<!--
+	
+	
 	 col column - kolumna
 	 span - rozpiętość
-	 colspan - rozpiętość kolumny
 	 
-	 rowspan - rozpiętość wiersza
-	-->
-	<!--
+	 colspan - rozpiętość kolumny czyli łączenie w poziomie
+	 
+	 rowspan - rozpiętość wiersza	czyli łączenie w pionie 
+	 
+	 
+	
+	
 	<table border="1" cellpadding="10" cellspacing="0">
 	<caption>Nagłówek Główny tabelki</caption>
 		<thead bgcolor="gray">
@@ -320,55 +312,22 @@
 		</tbody>			
 	</table>	
 
-	<table border="1" cellpadding="10" cellspacing="0">
-		<tr>
-			<td colspan="2" align="center">1</td>
-		
-		</tr>
-		<tr>
-			<td>2</td>
-			<td rowspan="2" valign="top">2</td>
-		</tr>
-		<tr>
-			<td>3</td>
-	
-		</tr>
-	</table>
--->
-	<table border="1" cellpadding="10" cellspacing="0" width="100%">
-		<tr>
-			<td colspan="2" align="center">BANER!!!</td>
-		</tr>
-		<tr height="500">
-			<td width="10%" valign="top" align="center"> MENU </td>
-			<td valign="top"> TREŚĆ </td>
-		</tr>		
-	</table>
 	
 	</body>	
 </html>
 
 17 OBRAZKI	-----------------------------------------------------------------------
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
-	<head>
-	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	  <meta http-equiv="content-language" content="pl" />
-	     
-      <meta name="author" content="Arkadiusz Włodarczyk" />
-	  <meta name="robots" content="index, follow" />
-		<title>Video Kurs - Video Kursy</title>
-	  <meta name="description" content="Video Kursy Tworzenia stron WWW oraz Video Kursy Programowania" />
-	  <meta name="keywords" content="video kurs, video kursy, video, kurs" />
-		<!--[if lt IE 7.]>
-			<script defer type="text/javascript" src="pngfix.js"></script>
-		<![endif]-->
-	</head>
-	<body style="background-color: rgb(255,235,205)">
-		tekst<img src="logo-video-kurs-pl.png" alt="Video Kurs - Logo" border="0" width="242" height="64" />
-tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst 
+	Wtawianie obrazka :
+	
+	<img src="logo-video-kurs-pl.png" alt="Video Kurs - Logo" border="0" width="242" height="64" />
+
+	alt wstawia to co bedzie widac jak sie obrazek nie wczyta
+	
+	UWAGA podając jeden wymiar drugi zostanie automatycznie dostosowany proporcjonalnie, więc pisanie dwóch
+	to po prostu dobra praktyka a nie ostatecznosc
+	
+	(JEszcze przydałoby się coś o opływaniu tego obrazka)
 		
 		<!--<img src="images/bass.jpg" alt="Bass" />-->
 	</body>	
@@ -378,24 +337,14 @@ tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst te
 
 18 OSADZANIE PLIKOW NA STRONIE	-----------------------------------------------------------------------
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
-	<head>
-	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	  <meta http-equiv="content-language" content="pl" />
-	     
-      <meta name="author" content="Arkadiusz Włodarczyk" />
-	  <meta name="robots" content="index, follow" />
-		<title>Video Kurs - Video Kursy</title>
-	  <meta name="description" content="Video Kursy Tworzenia stron WWW oraz Video Kursy Programowania" />
-	  <meta name="keywords" content="video kurs, video kursy, video, kurs" />
 
-	</head>
 	<body style="background-color: rgb(255,235,205)">
 		
 		<!--<embed src="czym-jest-xml.mov" width="812" height="676" 
 		       autostart="false" />-->
+			   
+		Chuj wie czy się z tego jeszcze korzysta, jak coś to pamiętaj że tutaj była o ty mowa	   
+			   
 			   
 		<object classid="CLSID:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B"
 				type="video/quicktime"
@@ -426,66 +375,46 @@ tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst te
 	
 19 LINKI	-----------------------------------------------------------------------
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
-	<head>
-	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	  <meta http-equiv="content-language" content="pl" />
-	     
-      <meta name="author" content="Arkadiusz Włodarczyk" />
-	  <meta name="robots" content="index, follow" />
-		<title>Video Kurs - Video Kursy</title>
-	  <meta name="description" content="Video Kursy Tworzenia stron WWW oraz Video Kursy Programowania" />
-	  <meta name="keywords" content="video kurs, video kursy, video, kurs" />
+	
+		Zwykły link:
 
-	</head>
-	<body style="background-color: rgb(255,235,205)">
-		<a name="top" href="#dol">Idź na sam dół strony</a>
-		<a href="http://videokurs.pl" title="Video Kursy Programowania i Tworzenia stron WWW">Video Kursy</a> Programowania i Tworzenia stron WWW
-		<br />
-		<a href="video-kurs-tworzenia-stron-www.html" title="Video Kurs XHTML i CSS">Xhtml i CSS</a>
-		<br /><br />
+		<a href="http://videokurs.pl" title="Video Kursy Programowania ">Video Kursy</a> Programowania 
+		
+		tytuł czyli to co się pokarze po najechaniu na link
+		
+		TO JEST ZAJEBISTE ! Czyli link do jakiejś częsci strony:
+		
+			<a name="top" href="#dol">Idź na sam dół strony</a>
+			
+			name - dzięki nawie jakiś inny link przeniesie nas właśnie w to miejsce
+			
+			href ="#dol"  - element na dole strony ma nazwę "dol" i wlasnie tam przeniesie nas ten link !
+
+			<a name="dol" href="#top">Idź do góry!</a>
+			
 		<!--
 			a stands for anchor
 			href = hypertext reference
 		-->
+			
+			Mozna odrazu zorbic link ktory otwiera domyslny program pocztowy i umozliwia wyslanie mejla:
 		
 		<a href="mailto:armiksos@gmail.com">Napisz do mnie... a na pewno tego nie pożałujesz ;-)</a>
 		<br />
 		
+		
+		Mozna tez odrazu dac gg i jego status, teraz juz pewnie chuj ale moze inne programy tez to umozliwiaja
+		
 		nr gg: <a href="gg:10870365" title="Numer mojego gg :-)">10870365
 		<img border="0" src="http://status.gadu-gadu.pl/users/status.asp?id=10870365&amp;styl=3" alt="nr gg" /></a>
 		
-		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-		<a name="5123525">POST</a>
-		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 		
-		<a name="dol" href="#top">Idź do góry!</a>
-		
-	</body>	
-</html>
+
 
 
 21 FORMULARZE	-----------------------------------------------------------------------
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
-	<head>
-	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	  <meta http-equiv="content-language" content="pl" />
-	     
-      <meta name="author" content="Arkadiusz Włodarczyk" />
-	  <meta name="robots" content="index, follow" />
-		<title>Video Kurs - Video Kursy</title>
-	  <meta name="description" content="Video Kursy Tworzenia stron WWW oraz Video Kursy Programowania" />
-	  <meta name="keywords" content="video kurs, video kursy, video, kurs" />
-
-	</head>
-	<body>
 		<form action="mailto:ddiabelekk@poczta.onet.pl?subject=Ankieta" method="post" enctype="text/plain" accept-charset="utf-8">
 			Imię: <input type="text" name="imie" size="10" maxlength="10" /><br />
 			Hasło: <input type="password" name="haslo" /><br />
@@ -536,9 +465,6 @@ tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst te
 			<!--imie=Arkadiusz -->
 				
 		</form>
-	</body>
-</html>
-
 
 23 STYLE CSS	-----------------------------------------------------------------------
 

@@ -1,10 +1,129 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="utf-8">
-    <title>Strona kursowa</title>
-</head>
-<body>
-    dupa dupa dupas
-</body>	
-</html>	
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+	<head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	  <meta http-equiv="content-language" content="pl" />
+	     
+      <meta name="author" content="Arkadiusz Włodarczyk" />
+	  <meta name="robots" content="index, follow" />
+		<title>Video Kurs - Video Kursy</title>
+	  <meta name="description" content="Video Kursy Tworzenia stron WWW oraz Video Kursy Programowania" />
+	  <meta name="keywords" content="video kurs, video kursy, video, kurs" />	
+	  	
+		<style type="text/css">
+			/*<![CDATA[*/
+            
+            /*
+            "*" sprawia ze wybieramy WSZYSTKIE mozliwe znaczniki w dokumnecie !
+            ustawiamy marign i padding na 0 zeby wyjebac marginesy domyslnie 
+            nadawane przez przegladarki
+            */
+            *
+            {
+                padding: 0;
+                margin: 0;
+            }
+            
+			body
+			{
+				background-image: url('obrazki/tlo_strony.jpg');
+				background-attachment: fixed;
+				/*background-repeat: repeat-x;
+				background-color: #64646c;*/
+			}
+
+			a    /* ustawienie formatowania dla wszystkich linkow w dokumencie */
+			{
+				color: teal;
+				text-decoration: none;
+				border-bottom: 1px dotted gray; /*dla boxa z kontaktem osobne formatowanie*/
+			}
+			a:hover  /* po najechaniu na link */
+			{
+				color: #06376C;
+			}
+            
+            #kontener
+            {
+                /*kontener na cala strone, ustawiajac jego szerokosc na konretna
+                    sprawiamy ze strona NIE BĘDZIE sie zmniejszac gdy bedziemy 
+                bawic sie szerokoscia okna, (teraz penwie sie juz tak nie robi)
+                Szerokosc ustwiamy na 1004px bo dawniej wlasnie taka rozdzielczosc byla 
+                najpoplarniejsza, chcemy uniknac scrolla na dole
+                */
+             #   border: 5px solid blue;
+                width: 1004px;
+                /* centrowanie diva, 0 z gory i z dolu, center po bokach */
+                margin: 0 auto;
+            }
+            
+            
+            /*  UWAGA ! Pozycja LOGA ! 
+                Dzięki temu że  #gorna_czesc_kontenera jest ustawiona na RELATIVE,
+                to elementy w niej zagniezdzone i ustawione na ABSOLUTE będą ustawiać
+                się włąsnie WZGLĘDEM TEGO DIVA ! czyli left 20px i top 20px są względem 
+                gornej_czesci a nie wzgledem BODY
+            */
+            #gorna_czesc_kontenera
+			{
+				position: relative;
+				margin-top: 10px;
+				background-image: url('obrazki/gora_i_dol.gif');
+				width: 944px;
+				height: 113px;
+			}
+            
+			img.logo
+			{
+				position: absolute;
+				border: 0;
+				left: 20px;
+				top: 20px;				
+			}
+            
+            #kontakt_box
+			{
+				position: absolute;    /* gorna_czesc ma pozycjonowanie reltywne */ 
+				right: 40px;
+				top: 7px;
+				font-family: "Trebuchet MS", Helvetica, sans-serif;
+				font-size: 11px;
+				color: white;
+				line-height: 125%;  /* zmniejszenie interlinii */
+			}
+          
+			#kontakt_box a     /*formatowanie dla kontakt boxa, bez podkreslenia*/
+			{
+				border-bottom: none;
+			}
+												
+			/*]]>*/
+		</style>
+	</head>
+	<body>
+        <div align="center">  <!-- to wylacznie na stare przegladarki -->
+            <div id="kontener">
+                <div id="gorna_czesc_kontenera">
+                    <a href="http://videokurs.pl"><img class="logo" src="obrazki/logo.gif" alt="Logo Videokurs.pl" /></a>
+                    
+                    <div id="kontakt_box">  <!-- adres po prawej stronie naglowka -->
+                        <table>
+                            <tr><th>Kontakt:</th></tr>  <!-- <th> automatycznie pogrubia -->
+                            <tr><td>Esko-Al, 32-700, Bochnia </td></tr>
+                            <tr><td>ul. Proszowska 92</td></tr>
+                            <tr><td>tel./kom.: 606 192 567 </td></tr>
+                            <tr><td>tel./fax: (0-14) 611 25 02</td></tr>
+                            <tr><td>e-mail: <a href="mailto:eskoal@bochnia.pl">eskoal@bochnia.pl</a></td></tr>
+                        </table>
+				    </div>
+                </div>    
+                <!-- koniec div gorna_czesc_kontenera -->
+            </div>
+            <!-- koniec div kontener-->
+        </div>
+	</body>
+</html>
+
+
+
