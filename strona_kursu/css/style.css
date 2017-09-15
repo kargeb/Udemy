@@ -1,0 +1,436 @@
+           *
+            {
+                padding: 0;
+                margin: 0;
+            }
+            
+			body
+			{
+				background-image: url('../obrazki/tlo_strony.jpg');
+				background-attachment: fixed;
+				/*background-repeat: repeat-x;
+				background-color: #64646c;*/
+			}
+
+			a    /* ustawienie formatowania dla wszystkich linkow w dokumencie */
+			{
+				color: teal;
+				text-decoration: none;
+				border-bottom: 1px dotted gray; /*dla boxa z kontaktem osobne formatowanie*/
+			}
+			a:hover  /* po najechaniu na link */
+			{
+				color: #06376C;
+			}
+            
+            #kontener
+            {
+                /*kontener na cala strone, ustawiajac jego szerokosc na konretna
+                    sprawiamy ze strona NIE BĘDZIE sie zmniejszac gdy bedziemy 
+                bawic sie szerokoscia okna, (teraz penwie sie juz tak nie robi)
+                Szerokosc ustwiamy na 1004px bo dawniej wlasnie taka rozdzielczosc byla 
+                najpoplarniejsza, chcemy uniknac scrolla na dole
+                */
+             #   border: 5px solid blue;
+                width: 1004px;
+                /* centrowanie diva, 0 z gory i z dolu, center po bokach */
+                margin: 0 auto;
+            }
+            
+            
+            /*  UWAGA ! Pozycja LOGA ! 
+                Dzięki temu że  #gorna_czesc_kontenera jest ustawiona na RELATIVE,
+                to elementy w niej zagniezdzone i ustawione na ABSOLUTE będą ustawiać
+                się włąsnie WZGLĘDEM TEGO DIVA ! czyli left 20px i top 20px są względem 
+                gornej_czesci a nie wzgledem BODY
+            */
+            #gorna_czesc_kontenera
+			{
+				position: relative;
+				margin-top: 10px;
+				background-image: url('../obrazki/gora_i_dol.gif');
+				width: 944px;
+				height: 113px;
+			}
+            
+			img.logo
+			{
+				position: absolute;     /* absolute wzlegem relative w gornej_czesci */
+				border: 0;
+				left: 20px;
+				top: 20px;				
+			}
+            
+            #kontakt_box
+			{
+				position: absolute;    /* gorna_czesc ma pozycjonowanie reltywne */ 
+				right: 40px;
+				top: 7px;
+				font-family: "Trebuchet MS", Helvetica, sans-serif;
+				font-size: 11px;
+				color: white;
+				line-height: 125%;  /* zmniejszenie interlinii */
+			}
+          
+			#kontakt_box a     /*formatowanie dla kontakt boxa, bez podkreslenia*/
+			{
+				border-bottom: none;
+			}
+            
+            /********* MENU GÓRNE *********/
+
+			#gorne_menu
+			{
+				position: absolute; /* Jeszcze raz kozystamy z ABSOLUTE wzgledem RELATIVE (w chuj dobre to) */
+				left: 50px;     /* odstep od lewej */
+				bottom: -1px; /* robimy to zeby to menu minimalnie opadalo na tle glownego banera, zeby nie bylo w prostej liniim taki profesjonalny wyglad niby */   
+			}
+            
+            /* Niezywkle wazne jest to dodanie "li" bo wtedy kolejne elementy listy moga wlasnie oplywac sie z lewej strony i tworzyc prawidze menu ! */          
+			#wlasciwe_gorne_menu li  
+			{
+				list-style-type: none;  /* usuwanie kropek */
+				float: left;    /* OPŁYWANIE DLA LI !! W chuj wazne ze robimy to dla LI wlasnie */
+				border-right: 1px solid #2E2121; /* baaardzo delikatna obwodka wokol przyciskow */
+			}            
+            
+			#wlasciwe_gorne_menu li a    /* wyglad linkow w menu */
+			{
+				background-image: url('../obrazki/srodek_menu_gornego.gif');
+				height: 31px;
+				display: inline-block;
+				float: left;    /* na wszelki wypadek */
+				border-bottom: none;
+				padding: 0px 10px;
+				font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+				font-size: 10px;
+				font-weight: bold;
+				color: white;
+			}            
+            /* zmiana w menu po najechaniu, ORAZ PO WYBRANIU dnaego przycisku (narazie pierszy przycisk) */
+			#wlasciwe_gorne_menu li a:hover, #wlasciwe_gorne_menu li.aktualny a
+			{
+				background-image: url('../obrazki/srodek_menu_gornego_hover.gif');
+				color: #CCCCCC;
+			}            
+            
+            /* Jest to dodane wylacznie po to zeby wysrodkowac napisy na menu ! Trzeba to zrobic w osobnym spanie bo w sekcji "wlasiwe menu li a" jebie sie tlo i inne marginesy */
+			span.link
+			{
+				display: inline-block;
+				margin-top: 10px;
+			}            
+            		
+            /********* MENU ŚRODKOWE *********/            
+            
+ 			#srodkowe_menu      /* po prostu wtsawienie niebieskiego paska pod banerem, jeden na wszystkie */
+			{
+				background-image: url('../obrazki/srodkowe_menu.gif');
+				width: 944px;
+				height: 32px;
+			}           
+
+			#srodkowe_menu li       /* LI BARDZO WAZNE ! */
+			{
+				list-style-type: none;  /* usuniecie kropek */
+				float: left;            /* to co u góry, czyli oplywanie LI względem siebie */
+			}            
+            
+			#srodkowe_menu li a
+			{
+				border-bottom: none;   /* wywalenie podkreslenia (stworzonego z mysla o linkach poza menu) */
+				color: #C7C7D4;
+				font-size: 13px;
+				font-family: "Trebuchet MS", Helvetica, sans-serif;
+				font-weight: bold;
+				font-style: italic;
+			}    
+            
+			#srodkowe_menu li a:hover    /* bardzo proste dodanie hovera */
+			{
+				color: white;
+			}	            
+            
+            /* Robimy to samo co w menu na banerze, zeby nie rozjebac tłeł i marignów, po prostu pakujemy to w spany i osobno je obniazmy i robimy wyswietlanie w bloku */
+			#srodkowe_menu li span.link2
+			{
+				display: block;
+				margin-top: 7px;
+			}            
+            
+            /* Nazwa pierwszy poziom bo rozwijalne menu to bedzie "drugi poziom?, sepcjlana klasa stworzona wylacznie po to zeby przesunac wszystko w lewo */
+			#srodkowe_menu #pierwszy_poziom
+			{
+				margin-left: 70px;
+			}            
+            
+			#srodkowe_menu span.odstepik /* to są te ":-:" między przycikami menu */
+			{
+				display: inline-block;
+				margin: 5px 10px 0px 10px;
+				color: #C7C7D4;
+			}            
+            
+            /********* MENU ROZWIJANE *********/ 
+                /* Uwaga powtorzenia blokow CSS sa zamierzone zeby byl widoczny tok myslenia, nie ma zadnej przeszkody zeby powtarzajace sie bloki wszystkie zlaczyc w jeden */
+            
+            #pierwszy_poziom li .drugi_poziom   /* shocwanie menu rozwijanego */
+			{
+				display: none;
+			}
+            
+			#pierwszy_poziom li:hover .drugi_poziom  /* pokazanie menu po najechaniu  */
+			{
+				display: block;
+				width: 210px;
+			}
+    
+			#pierwszy_poziom li .drugi_poziom li
+			{
+				width:150px;        /* sama ta szerokosc sprawia ze one sa pod soba a nie obok */
+				text-align: left;
+			}            
+            
+			#pierwszy_poziom li      /* juz wiadomo o co chodzi, bedziemy ustawiac menu wzgledem tego */
+			{
+				position: relative;
+			}
+            
+			#pierwszy_poziom li .drugi_poziom
+			{
+				position: absolute;
+				top: 1.9em;         /* margines gorny wzgledem #piewrszy_poziom */
+				left: 0em;
+			}            
+            
+			#pierwszy_poziom > li    /* ustalamy wyokosc dzieki czemu nie ma probelmow z trafieniem */
+			{                        /* znak > chyba onacza ze dotyczy to pierwszego elementu przed li ???? */
+				height:52px;
+			}    
+            
+			#pierwszy_poziom li .drugi_poziom
+			{
+				background-color: #0F3250;
+				border-left: 4px solid gray;        /* ramka wokol roziwjanego menu */
+				border-bottom: 1px solid gray;
+				border-right: 1px solid gray;
+				opacity: 0.9;                   /* przezroczystosc */
+				#filter: alpha(opacity=90); /* to jest dla IE starego wiec mozna wyjebac */
+			}            
+            
+			#pierwszy_poziom li .drugi_poziom li
+			{
+				margin-left: 30px;              /* margines od lewej */
+				border-top: 1px solid #CCCCCC;  /* kreska nad kazdym elementme menu */
+			}            
+            
+			#pierwszy_poziom li .drugi_poziom li a
+			{
+				display: block;         /* UWAGA ! Własnie dzieki temu zaznaczamy caly blok a nie tylko tekst */
+				width: 150px;           /* sztywna szerokosc bloku */
+				margin-bottom: 5px;
+				padding-bottom: 5px;    /* wieksze wypelenienie tych bloczkow, znaczenie przy najezdzaniu */
+			}            
+            
+			#pierwszy_poziom li .drugi_poziom li a:hover
+			{
+				background-color: #CCCCCC;
+				padding-left: 20px;
+				margin-left: -20px;     /* dzieki temu nie przesuwa nam sie tekst w prawo po najechaniu */
+				padding-right: 20px;    /* dopelnienie z prawej */
+				margin-top: -1px;       /* zakrycie tej belki malej szarej u gory ( ale skacze ) */
+				border-top: 1px solid #CCCCCC;  /* po tym juz nie skacze (taki bardziej trick niz wiedza) */
+				color: black;
+			}            
+            
+			#pierwszy_poziom li .drugi_poziom li a
+			{
+				font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+				font-size: 10px;
+				font-style: normal;
+				font-weight: bold;
+			}            
+            
+			#pierwszy_poziom li .drugi_poziom li.pierwszy_element_menu
+			{
+				margin-top: 5px;    /* klasa wylacznie po to zeby zrobic delkatny odstep od list rozw */
+			}            
+            
+             /********* ZAWARTOŚĆ GŁÓNA STRONY *********/     
+            #zawartosc
+			{
+				width: 944px;
+			}            
+            
+			#gorna_czesc_zawartosci
+			{
+				background-image: url('../obrazki/gorna_czesc_zawartosci.gif');
+				width: 944px;
+				height: 17px;
+			}
+            
+			#srodkowa_czesc_zawartosci
+			{
+				background-image: url('../obrazki/srodkowa_czesc_zawartosci.gif');
+				width: 944px;
+				background-repeat: repat-y;     /* UWAGA ! dzięki temu tło będzię się powiększać w miare dodawnaia lementów do strony */
+                                                /* niby kurwa bo gosc zle wpisal a i tak powtarza ... */
+			}
+            
+			#dolna_czesc_zawartosci
+			{
+				background-image: url('../obrazki/dolna_czesc_zawartosci.gif');
+				width: 944px;
+				height: 31px;
+			}    
+            
+			#tekst
+			{
+				text-align: justify;    /* tutaj to dziala tak samo jak left (???) */
+                padding: 10px 50px;     /* robi robote jednak, trzeba uzywac tego */
+				line-height: 140%;      /* interlinia tez daje rade */
+				font-size: 12px;
+				font-family: "Trebuchet MS", Helvetica, sanf-serif;
+			}            
+            
+			h1
+			{
+				font-size: 18px;
+				text-align: center;
+				color: #0A3C72;
+				margin-bottom: 22px;                    /* odstep od barachła pod naglowkami */
+				font-family: Calibri, Tahoma, Arial;
+				font-style: italic;
+			}            
+            
+            /* UWAGA !! KAŻDY TEKST JEST W AKAPCIE ALBO W NAGŁÓWKU ALBO W LIŚCIE !!! NIGDZIE NIE MA O TAK O JEBNIĘTEGO BEZ NICZEGO ! */
+			p
+			{
+				margin-bottom: 15px;    /* dolny odstep miedzy poszczegolnymi akapitami */
+			}            
+            
+            h3
+			{
+				margin-bottom: 15px;
+				color: #0A3C72;
+			}
+            
+			#tekst ul
+			{
+				margin: 20px;
+				margin-left: 110px;
+				list-style-image: url('../obrazki/ol.gif');
+			}
+			#tekst li
+			{
+				margin-bottom: 5px;
+			}  
+            
+			#zawartosc .boczny_tekst     /* UWAGA tym divem robimy CAŁĄ PRAWĄ STRONĘ za pomocą float right */
+			{
+				text-align: left;
+				float: right;
+				width: 150px;       /* BARDZO WAZNE bo inczej zajmuje cala szerokosc i nie ucieka do prawej !!! */
+				margin: 10px 20px;
+				font-size: 10px;
+				font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+				border: 1px dotted gray;
+				padding: 20px 15px;     /* Zawsze korzytsja z tych paddingow, robi zajebista robote */
+				background-image: url('../obrazki/tlo_boczne.jpg');
+			}          
+            
+			#zawartosc .obrazki
+			{
+				float: right;       /* zabawa z floatem, najpierwsz czyscimy float z bocznego tekstu i robimy obydwa na right */
+				clear: right;
+			}
+			#zawartosc .obrazki img
+			{
+				float: right;       /* a tutaj czyscimy dla wszystkich po koleji i ustawiamy right, pojebane ale efket jest */
+				clear: right;
+				margin-right: 30px;
+				margin-top: 30px;
+				cursor: pointer;
+				opacity: 0.6;
+				filter: alpha(opacity=60);
+			}            
+            
+            /* ZAMIANA OBRAZKOW PO NAJECHANIU ROBIONA JEST SKRYPTEM BO WIDOCZNIE W CSS NIE DA SIE */
+            
+             /********* DOLNA CZĘŚĆ STRONY *********/
+			#dolna_czesc_strony
+			{
+				background-image: url('../obrazki/gora_i_dol.gif');    /* identyczny jak w naglowku */
+				width: 944px;
+				height: 113px;
+				margin-bottom: 10px;
+			}            
+            
+			#newsletter_icon
+			{
+				float: left;
+				margin-left: 20px;
+			} 
+
+			#tekst_newsletter
+			{
+				color: white;
+				text-align: left;
+				padding-top: 15px;
+			}
+            
+			#naglowek_newsletter
+			{
+				font-size: 15px;
+				font-family: "Comic Sans MS", cursive, sans-serif;
+				font-weight: bold;
+			}            
+            
+			#form_newsletter
+			{
+				margin-top: 10px;
+				font-size: 12px;
+			}
+            
+			.input_text
+			{
+				background-color: gray;
+				font-size: 12px;
+			}            
+            
+			.submit_button
+			{
+				padding: 5px;
+				font-size: 10px;
+				font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+				font-weight: bold;
+				cursor: pointer;       /* Pamiętać o zmianie kursora !!! */
+				border: 2px outset gray;    /* outset sprawia ze on jest wypukly */
+			}      
+            
+			.submit_button:hover
+			{
+				color: green;
+			}
+            
+			.submit_button:active
+			{
+				border: 2px inset gray; /* inset sprawia ze w momencie klilniecia jest wklesly  */
+			}     
+            
+            /* UWAGA ! Wg niego Verdana jest zajebista dla malych czcionek a juz w szczegolnosci dla 10 px */
+			#newsletter_info
+			{
+				font-size: 10px;
+				font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+				margin-left: 25px;
+				margin-top: 4px;
+			}            
+            
+			#copyright
+			{
+				font-size: 10px;
+				font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+				margin-bottom: 10px;
+			}            
+			/*]]>*/
