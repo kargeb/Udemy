@@ -1506,9 +1506,54 @@ Skryptu i podpiecie go do naszego projektu, wtedy nie trzeba bedzie ustawiac ZAD
 54 Selektory i wlasciwosci pod IE
 
 	Dwa pliki, skrypty, które powodują że selektory css3 działają pod starszymy IE niz 10, czyli chuj z tym na ten moment
+		
+55	SELEKTORY		-		OBRAZEK !!!!!!!!!
 	
-55	SELEKTORY
+SELEKTOR  -  za pomocą jego wskazujemy elementy HTML, które mają otrzymać dane właściwości wyglądu zdefiniowane w regule CSS. 
 
+Selektor				Wyjaśnienie
+p					wybierz wszystkie elementy o nazwie p
+.foo				wybierz wszystkie elementy, których class='foo'
+#identyfikator		wybierz wszystkie elementy, których id='identyfikator'
+*					wybierz wszystkie elementy na stronie
+div, p				wybierz wszystkie elementy o nazwie div oraz p
+div p.foo			wybierz wszystkie elementy o nazwie p, których class='foo' - dodatkowo muszą znajdować się w jakimś div.
+div > p.foo			wybierz wszystkie elementy o nazwie p, gdy class='foo' które są w środku div, dodatkowo muszą być to elementy, które są bezpośrednimi dziećmi elementu div
+div + p.foo			wybierz wszystkie elementy o nazwie p, gdy class='foo' które są dokładnie obok (po) elemencie div. 
+					Inaczej - jeśli dokładnie po div, będzie p.foo to zastosuj na tym elemencie i tylko tym poniższy styl - TO JEST WARUNEK
+div ~ p.foo			to samo co wyżej tylko, że wybiera wszystkie elementy p.foo sąsiadujące po div (muszą być na tym samym poziomie w hierarchii)
+
+56 SELEKTORY ATRYBUTÓW		-		OBRAZEK !!!!!
+
+Mowa o Selektorach atrybutów CZYLI korzytsamy z tego że KAŻDY element HTML może mieć ATRYBUTY i to ICH będziemy szukać
+
+Selektor							Wyjaśnienie
+1.	input[required]					wybierz wszystkie elementy o nazwie tagu input które mają atrybut required
+2.	[href="twojastrona.pl"]			wybierz wszystkie elementy które mają atrybut href równy twojastrona.pl
+3.	input[type="text"]				wybierz wszystkie elementy o nazwie tagu input, a atrybut type równy jest text
+4.	[href*="twojastrona.pl"]		wybierz wszystkie elementy które mają atrybut href w której wartości znajduje się gdziekolwiek twojastrona.pl
+	BARDZO ISTOTNY i przydatny, np w wczytywaniu elementów bazy danych lub komentarzy
+5.	[id^="produkt-"]				wybierz wszystkie elementy które mają atrybut id o wartości rozpoczynającej się od produkt-
+6.	a[href^="http://"]				wybierz wszystkie elementy o tagu a które mają atrybut href w której wartości znajduje się na początku http://
+7.	[href$=".jpg"]					wybierz wszystkie elementy które mają atrybut href o wartości kończącej się na .jpg
+	8 ma w zasadzie zastosowanie wlasnie wylacznie do jezykow bo moze byc np en-uk i en-am,  NIE UŻYŁ ANI RAZU GOSC
+8.	[lang|=en]						wybierz wszystkie elementy które mają atrybut lang o wartości en lub też jest połączony z innym słowem przy pomocy - (myślnika)
+	9 W CHUJ WAZNE ! Mozmey tworzyc wlasne atrybuty poprzed rozpoczecie od "data-" no i dalej nasza nazwa ! No i wlasnie tak je wyszukujemy
+9.	[data-filetype="obrazek"]		wybierz wszystkie elementy które mają atrybut data-filetype o wartości równej obrazek
+10.	a[data-info~="external"]		wybierz wszystkie elementy, których tag nazywa się a oraz które mają atrybut data-info oraz jedną z wartości data-info jest external
+
+Bardzo fajnym wykorzystaniem 7 jest skoryztanie z :hover i np przypisywanie ikonek w zaleznosci od rodzaju pliku
+
+[src$=".jpg"]:hover					<img src="obrazek.jpg" width="300" height="200">
+{
+    border: 1px solid black;
+}
+
+57 PSEUDO SELEKTORY		-	OBRAZEK !!!
+
+	UWAGA ! Gosc to zajebiscie zrobil ! trzeba wejsc w folder z lekcja i jest interaktywna sciaga pokazujaca na bierzaco co Co robi co
+	
+	Cała ta tabela zostałan nawet stworzona za pomocą pseudoselektora :hover
 
 
 
