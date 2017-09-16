@@ -1,4 +1,4 @@
-9  ATRYBUTY I KOLORY   -----------------------------------------------------------------------
+﻿9  ATRYBUTY I KOLORY   -----------------------------------------------------------------------
 
 <html>
 	<head>
@@ -1452,4 +1452,60 @@
 		</div>
 	</body>
 </html>
+
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+--------------------------------------    CSS    --------------------------------------------------
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+
+52  Netbeans i szablon BOILERPLATE
+
+netbins ciul ale ten szablon mozna pobrac z ich storny, wypakowac i otworzyc jako nowy projekt. Na ich stornie
+pisza ze jest jeden z najpopularniejszych na swiecie. 
+Ma juz zaladowane jquery, jesli jestes offline to bierze lokalnie a jak jestes to prosto z sieci
+Ma gotowe style css dla w ciul roznych rzeczy, jakies ladne HR i powypieprzane niepotrzebne marginesy
+No tez klasy .hidden, poustawianie styli pod katem drukowania, dodane odpowiednie meta tagi w headzie
+Dodane np ostrzezenie ze jesli ktos uzywa starszego IE niz 7 to wyskoczy komunikat
+Ma dodana bilblioteke modernizer ? i ona podobni sprawdza co jest wspierane a co nie
+Nawt jest wlasna strona 404
+Ogolnie glownie chodzi o to zeby na wszystkich przegladarkach wygladalo to identycznie
+
+53 Czym sa vendor prefixy
+
+prfixy to sa przedrostki kazdej przeglądarki ? i chroma to jest webkit ? 
+
+ZAJEBISTA STRONKA  http://css3please.com/	-	testowanie css w locie
+
+A WIĘC ! Są rzeczy w css3 które nie są jeszcze oficjalnie wspierane przez wiele przeglądarek, nawet najnowszych ! 
+No i trzeba uzywac wtedy PREFIXÓW i to dla kazdej przeglądarki z osobna:
+Za pomocą strony np 
+
+ZAJEBISTA STRONKA   http://expressprefixr.herokuapp.com/  mozna dany wiersz CSS uzbroic od razu w te prefixy
+dla kazdej przegladarki:
+
+.container {
+  -webkit-transform: rotate(14.5deg);
+  -moz-transform: rotate(14.5deg);
+  -ms-transform: rotate(14.5deg);
+  -o-transform: rotate(14.5deg);
+  transform: rotate(14.5deg);
+}
+
+czyli trzebaby za kazdym razem sprawdzac na stronce u dolu co jest kiepsko w spierane i za kazdym razem
+dodawac te prefixy dla roznych przegladarek
+
+ZAJEBISTA STRONKA  https://caniuse.com	- wspieranie css i html przez przegladarki
+
+ALE jest jeden w zasadzie najlepszy spob, czyli sciagniecie ze strony :
+https://leaverou.github.io/prefixfree/
+Skryptu i podpiecie go do naszego projektu, wtedy nie trzeba bedzie ustawiac ZADNYCH prefixow bo skrypt ten zrobi wszystko za nas !
+
+        <script src="js/vendor/prefixfree.min.js"></script>
+
+54 Selektory i wlasciwosci pod IE
+
+
+
+
 
