@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+    
+
+    </head>
+    <body>
+        <!--[if lte IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://whatbrowser.org/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+        <table>
+            <tr><th>Selektor</th><th>Wyjaśnienie</th></tr>            
+            <tr><td>p</td> <td>wybierz wszystkie elementy o nazwie <b>p</b></td></tr>
+            <tr><td>.foo</td><td>  wybierz wszystkie elementy, których class='<b>foo</b>'</td></tr>       
+            <tr><td>#identyfikator</td> <td>wybierz wszystkie elementy, których id='<b>identyfikator</b>'</td></tr>                        
+            <tr><td>*</td><td>  wybierz wszystkie elementy na stronie</td></tr>
+            <tr><td>div, p</td> <td> wybierz wszystkie elementy o nazwie <b>div</b> oraz <b>p</b></td></tr>
+            <tr><td> div   p.foo</td><td>  wybierz wszystkie elementy o nazwie <b>p</b>, których class='<b>foo</b>' - dodatkowo muszą znajdować się w jakimś <b>div</b>.</td></tr>
+            <tr><td> div > p.foo</td><td> wybierz wszystkie elementy o nazwie <b>p</b>, gdy class='<b>foo</b>' które są <b>w środku div</b>, dodatkowo muszą być to elementy, które są <b>bezpośrednimi dziećmi</b> elementu <b>div</b><br>                    
+            <tr><td> div + p.foo</td><td> wybierz wszystkie elementy o nazwie <b>p</b>, gdy class='<b>foo</b>' które są <b>dokładnie obok (po)</b> elemencie <b>div</b>. <br>
+                    Inaczej - jeśli dokładnie po <b>div</b>, będzie <b>p.foo</b> to zastosuj na tym elemencie i tylko tym poniższy styl - TO JEST WARUNEK</td></tr>
+            <tr><td> div ~ p.foo</td><td> to samo co wyżej tylko, że wybiera wszystkie elementy <b>p.foo</b> sąsiadujące po <b>div</b> (muszą być na tym samym poziomie w hierarchii)
+                    </td></tr>            
+        </table>
+     
+        
+    
+             <p  class="foo">
+                To jest jakiś tekst
+            </p>
+       
+        <div>   
+            <p class="foo">
+                To jest jakiś tekst
+            </p>
+            <p  class="foo">
+                To jest jakiś tekst
+            </p>
+             <p  class="foo">
+                To jest jakiś tekst
+            </p>
+            <section>
+                 <p  class="foo">
+                To jest jakiś tekst
+                </p>
+            </section>
+        </div>
+            <p  class="foo">
+                To jest jakiś tekst
+            </p> 
+             <p  class="foo">
+                To jest jakiś tekst
+            </p>
+             <p  class="foo">
+                To jest jakiś tekst
+            </p>
+                 <p  class="foo">
+                To jest jakiś tekst
+            </p>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/vendor/prefixfree.min.js"></script>            
+ 
+
+
+        <!--[if lt IE 9]>
+        <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+        <![endif]-->
+    </body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+
+
+    </head>
+    <body>
+        <!--[if lte IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://whatbrowser.org/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+
+        <table>
+            <caption>Pseudo Selektory</caption>
+            <tr><th>Selektor</th><th>Wyjaśnienie</th></tr>            
+
+            <tr><td>input[type='radio']:checked</td><td>        
+
+                    wybierz wszystkie elementy o nazwie tagu <b>input</b> które mają atrybut <b>type</b> o wartości <b>radio</b><br>wybierz tylko te elementy z tego zbioru, które są <b>'zaznaczone' (checked)</b>
+
+                    <div class='example'>
+                        <form>
+                            <div>Jaki najbardziej lubisz kolor?</div>
+                            <input type='radio' name='question_1' id='a1' checked><label for='a1'>A - czerwony</label>
+                            <input type='radio' name='question_1' id='b1'><label for='b1'>B - zielony</label>
+                            <input type='radio' name='question_1' id='c1'><label for='c1'>C - żółty</label> 
+                        </form>
+                    </div> 
+                </td>
+            </tr>
+            <tr><td>input[type='text']:focus</td><td>        
+
+                    wybierz wszystkie elementy o nazwie tagu <b>input</b> które mają atrybut <b>type</b> o wartości <b>text</b><br>wybierz tylko te elementy z tego zbioru, które mają <b>skupienie (focus)</b>
+                    <div class='example'>
+                        <form>
+                            
+                            Imię: <input type='text' name='name'>
+                            Nazwisko: <input type='text' name='surname'>
+
+                        </form>
+                    </div>
+
+                </td>
+
+            </tr>            
+
+            <tr><td>[data-tooltip]:hover:after</td><td>        
+
+                    wybierz wszystkie elementy które mają atrybut <b>data-tooltip</b> gdy ktoś <b>najedzie na (:hover)</b> taki element <b>dodaj po (:after)</b> zawartość z właściwości <b>content</b>
+
+                    <div class='example'>
+                        <p>Dyski <span data-tooltip="Solid-State Drive">SSD</span> są jednymi z najszybszych dysków na świecie.</p>
+                    </div> 
+                </td>
+            </tr>        
+
+            <tr><td>.download:before</td><td>        
+
+                    wybierz wszystkie elementy które mają klasę <b>download</b> <b>dodaj przed (:before)</b> zawartość z właściwości <b>content</b>
+
+                    <div class='example'>
+                        <p>
+                            <a href="#" class="download">Lekcja 1</a><br>
+                            <a href="#" class="download">Lekcja 2</a><br>
+                            <a href="#" class="download">Lekcja 3</a><br>
+                        </p>
+                    </div> 
+                </td>
+            </tr> 
+
+            <tr>
+                <td>  table tr td:first-child</td>
+                <td>               
+                    wybierz wszystkie <b>table</b> a w nich wiersze (<b>tr</b>), a w nich wszystkie komórki (<b>td</b>), które są <b>NA PEWNO</b> pierwszymi dziećmi swojego rodzica
+                    <div class='example'>
+                        Przykładem jest ta tabela, gdzie pogrubiono czcionkę, wszystkim td w pierwszej kolumnie ;)
+                    </div>
+                </td>
+            </tr>    
+
+            <tr><td> table tr:nth-child(2n) td:first-child<br>
+                    table tr:nth-child(2n) td:last-child
+                    <br><br>
+                    table tr:nth-of-type(2n) td:first-of-type
+                    table tr:nth-of-type(2n) td:last-of-type</td><td>               
+                    wybierz wszystkie <b>table</b> a w nich co drugi (<b>2n</b>) wiersz (<b>tr</b>) poczynając od 2 elementu, a w nich wszystkie komórki <b>td</b>, które są <b>pierwszymi</b> dziećmi swojego rodzica
+                    <br>
+                    wybierz wszystkie <b>table</b> a w nich co drugi (<b>2n</b>) wiersz (<b>tr</b>) poczynając od 2 elementu, a w nich wszystkie komórki <b>td</b>, które są <b>ostatnimi</b> dziećmi swojego rodzica
+                    <br>
+                    <br>
+                    W obu przypadkach nth-child obliczamy w taki sposób, że za n podstawiamy liczby całkowite nieujemne to jest: 0, 1, 2, 3, 4...
+                    <br><br>
+                    <b>first-of-type, last-of-type, nth-of-type</b> różni się od <b>first-child, last-child, nth-child</b> tylko tym, że przed wybranymi elementami mogą sąsiadować inne tagi. Nie muszą być np.  <b>BEZPOŚREDNIO</b> pierwszym dzieckiem rodzica, tylko muszą być np. w przypadku <b>first-of-type</b> pierwszym tego typu elementem rodzica.
+                </td>
+            </tr>     
+
+            <tr>
+                <td>.example span:only-child(span)</td>
+                <td>
+                    wybierz wszystkie elementy o nazwie klasy <b>example</b>, a z nich wybierz <b>span</b> w taki sposób, aby było to <b>jedyne</b> dziecko tego elementu
+
+                    <div class="example">
+                        <span>jestem span</span>
+                    </div>
+                    <div class="example">
+                        <span>jestem span</span>
+                        <span>jestem span</span>
+                    </div>
+                    <div class="example">
+                        <span>jestem span</span>
+                        <p>jestem akapit</p>
+                    </div>                    
+                </td>
+            </tr>    
+
+            <tr><td>.example p:empty</td><td>   
+                    wybierz takie <b>p</b>, które są puste (<b>empty</b>) oraz są wewnątrz elementu, który ma klasę <b>example</b>
+                    <div class='example'>
+                        <p></p>
+                        <p>Nie jestem pusty</p>
+                        <p>Nie jestem pusty</p>
+                        <p>Nie jestem pusty</p>
+                    </div> 
+                </td>
+            </tr> 
+
+            <tr><td>#testing_selector p:not(.bezstylu)</td><td>        
+
+                    wybierz wszystkie elementy o nazwie tagu <b>p</b> wewnątrz elementu o id <b>testing_selector3</b> z wyjątkiem takiego <b>p</b>, którego klasa jest równa <b>bezstylu</b>
+
+                    <div class='example'>
+                        <div id="testing_selector">
+                            <p>To jest testowy test ostylowany. </p>
+                            <p>To jest testowy test ostylowany. </p>
+                            <p class="bezstylu">Tu nie chce mieć stylu</p>
+                            <p>To jest testowy test ostylowany. </p>
+                            <p class="bezstylu">Tu nie chce mieć stylu</p>
+                            <p>To jest testowy test ostylowany. </p>
+                        </div>
+                    </div> 
+                </td>
+            </tr>       
+            <tr><td>#testing_selector2 p:first-letter </td><td>        
+
+                    wybierz wszystkie elementy o nazwie tagu <b>p</b> wewnątrz elementu o id <b>testing_selector2</b>, po czym wybierz z tych elementów <b>pierwsze litery (first-letter)</b> i zastosuj poniższe style...
+
+                    <div class='example'>
+                        <div id="testing_selector2">
+                            <p>To jest testowy test ostylowany. </p>
+                            <p>Inny tekst o niczym tralalala. Coś tam sobie piszę po to by te zdanie zajęło trochę wiecej miejsca. Ogólnie to jest spoko, ponieważ mogę dzięki temu coś pokazać. </p>
+
+                        </div>
+                    </div> 
+                </td>
+            </tr>      
+            <tr><td>#testing_selector3 p:first-line </td><td>        
+
+                    wybierz wszystkie elementy o nazwie tagu <b>p</b> wewnątrz elementu o id <b>testing_selector3</b>, po czym wybierz z tych elementów <b>pierwsze litery (first-letter)</b> i zastosuj poniższe style...
+
+                    <div class='example'>
+                        <div id="testing_selector3">
+                            <p>To jest testowy test ostylowany. </p>
+                            <p>Inny tekst o niczym tralalala. Coś tam sobie piszę po to by te zdanie zajęło trochę wiecej miejsca. Ogólnie to jest spoko, ponieważ mogę dzięki temu coś pokazać. </p>
+                            <p>Znowu inny, a jednak podobny tekst o niczym tralalala. Coś tam sobie piszę po to by te zdanie zajęło trochę wiecej miejsca. Ogólnie to jest spoko, ponieważ mogę dzięki temu coś pokazać. </p>
+
+                        </div>
+                    </div> 
+                </td>
+            </tr> 
+            <tr><td>input:disabled</td><td>        
+
+                    wybierz wszystkie elementy o nazwie tagu <b>input</b>, które są nieaktwyne (<b>disabled</b>)
+
+                    <div class='example'>
+                        Rejestracja:
+                        <form>                            
+                            Email: <input type="text">                           
+                            Polecający: <input type="text" disabled value="ABG4">                            
+                        </form>
+                    </div> 
+                </td>
+            </tr>            
+            <tr>
+                <td>#showMeFun:target</td>
+                <td>Element o id <b>showMeFun</b>, do którego zostanie przeniesiona "akcja" otrzyma poniższe style...
+                    <div class="example">
+                        <a href="#showMeFun">Show me something</a>
+                        
+                      
+                    </div>
+                
+                </td>
+            </tr>
+
+        </table>
+        
+ 
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        
+        <div id="showMeFun">Jestem normalnie ukryty</div>
+        
+        
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/vendor/prefixfree.min.js"></script>            
+
+
+        <!--[if lt IE 9]>
+        <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+        <![endif]-->
+    </body>
+</html>

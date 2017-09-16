@@ -1,4 +1,4 @@
-           *
+           *		/* ustawienie marignesow i paddingow dla wszsytkiego na 0 */
             {
                 padding: 0;
                 margin: 0;
@@ -16,7 +16,7 @@
 			{
 				color: teal;
 				text-decoration: none;
-				border-bottom: 1px dotted gray; /*dla boxa z kontaktem osobne formatowanie*/
+				border-bottom: 1px dotted gray; /*dla boxa z kontaktem osobne formatowanie bedzie i dla menu*/
 			}
 			a:hover  /* po najechaniu na link */
 			{
@@ -158,7 +158,7 @@
 				margin-top: 7px;
 			}            
             
-            /* Nazwa pierwszy poziom bo rozwijalne menu to bedzie "drugi poziom?, sepcjlana klasa stworzona wylacznie po to zeby przesunac wszystko w lewo */
+            /* Nazwa pierwszy poziom bo rozwijalne menu to bedzie "drugi poziom", sepcjlana klasa stworzona wylacznie po to zeby przesunac wszystko w lewo */
 			#srodkowe_menu #pierwszy_poziom
 			{
 				margin-left: 70px;

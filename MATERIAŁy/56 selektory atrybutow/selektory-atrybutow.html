@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+    
+
+    </head>
+    <body>
+        <!--[if lte IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://whatbrowser.org/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+        
+        <table>
+            <caption>Selektory Atrybutów</caption>
+            <tr><th>Selektor</th><th>Wyjaśnienie</th></tr>            
+            <tr><td>input[required]</td> <td>wybierz wszystkie elementy o nazwie tagu <b>input</b> które mają atrybut <b>required</b></td></tr>
+            <tr><td>[href="twojastrona.pl"]</td> <td>wybierz wszystkie elementy które mają atrybut <b>href</b> równy <b>twojastrona.pl</b></td></tr>
+            <tr><td>input[type="text"]</td> <td>wybierz wszystkie elementy o nazwie tagu <b>input</b>, a atrybut <b>type</b> równy jest <b>text</b></td></tr>
+            <tr><td>[href*="twojastrona.pl"]</td> <td>wybierz wszystkie elementy które mają atrybut <b>href</b> w której wartości znajduje się gdziekolwiek <b>twojastrona.pl</b> </td></tr>                                    
+            <tr><td>[id^="produkt-"]</td> <td>wybierz wszystkie elementy które mają atrybut <b>id</b> o wartości <b>rozpoczynającej</b> się od <b>produkt-</b></td></tr>            
+            <tr><td>a[href^="http://"]</td> <td>wybierz wszystkie elementy o tagu <b>a</b> które mają atrybut <b>href</b> w której wartości znajduje się na początku <b>http://</b> </td></tr>                        
+            <tr><td>[href$=".jpg"]</td> <td>wybierz wszystkie elementy które mają atrybut <b>href</b> o wartości <b>kończącej</b> się na <b>.jpg</b></td></tr>            
+            <tr><td>[lang|=en]</td> <td>wybierz wszystkie elementy które mają atrybut <b>lang</b> o wartości <b>en</b> lub też jest połączony z innym słowem przy pomocy <b>-</b> (myślnika)</td></tr>      
+            
+            <tr><td>[data-filetype="obrazek"]</td> <td>wybierz wszystkie elementy które mają atrybut <b>data-filetype</b> o wartości równej <b>obrazek</b></td></tr>            
+            <tr><td>a[data-info~="external"]</td> <td>wybierz wszystkie elementy, których tag nazywa się <b>a</b> oraz które mają atrybut <b>data-info</b> oraz jedną z wartości data-info jest <b>external</b></td></tr>
+                  
+           
+        </table>
+        <p lang="en"><b>^</b> - rozpoczyna się od...</p>
+        <p><b>*</b> - zawiera w sobie...</p>
+        <p><b>$</b> - kończy się na...</p>
+          
+        <p data-filetype="obrazek">plik asfasf asf <br></p>
+        
+        <input type="text">
+        <input type="text" required>
+        <input type="text" required>
+        <input type="text" required>
+         <br> <br>
+         
+         
+        <a href="forum.videokurs.pl" data-info="added external">forum videokurs.pl</a>
+        <a href="czescidozaluzji.pl">czescidozaluzji.pl</a>
+     <br> <br>
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/vendor/prefixfree.min.js"></script>            
+ 
+        <div id="produkt-1">aaa</div>
+        <div id="produkt-2">bbb</div>
+        <div id="produkt-3">ccc</div>
+        <div>ccc</div>
+        
+        <img src="obrazek.jpg" width="300" height="200">
+
+        <!--[if lt IE 9]>
+        <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+        <![endif]-->
+    </body>
+</html>
