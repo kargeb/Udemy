@@ -1506,6 +1506,10 @@ Skryptu i podpiecie go do naszego projektu, wtedy nie trzeba bedzie ustawiac ZAD
 54 Selektory i wlasciwosci pod IE
 
 	Dwa pliki, skrypty, które powodują że selektory css3 działają pod starszymy IE niz 10, czyli chuj z tym na ten moment
+	
+55	SELEKTORY
+
+
 
 
 
