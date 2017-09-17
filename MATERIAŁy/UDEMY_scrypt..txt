@@ -1761,9 +1761,131 @@ i obadac czyt tez bys tak szybko to ogarnal
 
 66 Animacje
 
+Z animacjami jest tak ze trzeba sobie ja jakos nazwać:
 
-
-
-
+    animation: obracanie 1s;
 	
+a pozniej odwolac sie do niej za pomoca keyframes:
+
+@keyframes obracanie
+{
+    from
+    {
+			<!-- stan poczatkowy -->
+    }
+    to
+    {
+        transform: rotate(450deg);
+        margin-left: 300px;
+    }
+}
+
+OPIS 
+         <!--
+            none 0 ease 0 1 normal
+         
+            nazwa czas_trwania funkcja_zmiany opoźnienie ilosc_powtorzen jak_powtarzac
+         
+           funkcja_zmiany:
+           ease
+           ease-in
+           ease-out
+           ease-in-out
+         
+		   ilosc powtorzen mozna dac infinite, wtedy bedzie caly czas
+		 
+           jak_powtarzac:
+           normal - tak jak określono
+           reverse- w drugą stronę
+           alternate - raz w jedną raz w drugą		(Najwazniejsze i najpraktyczniejsze, czyli raz w jedna raz w druga, tylko wazne zeby ilosc powtorzen byla wtedy min 2)
+           alternate-reverse - jak wyżej tylko zaczynając od drugiej strony
+           
+         -->
+		 
+Tutaj juz mozna zaszalec i mowic mu CO MA ROBIC PO % OKRESIE CZASU Z CAŁEGO CZASU TRWANIA ANIMACJI !
+@keyframes obracanie2
+{
+    0%
+    {
+    }
+    30%
+    {
+        transform: rotate(180deg);
+    }
+    50%
+    {        
+        transform: rotate(270deg);        
+    }
+    100%
+    {
+        transform: rotate(3600deg);
+        
+        opacity: 0.4;
+    }
+}		 
+		 
+Późnije robi znowu skrypt z jquery i korzysta z parametru animation-play-state zeby w dowolnym momencie ja zatrzymac albo znowu ruszyc
+
+67 Transformacje 3D
+
+	PAnie ja jebie, feekt zajebisty ale ogarnac to to ja pierdole, na przyszlosc dla chetnych
+
+68 Kostka 3D tez raczej dla chętnych
+
+	Fajna lekcja, zrobienie od 0 kostki w 3d, podsunal pomysl ze mozma to w jquerty oklikac i np wybierac sobie odpowiednia scianke po kliknieciu (mozna by cale menu tak odjebac hmm ? )
+
+69 Zabawa z tłem
+
+	Nalezy pamietac zawsze ze jesli to mozliwe to trzeba graficznie stworzyc odpowiedni rozmiarowo obrazek BO SIE BEDZIE KROCEJ WCZYTYWAC !
+	No chyba ze bedziemy chceli rozszerzac to okno czy cos no to wtedy to co u dołu jest ZAJEBISTE.
+
+	jesli mamy jakis za duzy obrazek na tlo to trzeba go jakos ogarnac
+
+	background: url("../img/videokurspl.jpg");	- jesli za duzy to zostanie po prostu uciety czyli dupa
 	
+	Mozna mu dac
+	
+	background-size: 40px;  - wtedy cale zminiejszy sie proporcionalnie do takich rozmiarow i BEDZIE POWTARZANY AZ DO WYPLENIENIA BOXA
+	background-size: 40%;	-	 to samo tylko zmiejszenie do 20% calej wielkosci no i tez wypelnienie 
+	nie podajemy 2 wartosci bo wtedy obrazek bedzie nieproporcjonalnuy
+	
+	ŚWIETNYM sposobiem jest nadanie wartości:
+	background-size: contain;  -  Idealne dopasowanie obrazka do rozmiaru boxa, ale w dalszym ciągu powetarzanie
+	background: no-repeat url("../img/videokurspl.jpg");	-  NIE POWTARZANIE OBRAZKA W TLE !
+	
+	background: no-repeat url("../img/videokurspl.jpg");	- Ustawienie NA SAMYM DOLE BOXA
+	
+	UWAGA dzięki css3 mozemy sobie ustawic na raz kilka obrazkow w tel, jeden na dole drugi na gorze, I DO TEGO JESZCZE WALNĄĆ KOLOR W TLE :
+	 background: no-repeat bottom url("../img/videokurspl.jpg"), no-repeat top url("../img/watermark.gif"), white;
+	
+	UWAGA ! Jesli w boxie czy na stronie mamy jakies marginy i paddingi to tlo jest ustawione POD WSZYSTKICH
+	A moze zechcemy ze bylo ummieszczone jedynie pod sama zawartoscia strony ? NO to robimy coś takiego:
+		background-origin: content-box; 
+	Mozna zrobic zeby zaczynalo sie juz nawet od bordera:
+		 background-origin: border-box; 
+	Na starcie, domyslnie, ustawiony jest na:
+		background-origin: padding-box;
+
+	MOZNA tez PRZYCIAC dany tlo np 
+		background-clip: content-box;  przycina tlo tak ze widac tylko jego czesc w contencie a krawedzie sa uciete (oczywiscie gdy nie jest ustawione background-origin na content-box)
+		background-clip: padding-box;	to samo dla paddingu
+		
+70 Wielokolumnowy układ treści:
+
+	Ciekawa rzecz, jeden jednorodny tekst/akapit dzieli na ilechcemy kolumn, proporcionalnie wszystko ladnie rozkladajac (cos jak w wordzie)
+	
+#test
+{
+    width: 700px;
+    margin: 40px;
+    column-count: 3;	- ile kolumn
+    column-gap: 50px;	- odstep miedzy kolumnami
+    column-rule: 3px solid green;	-	jesli nie chcemy miedzy nimi bialej pustki to mozemy wlasnie cos takiego sobie wstawic
+}	
+
+
+--------------------------------------    Flex Box Layout    --------------------------------------------------
+
+
+71 Flex Box Layout
+
