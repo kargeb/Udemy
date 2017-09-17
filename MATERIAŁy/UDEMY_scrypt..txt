@@ -1591,3 +1591,50 @@ p.lowercase
 
 
 
+mamy dwa rodzaje:  text-shadow  i  box-shadow
+
+ZAJEBISTA STRONKA  -  https://css3gen.com/box-shadow/		-  mozmemy sobie stworzyc odpowiednie cienie
+						https://css3gen.com/text-shadow/
+
+przykladowy bardzo ladny tekst 3d 	http://markdotto.com/playground/3d-text/
+
+h1 {
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+  color: white;
+  background-color: #11a9e2;
+  height: 400px;
+  padding: 30px;
+  font-size: 80px;
+}
+p.putshadowonme
+{
+    text-shadow: 0 1px 0 #ccc;
+}
+div.putshadowonme
+{
+   box-shadow: 51px 3px 5px red;
+   width: 300px;
+   height: 300px;
+   background-color: teal;
+}
+
+Te generatory nie dają nam wszystkich możliwości jakie mają te shadov więc dobrze jest to samemu ogarnąć co można za tego pomocą robić też !
+
+0 20px 20px rgba(0,0,0,.15);
+
+pierwszy to lewo prawo,  drugi to góra dól,  pożniej blur czyli rozmazanie, a poziej kolor, no ale są wlasnie jeszcz inne tez 
+
+61 Przezroczystosc
+
+
