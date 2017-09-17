@@ -1637,4 +1637,108 @@ pierwszy to lewo prawo,  drugi to góra dól,  pożniej blur czyli rozmazanie, a
 
 61 Przezroczystosc
 
+ZAJEBISTA STRONA DO TWORZENIA TŁEŁ !!!  http://bg.siteorigin.com/
 
+div.przezroczyste_tlo
+{
+    background-color: rgba(204,204,204, 0.5);
+    width: 400px;
+    padding: 15px;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 10px;    
+    -pie-background: rgba(204,204,204, 0.5);		(wsparcie starych IE)
+    behavior: url("PIE.htc");						(wsparcie starych IE)
+}
+
+Chodzi o to ze jak dajemy normalne opacity to przezroczytsoc obejmuje tekst i tlo jednoczesnie
+A dzięki tem systemowi kolorów  RGBA(0,0,0,0) co bylo na eduwebie mozemy OSTATNIM parametrem regulowac sobie wlansnie przezroczytsoc !
+Oczywiscie tak jak w opacity podajemy wratosci od 0 do 1
+
+62 Zaokrąglone krawędzie
+
+border-radius
+
+	ZJABIESTA ZSTRONKA do generowania zaokralgen i nawet cieni i przezroczystosci
+	http://cssround.com/
+	
+    border-radius: 99px 20px 99px 20px;
+	
+ pierwsze to lewy górny rog, potem prawy dol i lewy dolny, mozna te skrocic 	
+ 
+	border-radius: 99px 20px;
+	border-radius: 20px;
+	
+63 Gradienty
+
+ZAJEBISTA STRONKA   https://www.cssmatic.com/gradient-generator
+Ona cala jest chyba zajebista, wejdz na glowna strone i zobcz jej rozne konfiguratory
+
+Czyli stopniowanie kolorów. Najoristszy przydklad:	background:  linear-gradient(#fff,#000);
+W czasie kursu wsparcie rózne ale teraz tylko do androida w wersji 4.3 trzeba webkita a retsza spoko wiec no problem
+
+background: radial-gradient(ellipse at center, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 50%, rgba(246,41,12,1) 51%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%);
+
+Swietna zrecza jest ustawiac w gradziencie ta ostatnia wartosc na przezroczysta rgba(241,111,92,1)  czyli 
+tam gdzie 1 bo wtedy jest zajebisty efekt,   do przetestowania
+
+64 Transitions - płynne przejścia 
+
+Płynne przejscia czyli przesowanie sie elementów na stronie jak animowany ! Zajebiste ! W samym scc
+Wsparcie obecnie zajebiste więc caly watek pomijamy
+
+ZAJEBISTA STRONKA do generowania przejść; 	http://cubic-bezier.com
+
+Ogolnie chodi o to ze wszystkie efekty w css np po najechaniu (hover) zamiast skokowo, robia sie PLYNNIE
+
+transition: 1s;
+
+zeby to sie odbywalo w dwie strony, trzeba to zrobic zarowno na hover jak i na samym elemencie
+
+Cala zabawa polega na tym ze mozemy regolowac predkosci wlasnie za pomoca tamtej strony:
+
+transition: all 1s cubic-bezier(.94,.94,0,.86);
+
+Domyslanie pierwsze jest all ale mozemy wybierac co sie ma zmieniac plynnie a co od razu zamieniajac all na color np
+
+         <!--
+          transition: czego_ma_dotyczyc(all) jak_dlugo_ma_to_trwac typ_przejscia(ease) po_jakim_czasie_ma_rozpoczac_przejscie
+          ease - wolny na poczatku, pozniej szybko i znow wolno (domyslny)
+          ease-in - wolny na poczatku, pozniej normalnie
+          ease-out - wolny na koncu, wczesniej normalnie
+          ease-in-out - wolny na koncu i na poczatku, a w srodku normalnie
+          linear - stale normalnie
+         -->
+Uwaga dodając jeszcze na koncu jakas wartosc to podajemy za ile ma sie to rozpocząć ! 		 
+
+transition: all 1s cubic-bezier(.94,.94,0,.86) 20s;  czyli tutaj dopiero za 20 sekund sie rozpocznie sekwencja !
+
+PRZYKŁAD Z PRZESÓWANIEM SIE KLOCKA:
+
+.klocek
+{
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    transition: all 1s cubic-bezier(.94,.94,0,.86);
+}
+#klockocontent
+{
+    width: 300px;
+    height: 50px;
+    background-color: green;
+}
+#klockocontent:hover .klocek
+{
+    margin-left: 250px;
+    
+}
+
+65 Transpozycje 2D
+
+
+
+
+
+
+	
+	
