@@ -1555,6 +1555,39 @@ Bardzo fajnym wykorzystaniem 7 jest skoryztanie z :hover i np przypisywanie ikon
 	
 	Cała ta tabela zostałan nawet stworzona za pomocą pseudoselektora :hover
 
+	TRZEBA TO RRZEROBIC JESZCZE KILKA RAZY, najelpiej wszystko zaimplementowac samemu
+
+58 Własne czcionki
+
+Reguła FontFace
+
+Stronka google.com/fonts  -  w ciul czionek a nie ma obaw o prawa autorskie
+po wybraniu danej czionki, wystarczy skopiowac odpwiedni skrypt na nasza strone i juz mozna pracowac na tej czcionce ! Trzeba pamietac zeby nie nawalic za duzo wlasnych czcionek bo strona sie bedzie wolniej wczytywac, oraz ze jak raz juz sie ona zaladuje na czyjs komputer to pozniej bedzie wczytywac sie szybciej bo bedzie szla z kesza
+
+59 Transformacja tekstu
+
+Przeskształcanie tekstu za pomocą samego cssa a nie jakihs skryptow, np podczac wyciagania czegos z bazy danych.
+Typu wszystkie litery duze, wszystkie male lub tylko pierwsza duza
+
+           <p class="capitalize">To jest tytuł jakiegoś posta na forum, fajnie jakby miał każdą pierwszą literę dużą</p>
+            <p class="uppercase">ten tekst będzie napisany dużymi literami</p>
+            <p class="lowercase">To jest tekst napisany małymi literami... Pomimo tego, że normalnie znajdują się tutaj DUŻE LITERY</p>
+		
+		
+p.uppercase
+{
+    text-transform: uppercase;
+}
+p.capitalize
+{
+    text-transform: capitalize;
+}
+p.lowercase
+{
+    text-transform: lowercase;
+}			
+
+60. Cienie
 
 
 
