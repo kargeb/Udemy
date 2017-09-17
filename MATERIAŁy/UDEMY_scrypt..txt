@@ -1681,7 +1681,7 @@ background: radial-gradient(ellipse at center, rgba(248,80,50,1) 0%, rgba(241,11
 Swietna zrecza jest ustawiac w gradziencie ta ostatnia wartosc na przezroczysta rgba(241,111,92,1)  czyli 
 tam gdzie 1 bo wtedy jest zajebisty efekt,   do przetestowania
 
-64 Transitions - płynne przejścia 
+64 Transitions - płynne przejścia (z tego co mowi to zostalo to raczej wyparte przez transform)
 
 Płynne przejscia czyli przesowanie sie elementów na stronie jak animowany ! Zajebiste ! W samym scc
 Wsparcie obecnie zajebiste więc caly watek pomijamy
@@ -1733,8 +1733,33 @@ PRZYKŁAD Z PRZESÓWANIEM SIE KLOCKA:
     
 }
 
-65 Transpozycje 2D
+65 Transformacje 2D
 
+Czyli przekształcanie elementów ! Np najprostsza rzecz to przesklawoanie:
+
+.zakladka:hover
+{
+    cursor: pointer;
+    color: teal;
+    opacity: 0.6;
+	transform: scale(0.3);
+}
+
+Wsparcie obecnie rowniez zajebiste
+
+         <!--
+          scale - skalowanie proporcjonalnie np. scale(0.5);
+          rotate - obracanie o stopnie np. rotate(30deg);
+          translate - przesunięcie o wektor np. translate(10px, -5px), czyli 10 w prawo i 5 do góry
+          skew - skrzywienie / uchylenie np. skew(30deg, 40deg), czyli 30 stopni wzg. os X i 40 stopni wzg osi Y
+         -->
+		 
+takie delikatne translate czyli o wektor sa zjaebiste to buttonow
+
+w 6:50 minucie gosc w kilka sekund napisal ciekawy skrypt, mozna do niego wrocic gdy juz bedziesz cos umial
+i obadac czyt tez bys tak szybko to ogarnal		 
+
+66 Animacje
 
 
 
