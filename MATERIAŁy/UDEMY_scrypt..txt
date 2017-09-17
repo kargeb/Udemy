@@ -1889,3 +1889,9 @@ Późnije robi znowu skrypt z jquery i korzysta z parametru animation-play-state
 
 71 Flex Box Layout
 
+	Czyli elastyczny sposób rozmieszczania elementów  (czyli zamiast display block bedziemy miec display flex)
+	
+	Baaaaaaaaaaaaaaardzo to ciekawe, zajebiscie elsatyczna strona czyli cos czego dokladnie szukalem :)
+	Trzeba to ogarnac dosc dobrze bo miejscami troche zagmatwane
+	
+	
