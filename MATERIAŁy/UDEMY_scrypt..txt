@@ -1894,4 +1894,95 @@ Późnije robi znowu skrypt z jquery i korzysta z parametru animation-play-state
 	Baaaaaaaaaaaaaaardzo to ciekawe, zajebiscie elsatyczna strona czyli cos czego dokladnie szukalem :)
 	Trzeba to ogarnac dosc dobrze bo miejscami troche zagmatwane
 	
-	
+	Flexible Box Layout - wsparcie dla większości przeglądarek
+
+Wymagania:
+http://leaverou.github.io/prefixfree/#
+-prefix-free- by ograniczyć robotę
+
+------------------------------------------
+DISPLAY - włącza elastyczny układ pudełek
+------------------------------------------
+
+display: box; /* starsze przeglądarki */
+display: flexbox; /* IE10 */
+display: flex; /* najnowsze */
+
+------------------------------------------
+FLEX - ustawia ile stosunkowo przestrzeni otrzyma dany obiekt. 
+------------------------------------------
+Jeśli są 3 elementy w których flex: 1, flex: 4, oraz flex: 3 to odpowiednio 
+1) element otrzyma 1/(4+3+1) * (szerokość lub wysokość) dostępnej przestrzeni
+2) element otrzyma  4/8 ...
+3) element otrzyma  3/8 ...
+Przez dostępna przestrzeń mamy na myśli ustaloną w elemencie rodzic MINUS przestrzeń zajęta przez elementy, które z góry mają ustaloną szerokość / wysokość
+
+box-flex: 1; /* stare przeglądarki */
+-ms-flex: 1; /* IE 10 */
+flex: 1; /* nowe */
+
+------------------------------------------
+FLEX-DIRECTION - ustala kierunek rozprowadzania się elementów
+------------------------------------------
+WSPARCIE - nowe przeglądarki + IE 10:
+flex-direction: row; /* poziomo */
+				column; /* pionowo */
+				row-reverse; /* poziomo w odwrotną stronę */
+				column-reverse; /* pionowo w odwrotną stronę */
+STARE PRZEGLĄDARKI:
+box-orient: horizontal; /* poziomo */
+box-orient: vertical; /* pionowo */
+box-direction: reverse; /* w odwrotną stronę */
+------------------------------------------
+ALIGN - WYRÓWNANIE ELEMENTÓW WEWNĄTRZ
+------------------------------------------
+WSPARCIE: IE10+ (z -prefix-free):
+flex-align: start; /* wyrównanie na (gdy direction ustawione na ROW(poziom)) lewy górny róg, gdy (direction ustawione na COLUMN(pion)) też lewy górny róg elementu w którym się znajduje */
+flex-align: end; /* wyrównanie na (gdy direction ustawione na ROW (poziom)) lewy dolny róg, gdy (direction ustawione na COLUMN(pion))  prawy górny róg elementu w którym się znajduje  */
+WSPARCIE STARSZE PRZEGLĄDARKI:
+box-align: start; /* end / center */
+WSPARCIE NOWE PRZEGLĄDARKI
+align-items:	flext-start;
+				flex-end;
+				center;
+------------------------------------------
+PACK / JUSTIFY-CONTENT - WYRÓWNANIE ELEMENTÓW WEWNĄTRZ wzg. drugiej osi
+------------------------------------------
+WSPARCIE: IE10 (z -prefix-free):
+flex-pack: start; /* wyrównanie na (gdy direction ustawione na ROW(poziom)) lewy górny róg, gdy (direction ustawione na COLUMN(pion)) też lewy górny róg elementu w którym się znajduje */
+flex-pack: end; /* wyrównanie na (gdy direction ustawione na ROW (poziom)) lewy dolny róg, gdy (direction ustawione na COLUMN(pion))  prawy górny róg elementu w którym się znajduje  */
+WSPARCIE STARSZE PRZEGLĄDARKI:
+box-pack: start; /* end / center / justify (space-between(przestrzeń pomiędzy elementami))*/
+WSPARCIE NOWE PRZEGLĄDARKI
+justify-content:	flext-start;
+					flex-end;
+					center;
+					space-between;
+------------------------------------------
+ORDER - USTAWIA KOLEJNOŚĆ ELEMENTÓW
+------------------------------------------			
+IE10:
+-ms-flex-order: 1;
+WSPARCIE NOWE PRZEGLĄDARKI
+order: 1; /* ten kto ma najmniejszą wartość ten będzie wyświetlany pierwszy */
+STARE PRZEGLĄDARKI:
+box-ordinal-group: 1;
+
+
+--------------------------------------    HTML5    -------------------------------------------------				
+
+		NA POZNIEJ !!!
+		
+        <!-- 
+            article (artykuł)
+            aside (na boku)
+            section (część, dział)           
+            div (division - podział blokowy)
+            span (przęsło, podział liniowy)
+        
+            header (nagłówek)
+            footer (stopka)
+            nav (navigation - nawigacja)
+        -->
+
+		
