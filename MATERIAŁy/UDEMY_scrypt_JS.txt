@@ -80,6 +80,45 @@ deklaracja to samo zarezewrowanie pamieci, inicjalizacja to juz przypisanie wart
  
  Pamietaj ze return konczy funkcje !
  
+ UWAGA ! Pamiêtaj ze zmienne w JS mozna tworzyc bez slowa VAR, no i jak w funkcji wlasnie stworzysz zmienna bez tego slowa to BEDZIE ONA WIDOCZNA WSZEDZIE ! No bo jak zrobisz normalnie z varem to bedzie widoczna wylacznie w funkcji.
+ 
+ Zmienne tworzone w funkcji przestaja istniec po jej dzia³aniu.
+ 
+ FUNKCJE W ZMIENNEJ !
+ 
+ var x = function test()
+ {
+	alert("xxxx");
+ };
+ 
+	1. po pierwsze musi byc srednik na koncu bo jest to wyrazenie
+	2. NIE WYWOLAMY TEJ FUKNCJI JAKO test() !!! Mozemy poslugiwac sie jedynie zmienna x =>  x();
+	
+Funkcja anonimowa to dokladnie to samo co u góry tylko bez nazwy test:
+
+var x = function()
+ {
+	alert("xxxx");
+ };
+	
+Czyli korzystamy z nich albo gdy chcemy ja do czegos przypisac, lub gdzies wyslac, lub jako parametr innej funkcji (no no cos cos czaje)
+
+PRZYK£AD WYKORZYTSANIA ANONIMOWEJ:
+
+function test(f)
+{
+	f(20);
+}	
+	
+test(
+	function(x) {
+		alert("cosik" + x);
+	}
+)	
+	
+ Mowi ¿e najczêœciej z anonimowych korzysta siê w framerowkach.
+ 
+ KURWA dalej nie czaje tych anonimowych kurew !
  
  
  
