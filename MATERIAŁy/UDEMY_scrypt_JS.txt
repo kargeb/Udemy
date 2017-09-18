@@ -1,0 +1,85 @@
+PODSTAWY  przypomnienie
+
+alert(X + y);    ...  :)
+
+Niby mozna pomin±æ ¶redniki w JS i tak wszystko bêdzie dzia³±æ !
+
+deklaracja to samo zarezewrowanie pamieci, inicjalizacja to juz przypisanie wartosci.
+
+/*
+ * typy zmiennych:
+ * 1) liczby - number
+ * 2) ci±g znaków - string
+ * 3) warto¶æ logiczne - true/false
+ * 4) tablice, obiekty - o tym pó¼niej
+ * 5) null - pustka
+ * 6) undefined - niezdefiniowana
+ */
+
+/*
+ * NIE WOLNO:
+ * 1) zaczynaæ od liczby nazwy zmiennej
+ * 2) nie wolno stosowaæ zarezerwowanych s³ów (keywords)
+ * 3) tworzyc spacji
+ * 
+ * WIELKO¦Æ LITER W JAVASCRIPT MA ZNACZENIE!!!
+ */
+ 
+ /*
+ * OPERATOR - to znaki s³u¿±ce do operowania na zmiennych
+ * 
+ *  OPERATORY ARYTMETYCZNE
+ *      +   dodawanie liczb oraz ³±czenie string'ów
+ *      -   odejmowanie
+ *      *   mno¿enie
+ *      /   dzielenie
+ *      
+ *      %   reszta z dzielenia (dzielenie modulo)
+ *      
+ *      =   przypisanie warto¶ci
+ *      +=  
+ *      -=
+ *      /=
+ *      *=
+ *      %=
+ *      
+ *      
+ *      ++   inkrementacja - powiêksz o 1
+ *      --   dekrementacja - zmniejsz o 1
+ *      
+ *      y++ - POST INKREMENTACJA
+ *      y-- - POST dekrementacja
+ *      
+ *      ++y - PRE INKREMENTACJA
+ *      --y - PRE dekrementacja
+ *      
+ *  
+ */
+ 
+ Modulo mozna bardzo fajnie wykorzystac gdy chcemy robic cos na np co 5 lub co 3 elemencie, dajesz wtedy 5%zmienna no i gdy nie ma nic to wiaodmo ze dzieli sie przez 5 czyli co 5.
+ 
+ /*
+ * 
+ *  OPERATORY RELACYJNE (porównania)
+ *  
+ *  === - porównuje czy warto¶ci dwóch zmiennych s± IDENTYCZNE
+ *  == - porównania
+ *  = - operator przypisania
+ *  
+ *  != - porównuje czy dwie warto¶ci s± od siebie ró¿ne
+ *  !== 
+ *  
+ *  >
+ *  <
+ *  >=
+ *  <=
+ *   
+ */
+ 
+ FUNKCJE
+ 
+ Pamietaj ze return konczy funkcje !
+ 
+ 
+ 
+ 
