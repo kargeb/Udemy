@@ -290,4 +290,123 @@ test(
 	
 	Jako ze tablice to tez obiekt wiec mozemy stworzyc ja w taki sposob:
 	
+	var produkty  = new Array();	ALE GO¦Æ TO ODRAZA bo wolniejszy
+	
+	-- Tablice Asocjacyjne --
+	
+		to sie tylko w zasadzie nazywa tablica bo to juz bardziej podchodzi pod obiekt, chodzi o to ze mozna zamiast do nr elementow to przypisaywac do nazw:
+		
+		osoba["imie"] = "Arek";
+		osoba["nazwisko"] = "Franczyk";
+		
+		alert(osoba["imie:]);
+		alert(osoba.nazwisko);	Mozna odwolac sie rowniez za pomoca . !
+		
+		To raczej tak ze wiesz ze cos takiego istnieje niz zeby z tego korzystac.
+		
+		Przyklad ponrania wszystkich li za pomoca skryptu:
+		
+		var kursyProgramowania = document.getElementsByTagName("li");
+
+		alert(kursyProgramowania[6].innerHTML);
+		
+100 PÊTLE
+			
+	Przyk³ad WHILE:
+	
+	var kursyProgramowania = document.getElementById("kursyProgramowania").getElementsByTagName("li");
+
+var i = 0;
+
+while(i < kursyProgramowania.length)
+{
+    if (kursyProgramowania[i].innerHTML === "C++")
+        kursyProgramowania[i].innerHTML += " HIT";
+    else
+        kursyProgramowania[i].innerHTML += " PROMOCJA";
+    
+    i++;
+}
+	Powy¿szy przyk³±d jest namiastk± takiego ciekawego sorotwania odno¶nie warto¶ci które chcemy wyró¿niæ lub wy³owiæ.
+
+	UWAGA ! Ogólnie to zawsze korzytsaj z pêtli gdy jest taka mo¿liwo¶æ, nie rób tego rêcznie bo chodzi o to ¿eby twój kod by³ elastyczny i reagowa³ na zmiany na stronie.
+	
+	UWAGA ! Fajnym sposobem na testowanie pêtki jest dawanie alerta w linijkach ktore chcemy sprawdzic wtedy petla za kazdym okrozeniem bedzie zatrzymywana.
+	
+102 Break i continue:
+
+		var kursyProgramowania = document.getElementById("kursyProgramowania").getElementsByTagName("li");
+
+for (var i = 0; i < kursyProgramowania.length; i++)
+{    
+    
+    if (i % 2 !== 0)
+        kursyProgramowania[i].innerHTML = "parzysty: " + kursyProgramowania[i].innerHTML;
+    else
+        continue; //przerwij wykonywanie danej iteracji i kontynuuj, nastêpne instrukcje po continue nie zostan± wywo³ane   
+}
+	
+	UWAGA ! Ciekawa rzecz odnosnie continue. Bardzo dobrym pomyslem jest z tego korzystac gdy chcemy wylowaic z jakiegos zbioru pewne rzeczy i z nimi cos robic w dalszej czesci kodu, to zamiast stosowac jakies ify to po prostu dajemy CONTINUE po else i oszczedzamy czas i kod (tak jak u góry).
+	
+		Break jak wiadomo za³atwia dzia³anie CE£EJ pêtli !
+	
+103 Pêtla FOR/IN
+
+	STWORZONA DO LATANIA PO W£A¦CIWO¦CIACH OBIEKTÓW !
+
+	UWAGA ! (bo to sie jebie) PIERWSZY sk³adnik (property) nazywamy JAK NAM SIÊ PODOBA ! a drugi (person) TO JUZ AUTENTYCZNY OBIEKT (tablica) Z KODU !
+	
+	person = {
+	imie: "Arek",
+	nazwisko: "W³odarczyk",
+	wiek: "26"
+	};
+	
+	
+	Do w³a¶ciwo¶ci obiektu mozna dostaæ siê zaorówno:
+	
+	person.imie;
+	jak i 
+	person["imie"];
+	
+	
+	for (var property in person)
+	{
+		alert(person[property]);   => wypisze po koleji: Arek, W³odarczyk, 26
+	}
+	
+	Czyli mozna np zorbic :
+	
+	var wszystkieDaneCHlopa = "";  (nadajemy pusty zeby mozna bylo uzyc =+ !!
+	
+	for (var property in person)
+	{
+		wszystkieDaneChlopa += person[property]; 
+	}
+	
+	Je¶li pobieramy cos ze strony czy skads:
+	
+	var kursyProgramowania = document.getElementById("kursyProgramowania").getElementsByTagName("li");
+	
+	moze sie zdarzyc ze zamiast obiektow beda jakies inne rzeczy funkcje czy cos, wtedy dobrze jest sobie to np od razu porownac czy mamy do czynienia z obietkem:
+	
+	
+	for (var property in kursyProgramowania)
+	{
+   if (typeof(kursyProgramowania[property]) !== "object")
+        break;  (lub continue jesli nie jestesmy pewni czy cos tam jeszcze jest po funkcjach)
+    
+   alert(kursyProgramowania[property].innerHTML);
+	}	
+	
+	OGLNIE to ta pêtla jest idealna kiedy chcemy przechodziæ po obiektach i nie wiemy jak nazywaj± siê poszczególne w³a¶ciow¶æi !
+	Je¶li chcemy przelecieæ co¶ w³a¶nie pobrane sk±d¶to lepiej skorzystaæ z fora czy innego whila.
+	
+	
+	
+	
+	
+	
+	
+	
 	
