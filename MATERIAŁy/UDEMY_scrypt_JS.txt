@@ -116,9 +116,178 @@ test(
 	}
 )	
 	
- Mowi ¿e najczêœciej z anonimowych korzysta siê w framerowkach.
+ Mowi ¿e najczê¶ciej z anonimowych korzysta siê w framerowkach.
  
  KURWA dalej nie czaje tych anonimowych kurew !
  
+ OBIEKTY
  
+ Spis wbudowanych obiektów na stronie MDN w zak³adzce "Built-In objects"
+	https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
+	
+	"Ogólnie jest to co¶ co poznaje siê ca³e ¿ycie" i chuj
+	
+	NOwy obiekt:
+	
+		var x = {};  i juz
+		
+		var osoba = {imie: "Arek", nazwisko: W³odaczyk"};
+		
+	UWAGA ! Nie dawaj przecinka po ostatniej w³a¶ciwo¶ci w obiekcie !
+
+	METODY: za pomoca funkcji anoniniwych
+	
+	var osoba = {
+		imie: "Arek", 
+		nazwisko: W³odaczyk"
+		
+		pobierzDane: function()
+		{
+			return this.imie + " " + this.nazwisko;
+		}
+	};
+	
+	zm_div.innerHTML = osoba.pobierzDane();
+	( zamiast   zm_div.innerHTML = osoba.imie + " " + osoba.nazwisko; )
+	
+	-- toString --  Czyli co jesli wywolamy obiekt po prostu bez zadnej innej zmiennej
+	
+	toString: function()
+	{
+		return this.imie + " " + this.nazwisko;
+	}
+	
+	div.innerHTML = osoba;    =>  Arek W³odarczyk
+	
+	-----------------
+	
+	Wszystkie w³a¶ciwo¶ci mo¿na od razu zmieniaæ:
+	
+	osoba.imie = "Wiola"  =>   zmienione
+	
+	UWAGA ! Obiekt mozna sworzyc równiez tak:
+	
+	var osoba = new Object(
+	{
+		imie: "Arek", 
+		nazwisko: W³odaczyk"
+		
+		pobierzDane: function()
+		{
+			return this.imie + " " + this.nazwisko;
+		}
+	}
+	);
+	
+	Nie zaleca siê tego sposoby, niby to samo ale co¶ kojarze z eduWeb ze jednak czyms to sie roznilo.
+	
+97. Funkcje konstrukcyjne (klasy)
+
+	Aby nie tworzyc po sto razy takiego samego kodu (osoba1, osoba2) tworzy sie szablony, do ich automatycznego tworzenia. Oczywiscie jesli tworzymy jeden obiekt na caly projekt to nie ma nic zlego w tworzeniu go tak jak w poprzedniej lekcji.
+	
+	/*  
+ * Obiekty - to pojemniki do przechowywania zmiennych i funkcji tematycznie 
+ *           ze sob± zwi±zanych do dalszego ³atwiejszego ponownego u¿ycia
+ *           
+ * Klasa -  W skrócie klasa to forma do wytwarzania obiektów.
+ *          Ta foremka s³u¿y do zebrania obiektów w jedn± "klasê". 
+ *          Daje mo¿liwo¶æ stworzenia z tej formy wielu nowych ró¿ni±cych siê 
+ *          minimalnie od siebie obiektów, 
+ *          ale bêd±cych dalej do siebie podobnych cechami i metodami.
+ *          
+ */
+
+	Najlatwiej odroznik zwykla funkcje od klasy tym ze klasa ma z regoly nazwe rzeczownika a funkcja czasownika.
  
+	function osoba(imie, nazwisko)
+	{
+		this.nawe = imie;
+		this.surname = nazwisko;
+		
+		this.toString = function()
+		{
+		return this.name + " " + this.surname;
+		}
+	}
+	
+		Tworzenie obiektu nowej "klasy" NEW NEW NEW !!!
+		
+	var x = new osoba("Arek", "Franczyk");
+
+	zm_div.innerHTML = x;  =>  "Arek Franczyk";
+	
+	No i dziêki temu mo¿emy tworzyc w ciul osób:
+	
+	var x = new osoba("Arek", "W³odarczyk", 15);
+	var y = new osoba("Wiola", "asfasf", 16);
+	var z = new osoba("Agnieszka", "fasf", 20);
+
+	div.innerHTML = x + "<br>" + y + "<br>" + z;
+	
+98. Prototypy, dodawanie nowych w³a¶ciwo¶ci do klas z zewn±trz.
+
+	W danym obiekcie mozemy bez zadnego problemu dodac sobie jakas dodatkowa wlasciwosc:
+	
+	x.nowaWl = 12;
+	
+	Wtedy bedzie ona dostepna tylko dla obiektu x i dla zadnego innego nawet z tej samej klasy.
+	
+	WSZYSTKIE klasy wzoruj± siê na Object (to jest ich prototyp)
+	
+	pisz±c "x." mamy juz dostêp do wszystkich metod obiektu Object.
+	
+	No i tera mozemy skorzystac z protoypu na naszej stworzonej klasie:
+	
+	osoba.prototype.nowaWl = 12;
+	
+	Efektem bêdzie przypisanie dla wszystkch stwrzonych w niej obiektów:
+	
+	div.innerHTML = x.specifiedValue + "<br>" + y.specifiedValue + "<br>" + z.specifiedValue;
+	
+	=>  12
+		12
+		12
+		
+	To dokladnie tak jakbysmy sobie w tej klasie dodali tak± linijkê:
+		this.specifiedValue = 12;
+
+	Tyle ze dziêki prototypowi moglismy to zrobic z zewtnarz, nie otwierajac danej klasy, podobno stosuje sie to wlasnie na frameworkach.
+
+	UWAGA UWAGA ! :) :) :) Gosc odraza korzystanie w javie z dziedczenia bo mowi ze jest to ciulowo rozwi±zane i SAM NIGDY Z TEGO NIE SKORZYSTA£ i ¿e ogólnie siê z tego nie korzysta ! ¯e s± ciekawsze i lepsze rozwi±zania ! :) :) :) 
+
+99 Tablice ARRAYS
+
+	Kontener do ktorego mozna wrzucic wiele rzeczy i one sa kolo siebie i mozna sie pozniej do nich dostac za pomoca indexow.
+
+	Czyli zamiast napieprzac:
+			var produk1, pr2, pr3, pr4 ... i za kazdym razem dodawac nowy jak sie pojawi to robimy sobie wlasnie taki zbiornbik i na nim pracujemy
+			
+	var produkty = {
+		"php",
+		"js",
+		"msql"
+	}	
+	
+	alert(prodyktu[0]);
+	
+	Dopisanie:
+	
+	prodkuty[3] = "Pdo";
+	
+	No ale wiaodmo ze nie mozna za kazdym razem tych elementow liczyc wiec :
+	
+	produkty[produkty.length] = "PDO"	DOBRE
+	
+	Ale mozna tez oczywiscie:
+	
+	produkty.push("PDO");		PUSH
+	
+	aby wypisac wszyskie to po prosty dajemny nazwe tabeli:
+	alert(produkty)
+	
+	mozemy tez bez oribelmu cos nadpisac czyli
+	produkty[2] = "dupa"
+	
+	Jako ze tablice to tez obiekt wiec mozemy stworzyc ja w taki sposob:
+	
+	
