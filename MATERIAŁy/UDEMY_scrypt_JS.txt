@@ -403,10 +403,100 @@ for (var i = 0; i < kursyProgramowania.length; i++)
 	Je¶li chcemy przelecieæ co¶ w³a¶nie pobrane sk±d¶to lepiej skorzystaæ z fora czy innego whila.
 	
 	
+---------------------------------------------------------------------------------------------------	
+---------------------------------    D   O   M    ----------------------------------------------	
+---------------------------------------------------------------------------------------------------
+	
+	Document Object Model
+	
+	UWAGA ! Wêze³ jest to KA¯DY byt na naszej stronie, SPACJE RÓWNIE¯ ! Dlatego przy pobieraniu czego¶ ze strony trzeba sorotowaæ uwaznie otrzymane wyniki.
 	
 	
+	/*
+    nodeName	nazwa wêz³a (najczê¶ciej nazwa tagu)
+    nodeValue	wartosæ wêz³a
+    parentNode	rodzic wêz³a
+    childNodes	tablica dzieci danego obiektu
+    firstChild	pierwsze dziecko (wêze³)
+    lastChild	ostatnie dziecko (wêze³)
+    previousSibling	zwraca poprzedni wêze³ na tym samym poziomie (jego krewniaka)
+    nextSibling         zwraca nastêpny wêze³ na tym samym poziomie (jego krewniaka)
+    attributes          tablica atrybutów elementu 
+                        attributes[indeks].nodeValue zwraca warto¶æ atrybutu 
+                        lepiej stosowaæ funkcjê getAttribute("nazwa")
+    textContent zawarto¶æ tekstowa JEST WSPIERANY OD IE 9 >
+    innerHTML   zawarto¶æ HTML
+
+    setAttribute("nazwaAtrybutu", "wartosc atrybutu");
+    removeAttribute("nazwaAtrybutudousuniecia");
+                        
+	*/
 	
+	Zawsze warto zapisywac od razu wyniki wyszukiwania do zmiennych bo oszczedzamy CZAS i ZASOBY:
+	var kursyProgramowania = document.getElementById("kursyProgramowania");
 	
+	mozna juz na tym etapie wiedzy wstawic klase zmieniajaca np kolor:
+	kursyProgramowania.setAttribute("class", "zmienKolor");
+	i usunac tez:
+	kursyProgramowania.removeAttribute("class");
+	
+	Odwo³ywanie siê do zawarto¶ci elementów:
+		kursyProgramowania.innerHTML   =>  zwróci nam rowniez TAGI html ! Dlatego jest takie cos:
+		kursyProgramowania.textContent  => i wlasnie o to bedzie nam najeszczesciej chodzic
+		
+	TAK SAMO gdy chcesz podmienic tagi to innerHTML a jak tylko zawarto¶ci to textContent !
+
+	Uwaga jak pobierzemy tablice elementów to textContent nam gówno da, trzeba grzenac glebiej.
+
+	UWAGA ! Tu cos ciekawego mówi. Ze jak chcemy sobie sprawdzac czy zawartosc jest elementem czy jakas spacja to korzytsamy z nodeType ! No i nodeType 3 to jest text (spacja) a nodeType 1 to jest ELEMENT !
+
+	UWaga m.in. na te nextSibling i previousSibling	bo one tez pobieraja te #text czyli puste znaki.
+	
+105 querySelector - szybkie wybieranie
+
+	S± to ZAJEBISTE metody:
+		querySelector
+		querySelectorAll
+		
+	Selektory czyli dok³adnie to z czego korzysta CSS !
+
+	
+
+	/*
+	-------- ZAST¡PIONE PRZEZ querySelectory -------------------
+    getElementById()
+    getElementsByTagName()
+
+    s³abiej wspierane:
+    getElementsByClassName() - brak wsparcia w ie6,7,8		- wylowienie klasy
+    getElementsByName() - brak wsparcia w ie6,7,8,9			- wylowienie name (formularze)
+    
+	---------------------------------------------------------------
+	
+    brak wsparcia w ie 6 i 7 i po³owiczne w ie8:
+    querySelector() - wybranie pierwszego napotkanego elementu spe³niaj±cego warunek
+    querySelectorAll() - wybieranie wszystkich elementów spe³niaj±cych warunek
+
+ */	
+	
+	STARE:
+	var kursyProgramowania = document.getElementById("kursyProgramowania").getElementsByTagName("li");
+	
+	NOWE:
+	var kursyProgramowania = document.querySelectorAll("#kursyProgramowania li");  - wybranie wszystkich
+	var kursyProgramowania = document.querySelector("#kursyProgramowania li");  - wybranie pierwszego
+	
+	gdyby na stronie byla tylko jedna lista ALBO chcielibysmy wziasc WSZYSTKIE li niezaleznie z ilu list to mozna zawsze od razu napisac:
+	var kursyProgramowania = document.querySelectorAll("li");  - wybranie wszystkich
+	
+	jak juz mamy wylownione to dzialamy po prostu:
+	
+	kursyProgramowania[0].innerHTML  ... itd 
+	
+	Pamietaj ze to wlasnie dziala jak w CSS wiec mozna zdziwiac :
+	var kursyProgramowania = document.querySelector("#kursyProgramowania li:nth-child(4)");
+	
+	CZYLI TO JEST NAJPOTEZNIEJSZE NARZEDZIE DO WYBIERANIA CZEGOKOLWIEK NA STRONIE I NADUPCANIA 
 	
 	
 	
