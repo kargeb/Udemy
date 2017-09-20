@@ -882,6 +882,280 @@ Tworzenie eventu:
 	
 	
 	Wszystko gra ale jesli chcemy przeslac jakis argument to musimy wziasc funkcje anonimowa!
+
+	window.onload = function()
+	{
+		var test = document.getElementById("test");
+		
+		test.onmousemove = function(event)	- funckja anonimowa ! Musmy przesalc EVENT jako parametr
+		{
+			
+			wykonaj(event, this.tagName);	-  jako tag name jest wartosc "DIV" no bo "test" to jest div
+		};
+	   
+	};
 	
-	kurwa spanie bierze, trzeba to dokonczyc w chalupie bo wazna rzecz, rozroznejenie target od event
+		function wykonaj(event, str)
+	{
+		var e =  event || window.event;
+		var srcElement = e.target || e.srcElement;		- kurwa tutaj znowu z tym ie 
+		
+		var tmp = document.getElementById("tmp");
+		
+		tmp.innerHTML = e.clientX + " " + srcElement.tagName;	- czyli tak naprawde e.target zamiast srcElement
+		
+		var tooltip = document.getElementById("tooltip");
+		
+		tooltip.style.display = "block";
+		
+		tooltip.style.left = e.clientX + 10 + "px";
+		tooltip.style.top = e.clientY + 10 + "px";
+	}
 	
+	Chujowo wyjasnil poki co ten target, ogolnie do THIS wskazuje na element ktory wywolal zdarzenie a e.target konkretny element klikniety czy cos
+	
+113. Propagacja - rozmnarzanie sie eventow
+
+	    <body> 
+
+        <div id="test">
+            <b id="pogrubiony">To jest pogrubiony tekst</b> a to jest zwyk³y
+            <button id="przycisk">Kliknij mnie</button>            
+        </div>
+		
+		
+		Chodzi o to ze zdarzenie mamy przypisane na DIV "test" a dzieki temu ze zdarzenia babelkuja do gory,
+		to mimo ze naciskamy na np przycisk w DIVIE test to e.target wyswietla BUTTON ! To wlasnie dzieki propagacji
+		
+		 
+		 var test = document.getElementById("test");
+		var pogrubiony = document.getElementById("pogrubiony");
+		var przycisk = document.getElementById("przycisk");
+	
+	
+	    test.onclick = function(event)
+		{    
+			alert("test");
+			wykonaj(event, this);
+		};
+	
+	
+		function wykonaj(event, eventObj)
+		{
+			var tmp = document.getElementById("tmp");
+			
+			tmp.innerHTML = "Ÿród³o eventu: " + e.target.tagName + "<br>event przypisany do tagu: "+ eventObj.tagName;
+		}
+	
+		Ale z tej progagacji nie zawsze chcemy korzystac np jak jakas funkcja przypisana do buttona wywoluje nam sie znowu
+		po pezeskoczeniu do diva test i moze jeszcze nawet pozniej do body ! 
+		Dlatego czasami trzeba blokowac ta propagacje.
+		
+		Czyli jesli jedna funkcja jest na caly DIV to spoko ! Ale jesli kazdy ZAGNIEZDZONY element ma osobna funkcje do czegos,
+		to nie chcemy zeby nam sie odpalaly funkcje dla "rodzicow" naszego wybranego elementu !
+		
+		 var test = document.getElementById("test");
+		var pogrubiony = document.getElementById("pogrubiony");
+		var przycisk = document.getElementById("przycisk");
+		
+		test.onclick = function(event)
+		{    
+			alert("test");
+			wykonaj(event, this);
+		};
+		pogrubiony.onclick = function(event)
+		{    
+			alert("pogrubiony");
+		};
+		przycisk.onclick = function(event)
+		{    
+			alert("przycisk");
+		};   
+		
+		TAK JAK U GÓRY gdy klikamy na "przycisk" to poza alertem "przycisk" wyskoczy tez alert "test" !!!!!!!!!!
+	
+		ZATRZYMUJEMY PROPAGACJE !  ->  event.stopPropagation();			I TYLE !
+		
+		pogrubiony.onclick = function(event)
+		{    
+			alert("pogrubiony");
+			event.stopPropagation();	// ta linjka !
+		};
+		przycisk.onclick = function(event)
+		{    
+			alert("przycisk");
+			event.stopPropagation();	// ta linijka 
+		}; 
+	
+		Po dodaniu tej jednej komendym nie beda nam sie uruchamiacy eventy na rodzicu.
+		
+114. OreventDefault - zapobieganie domyslnej akcji.
+
+	Wiadomo o co chodzi. Przyklad rowniez na formularzu. Jesli przed wyslaniem formularza chcemy zatrzymac przesylanie danych
+	po to zeby spawdzic poprawnosc wypelnionycj pol, no to wlasnie zapobiegamy DOMYSLNEJ AKCJI PRZYCISKU.
+	
+	   <form id="newsletter">
+            Email: <input type="text" id="email"> 
+			input type="submit" value="Wyœlij">
+       </form>
+	   
+	  
+		var email = document.getElementById("email");
+		var submitFormButton = document.querySelector("#newsletter input[type='submit']");
+		
+		    
+		Ta funckja wypisujemy pod inputem wszystko to co wyslalismy mejlem,
+		ALE NIE WIDAC NIC no bo strona sie przeladowuje i nic nie zostaje na stronie
+			
+		submitFormButton.onclick = function(e)
+		{
+			var tmp = document.getElementById("tmp");	
+			tmp.innerHTML = email.value;
+			
+		};
+		
+		DOPISUJEMY WIEC LINIJKE:  e.preventDefault();
+		
+		submitFormButton.onclick = function(e)
+		{
+			var tmp = document.getElementById("tmp");	
+			e.preventDefault();							// Po tym nie wysylamy nic poza strone i wszystko widac !
+			tmp.innerHTML = email.value;
+		};
+		
+		ABY wreszcie wyslac ten formulraz, np pod spelnionym warunkiem, DAJEMY METODE submit();
+		
+		if (email.value === 'videokurspl@gmail.com')
+            this.parentNode.submit();
+		
+		PRZYKLAD Z ZABLOKOWANIEM MENU KONTEKSTOWEGO NA BUTTONIE (nic sie nie pokaze pod prawym przyciskiem myszy)
+		
+		submitFormButton.oncontextmenu = function(e)
+		{
+				e.preventDefault();				//  i juz
+		};
+		
+115. onscroll - zabawy suwakiem
+
+
+	/*
+		  window.pageYOffset;		-  pokazuje przesuniecie strony wzgledem Y
+		  window.scrollBy(xaxis, yaxis);	-  ustawiamy gdzie ma sie przesunac scroll (x, y)
+	 */
+			
+		Tworzenie przycisku przewiajania na sama gore strony.
+		
+		<div id="toTopButton">To top <span id="test"></span></div>
+		
+		<br><br><br><br><br> x 100
+		
+		CSS: postion:fixed  ->  ZAWSZE w tym samym miejscu na ekranie, nic go nie rusza !
+		
+		var toTopButton = document.getElementById("toTopButton");
+		
+		window.onscroll = function()
+	   {
+		   var test = document.getElementById("test");		//  div z wypisywaniem aktualnej pozycji
+		   var toTopButton = document.getElementById("toTopButton");	//  przycisk przenoszacy na gore
+		   
+		   var yScrollAxis = window.pageYOffset;	// pozycja wzgledem y
+		   
+		   if (yScrollAxis > 300)				// jesli pozycja y wieksza niz 300 ...
+			   toTopButton.style.display = "block";	// to pokaz przycisk
+		   else
+			   toTopButton.style.display = "none";	// jak nie to nie
+		   
+		   test.innerHTML = yScrollAxis;	// wypisanie na ekran pozycji y
+	   };
+	   
+	   toTopButton.onclick = function()
+	   {
+		   window.scrollBy(0, -1 * window.pageYOffset);	- dajac ujemna wartosc, podejzewam ze po prostu idzie na poczatek
+	   };
+			
+
+116. Zdarzenia Myszki
+
+	/*
+    onmouseover - gdy kursor myszy najedzie na element
+    onmouseout - gdy kursor myszy opuœcie elemen
+    onmousemove - gdy kursor myszy "jeŸdzi" po elemencie.
+    onclick = gdy element zostanie klikniêty
+    ondblclick = gdy element zostanie 2x szybko klikniêty
+    
+    onclick to tak naprawdê:
+
+    onmousedown - gdy mamy wciœniêty przycisk myszy
+    onmouseup - gdy opuœcimy przycisk myszy
+	*/
+	
+	Robimy lapanie obrazka i przesuwanie go po stronie calej
+	
+	#wykrzyknik
+	{
+		position: absolute;
+	}
+	
+	
+	
+	window.onload = function()		//  niech mu bedzie to on load ale mozna to pominac raczej
+	{
+		var wykrzyknik = document.getElementById("wykrzyknik");	// pobranie wykrzyknika
+		
+		wykrzyknik.onmousedown = function()		// GDY PRZYCISK MYSZY WSICNIETY
+		{
+			wykrzyknik.onmousemove = function(e)	// GDY  PRZESUWAMY KURSOR, bierzemy tez event
+			{
+				this.style.top = e.clientY - this.height / 2  + "px";
+				this.style.left = e.clientX - this.width / 2 + "px";
+			};
+		};
+		
+		wykrzyknik.onmouseup = function() {
+			this.onmousemove = null;	
+			console.log("tu jestem");
+		};
+		
+		wykrzyknik.ondragstart = function(e){
+			e.preventDefault();
+		};
+		
+	};
+	
+	WSZYSTKO TUTAJ GRA ! Tylko jak za szybko przeciagniemy myszke z obrazka to to przestaje dzialac.
+	
+	
+		function movingImage(e, objToMove)
+		{
+			objToMove.style.left = e.clientX - objToMove.width / 2 + "px";
+			objToMove.style.top = e.clientY - objToMove.height / 2 + "px";
+		}
+
+		window.onload = function()
+		{
+			var wykrzyknik = document.getElementById("wykrzyknik");
+			
+			wykrzyknik.onmousedown = function()
+			{
+				var self = this;	// to trzeba zrobic bo zmienna wykrzynik nie jest dostpena tu  (chuj wie czemu)
+				document.onmousemove = function(e)
+				{
+					movingImage(e, self);
+				};
+			};
+			
+			wykrzyknik.onmouseup = function()
+			{
+				document.onmousemove = null;
+			};
+			
+			wykrzyknik.ondragstart = function(e)
+			{
+			   e.preventDefault();  
+			};
+		};
+	
+117. Funkcje wywolywane po czasie - setTimeout i setInterval
+
+		
+		
