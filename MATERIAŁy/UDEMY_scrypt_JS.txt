@@ -670,5 +670,160 @@ for (var i = 0; i < kursyProgramowania.length; i++)
 	
 	UWAGA ! Usuwanie elementów zabiera duzo zasobów WIÊÆ NAJCZÊ¦CIEJ nie bêdziemy usuwaæ elementów tylko je ewentualnie CHOWAÆ ! Musisz mieæ bardzi dobry powód ¿eby co¶ usun±æ ! I robi siê to RZADKO !
 	
+---------------------------------------------------------------------------------------------------	
+---------------------------------    E V E N T S    ----------------------------------------------	
+---------------------------------------------------------------------------------------------------	
+
+Eventów jest w chuj, mozna czytac o nich m.in. na MDN
+
+Tworzenie eventu: 
+
+	1. PIERWSZY najgorszy sposób:
+
+	Dodanie event bezpo¶rednio w kodzie HTML:
+	<div onmouseover=alert("dupa")>To jest testowy tekst o niczym :-)</div>
 	
+	Mozna oczywiscie dodac wlasna funkcje:
+	
+	function wypisz_tekst(tekst)
+	{
+		alert(tekst + " !!!!!!!!!!!!");
+	}
+	
+	<div onmouseover="wypisz_tekst('dupa wlasna')">To jest testowy tekst o niczym :-)</div>
+		UWAGA ! Pamiêtaæ o cudzys³wach ju¿ po znaku "=" !!! (alert mglbyc bez !)
+	
+	2. DRUGI troche lepszy spoób:
+	
+	Obs³u¿enie eventu w kodzie JS:
+	
+		Zidentyfikowanie danego elementu: 
+		<div id="test">To jest testowy tekst o niczym :-)</div>
+	
+		Obs³uzenie go w kodzie:
+		
+		function wypiszCosTam()
+		{
+			alert("Asfasf");
+		}
+		
+		var test = document.getElementById("test");		-	pobranie elementu do zmiennej
+		 lub tak :) => var test = document.querySelector("#test");
+		 
+		test.onclick = wypiszCosTam;	-	obluga zdarzenia
+		
+		UWAGA ! Nie mozesz zrobiæ:   test.onclick = alert("Wypisz cos tam");
+		No bo to sie wywola od razu, bez klikania, zaraz po zaladowaniu strony (on widzi wywolanie funkcji wiec to robi, nie obchodzi go ze to jesy dopiero przypisanie);
+		
+		UWAGA ! 
+		test.onclick = wypiszCosTam;  takie wywolanie zdarzenia, przez nazwe funkcji jest dobre TYLKO WTEDY gdy nie chcemy przekazywac zadnych partametrów ! No bo gdy dame jakies w nawiasach to ona znowu od razu sie wykona !
+		Aby mozna bylo przesylac parametry TRZEBA POSLUZYC SIE FUNKCJA ANIONIMOWA !
+		
+		function wypisz_tekst(tekst)
+		{
+			alert(tekst + " !!!!!!!!!!!!");
+		}		
+			
+		test.onclick = function() {
+			wypisz_tekst("test tekstu wypisanego z funkcji");
+		};
+		
+		W TYM SPOSOBNIE JEST PROBLEM GDY CHCEMY KILKA ZDARZEN PRZYPISAC DO JEDNEGO ELEMENTU, A JESLI NAWET ZROBIMY TO ZA POMOCA FUNKCJI ANONIMOWEJ TO JUZ CALKIEM PRZEJEBANE JEST POZNIEJ USUNAC NA ZYCZENIE KTORYS Z TYCH KONKRETNYCH ZDARZE.
+		Aczkolwiek mimo wszystko do drobynch zdarzen czy w malych projektoach mozna juz w ten spoosb dzialac, zeby go przynajmniej nie zapomieniec.
+		
+109 ODwo³ywanie siê do w³a¶ciow¶æi elementu który wywo³a³ zdarzenie.
+
+	Bardzo czêsto bedzie tak ze bedziesz chcial zmienic cos w elemencie na ktorym wywolales zdarzenie.
+
+	THIS
+	
+	Aby zmienic element wywolujacy teoretycznie mozna zrobic tak: (podajac po prostu jego nazwe)
+	
+	function zmienKolor()
+	{
+		test.color = "red";
+	}
+	
+	var test = document.getElementById("test");
+
+	test.onmouseover = zmienKolor;
+		
+	ALE TO JEST Z£Y SPÓSÓB bo np ktos moglby zmienic nazwe zmiennej i juz by przestalo dzialac, a poza tym w kodzie o 100000 linijkach nikt nie bedzie szukal "co to jest kurwa ten test i gdzie to jest".
+	Poza tym przy pobiraniu tablic i robeiniu na kazdym elemencie z osobna zdarzenia to JA PIERDOLE co by bylo.
+
+	Wiêc po prostu uzywamy sk³owa THIS.
+	
+	function zmienKolor()
+	{
+		this.color = "red";
+	}
+	
+	
+	Wiêksza profeska to uzyc do tego klas:
+	
+	.zmienKolor
+	{
+		color: red;
+	}
+	
+	
+	function zmienKolor()
+	{
+		this.className = "zmienKolor";	-	dodanie klasy
+	}
+	
+	function zmienKolor2()
+	{
+		this.removeAttribute("class");	 // mozna tez tak : className = "";
+	}
+	
+	test.onmouseover = zmienKolor;
+	test.onmouseout = zmienKolor2;
+	
+	--- pobarnie dowolnego atrybutu dowlnego elementu ---
+		window.getComputedStyle(test, null).getPropertyValue('font-size')
+		
+110 ONLOAD
+
+	UWAGA ! No bo teraz to wszystko dzia³a³o mimo tego ze skrypt uruchamiany jest w sekcji HEAD a nie na dole BODY. Dzialo sie tak dlatego bo mielismy przy tagu STYLE umieszczone slowo "async"
+		<script src="js/script.js" async></script>  
+	
+	Nie powiedzial gosc ze wystarczy ta linijke wkleic na koniec dokumnetu html, zamiast tego zeby zawsze skrypty zawierac w zdarzeniu onload:
+	
+	window.onload = function()
+	{
+		var test = document.getElementById("test");
+
+		test.onmouseover = zmienKolor;
+		test.onmouseout = zmienKolor2;
+	};
+	
+111. EventListener	
+
+	Lekcja o:
+	    addEventListener
+		removeEventListener
+		
+	3 TRZECI SPOSÓB DODAWANIA ZDARZEÑ:
+
+		test.addEventListener("mouseover", zmienKolor);
+		test.addEventListener("mouseout", zmienKolor2);
+		
+		UWAGA ! Tutaj nazwy tych samych zdarzen co poprzenio pozbawione s± "on" na pocz±tku ich nazwy
+		
+		No i ten sposób JEST NAJLEPSZY, mozemy sobie w kazdej chwili bez zadnego problemu dodac kolejne zdarzenie i to na 100% bedzie dzialac, nawet rownoczesnie z innymi.
+		
+		test.addEventListener("mouseover", zmienKolor);
+		test.addEventListener("mouseover", powiekszCzionke);
+		test.addEventListener("mouseout", zmienKolor2);
+		
+		UWAGA ! zeby pobrac atrybut elementu na ktorym wywolalismy zdarzenie to robimy tak:
+			var fontSize = parseInt(window.getComputedStyle(this).fontSize);
+			
+		USUWANIE EventListenerow:
+
+		test.removeEventListener("mouseover", powiekszCzionke);
+		
+112. Automatycznie przesy³any do funkcji obiekt EVENT
+
 	

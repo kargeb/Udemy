@@ -1,0 +1,12 @@
+.zmienKolor
+{
+    color: red;
+}
+#tooltip
+{
+    display: none;
+    background-color: teal;
+    position: absolute;
+    width: 150px;
+    height: 50px;
+}

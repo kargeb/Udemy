@@ -1,0 +1,16 @@
+#toTopButton
+{
+    background-color: teal;
+    width: 150px;
+    height: 30px;
+    padding: 10px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    display: none;
+}
+#toTopButton:hover
+{
+    color: red;
+}
