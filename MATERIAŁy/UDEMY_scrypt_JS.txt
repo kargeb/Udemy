@@ -826,4 +826,62 @@ Tworzenie eventu:
 		
 112. Automatycznie przesy³any do funkcji obiekt EVENT
 
+	/*
+    altKey, ctrlKey, shiftKey - czy podczas wywo³ania eventu by³y wci¶niête klawisze alt, ctrl, shift?
+    button - które przyciski myszy zosta³y klikniête (nie dzia³a w ka¿dym evencie)
+    clientX, clientY - w którym miejscu jest mycha wzglêdem 0,0
+    keyCode - zwraca w postaci liczby jaki klawisz zosta³ wci¶niêty, String.fromCharCode(e.keyCode) zwróci jaka to warto¶æ
+    target.tagName - nazwa tagu elementu który wywo³a³ zdarzenie wspierane w ka¿dej przegl±darce prócz IE 6-8 
+                     u¿yj srcElement dla IE na starcie mo¿na napisaæ: var srcElement = e.target ? e.target : e.srcElement;
+
+	*/
+	
+	var test = document.getElementById("test");
+    
+	test.onmousemove = wykonaj;	 	-	2 metoda zeby bylo prosciej
+
+	function wykonaj(e)	- e jest przesylany ZAWSZE ! Nawet jak z niego nie chcemy skorzystac !
+	{					  ON NIE MUSI NAZYWAC SIE e !!! Mozne jak badz ! wykonaj(edupadupa)
+	
+
+		var tmp = document.getElementById("tmp");
+		
+		tmp.innerHTML = e;  => Object mouseEvent
+	}
+	
+		--	UWAGA !	--
+		var e =  event || window.event;		-	nieistotne, to jest do starych IE
+		
+		cos takiego to jest ALTERNATYWA i ona jako operator ZAWSZE wybiera to co jest PRAWDZIWE ! 
+		Czyli jak nie bedzie event to bierze window.event, a jak prawdziwa jest pierwsza wartosc to juz jej nie obchodi druga i od razu bierze ta pierwsza.
+		
+	-- ToolTip --
+
+	#tooltip
+	{
+		display: none;
+		background-color: teal;
+		position: absolute;
+		width: 150px;
+		height: 50px;
+	}	
+	
+	var test = document.getElementById("test");
+	
+    test.onmousemove = wykonaj;		-	 2 metoda zeby bylo prosciej
+	
+	function wykonaj(e)
+	{	
+		var tooltip = document.getElementById("tooltip");
+		
+		tooltip.style.display = "block";	-	 pajewienie sie tooltipa po najechaniu
+		
+		tooltip.style.left = e.clientX + 10 + "px";		-	 zmiana pozycji na bierzaco
+		tooltip.style.top = e.clientY + 10 + "px";
+	}
+	
+	
+	Wszystko gra ale jesli chcemy przeslac jakis argument to musimy wziasc funkcje anonimowa!
+	
+	kurwa spanie bierze, trzeba to dokonczyc w chalupie bo wazna rzecz, rozroznejenie target od event
 	
