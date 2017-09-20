@@ -498,5 +498,177 @@ for (var i = 0; i < kursyProgramowania.length; i++)
 	
 	CZYLI TO JEST NAJPOTEZNIEJSZE NARZEDZIE DO WYBIERANIA CZEGOKOLWIEK NA STRONIE I NADUPCANIA 
 	
+106 Zmiana styli
+
+	Spis najszczêstyszych odwo³añ do styli ze strony	 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference
+	
+	CSS	JavaScript
+	background					background
+	background-attachment		backgroundAttachment
+	background-color			backgroundColor
+	background-image			backgroundImage
+	background-position			backgroundPosition
+	background-repeat			backgroundRepeat
+	border						border
+	border-bottom				borderBottom
+	border-bottom-color			borderBottomColor
+	border-bottom-style			borderBottomStyle
+	border-bottom-width			borderBottomWidth
+	border-color				borderColor
+	border-left					borderLeft
+	border-left-color			borderLeftColor
+	border-left-style			borderLeftStyle
+	border-left-width			borderLeftWidth
+	border-right				borderRight
+	border-right-color			borderRightColor
+	border-right-style			borderRightStyle
+	border-right-width			borderRightWidth
+	border-style				borderStyle
+	border-top					borderTop
+	border-top-color			borderTopColor
+	border-top-style			borderTopStyle
+	border-top-width			borderTopWidth
+	border-width				borderWidth
+	clear						clear
+	clip						clip
+	color						color
+	cursor						cursor
+	display						display
+	filter						filter
+	font						font
+	font-family					fontFamily
+	font-size					fontSize
+	font-variant				fontVariant
+	font-weight					fontWeight
+	height						height
+	left						left
+	letter-spacing				letterSpacing
+	line-height					lineHeight
+	list-style					listStyle
+	list-style-image			listStyleImage
+	list-style-position			listStylePosition
+	list-style-type				listStyleType
+	margin						margin
+	margin-bottom				marginBottom
+	margin-left					marginLeft
+	margin-right				marginRight
+	margin-top					marginTop
+	overflow					overflow
+	padding						padding
+	padding-bottom				paddingBottom
+	padding-left				paddingLeft
+	padding-right				paddingRight
+	padding-top					paddingTop
+	page-break-after			pageBreakAfter
+	page-break-before			pageBreakBefore
+	position					position
+	float						cssFloat
+	text-align					textAlign
+	text-decoration					textDecoration
+	text-decoration: blink			textDecorationBlink
+	text-decoration: line-through	textDecorationLineThrough
+	text-decoration: none			textDecorationNone
+	text-decoration: overline		textDecorationOverline
+	text-decoration: underline		textDecorationUnderline
+	text-indent					textIndent
+	text-transform				textTransform
+	top							top
+	vertical-align				verticalAlign
+	visibility					visibility
+	width						width
+	z-index						zIndex
+		
+	Oczywiscie zaczynamy od pobrania elementów:
+	var kursyProgramowania = document.querySelectorAll("#kursyProgramowania li");	
+		
+	WSZYSTKO ROZCHODZI SIÊ O OBIEKT "STYLE"
+
+	kursyProgramowania[0].style.color = "red";   i  juz		(jeden element)
+	
+	for(var index in kursyProgramowania)					(wszystkie elementy)
+	{
+		kursyProgramowania[index].style.color = "red";
+	}
+	
+	LUB
+	
+	for(var i=0; i<kursyProgramowania.length; i++)					(wszystkie elementy)
+	{
+		kursyProgramowania[i].style.color = "red";
+	}																	>
+	
+	ukrywanie elementów:
+	
+	kursyProgramowania[i].style.display = "none";
+	
+	
+	UWAGA ! To jest fajne i dzia³a ALE MUSISZ ZAGL¡DAÆ W KOD JS aby cos pozmieniaæ ! I przy wiêkszej licznie zmian bêdzie siê to robiæ uci±¿liwe i nieprofesjonalne ! 
+	TAK¯E najszêcz¶ciej bêdzoe siê to jednak odbywaæ na zasadzie DODAWANIA I USUWANIA KLAS lub innych atrybutów CSS ! 
+
+107 Dodawanie i usuwanie elementów z witryny
+
+	/*
+    dodawanie i usuwanie elementów znajduj±cych siê na stronie
+	
+    createElement("nazwa_tagu");	- Stworzenie elementu, ALE JEGO TRZEBA JESZCZE DODAÆ BO NIE WIDAÆ
+
+    appendChild		-  DODANIE ELEMENTU	na koñcu
+
+    removeChild
+
+    tmp.parentNode.removeChild(tmp);
+    
+	*/
+
+
+	var x = document.createElement("p");	-	zapisujemy do zmiennej zeby go moc pozniej wlasnie dodac
+
+	x.style.color = "red";
+	x.className = "tesciur";
+
+	var body = document.querySelector("body");		-	wybarnie elementu "zaczepienia"
+
+	var newChildNode = body.appendChild(x);
+	
+	--- UWAGA ! Dlaczego nie innerHTML ?  -- !!!!!!!!!!!! 
+	
+	Czemu dodaje sie w spoosb jak wyzej czyli kazdy parametr z osobna skoro mozna w innera dac ?
+	CHODZI O PRZEPARSOWYWYANIE STRONY ! BARDZO TRUDNY B£¡D DO WYKRYCIA !
+	
+	x.innerHTML = "<p id='testowy2'>nowy tekst<p> 4";
+	var testowy2 = document.getElementById("testowy2");
+	testowy2.style.color = "green";
+
+	To u góry nam ¶wietnie zadzia³a, ale to u do³u JU¯ NIE !!!
+	
+	x.innerHTML = "<p id='testowy2'>nowy tekst<p> 4";
+	var testowy2 = document.getElementById("testowy2");
+	x.innerHTML += "4";
+	testowy2.style.color = "green";	-- NIE ZADZIA£¡ !
+	
+	DLatego ¿e dodanie "4" poprzez innerHTML sprawi³o PRZEPARSOWANIE CA£EJ STRONY co sprawia ¿e zmienna testowy2 NIE ODWO£UJE SIÊ JU¯ DO TEGO ELEMENTU KTÓRY ZMIENIA KOLOR NA ZIELONY ! INNA REFERENCJA !
+	Trzebaby zroibæ co¶ takiego ¿eby to naprawiæ:
+	
+	x.innerHTML = "<p id='testowy2'>nowy tekst<p> 4";
+	var testowy2 = document.getElementById("testowy2");
+	x.innerHTML += "4";
+	var testowy2 = document.getElementById("testowy2"); - PONOWNE POBRANIE ELEMENTU 
+	testowy2.style.color = "green";	- znowu dzia³a
+	
+	Jak widaæ JEST TO POJEBANE i trudne do wychwycenia wiêc trzeba unikaæ innerHTML stosowanego w ten sposób, CHYBA ¯E JESTE¦MY PEWNI ¯E CO¦ DODAMY I JU¯ NIE BÊDZIEMY TEGO ANI RUSZAÆ ANI KORZYSTAÆ !!!!
+	
+	
+	-- usuwanie --
+
+	var kursyProgramowania = document.getElementById("kursyProgramowania");
+
+	kursyProgramowania.parentNode.removeChild(kursyProgramowania);
+	
+	Jedynym sposobem (na moment tej lekcji) na usuniecie czegos jest wlasnie skoczenie do rodzica i usuniecie siebie samego jako dziecka.
+	
+	LEPSZE METODY S¡ W jQUERY 
+	
+	UWAGA ! Usuwanie elementów zabiera duzo zasobów WIÊÆ NAJCZÊ¦CIEJ nie bêdziemy usuwaæ elementów tylko je ewentualnie CHOWAÆ ! Musisz mieæ bardzi dobry powód ¿eby co¶ usun±æ ! I robi siê to RZADKO !
+	
 	
 	
