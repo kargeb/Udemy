@@ -1,0 +1,36 @@
+body
+{
+    background-color: #f5f5f5;
+    font-family: LettraProLight, monospace;
+    letter-spacing: 1.7px;
+    color: rgba(0,0,0,.7);
+}
+
+h1
+{
+    font-size: 2.5em;
+    
+}
+
+header
+{   
+    line-height: 100%;
+    padding-left: 1.5%;
+    padding-bottom: 1%;
+    padding-top: 0.5%;
+  #  border: 2px solid black;
+}
+
+header a
+{
+    text-decoration: none;
+    color: inherit;
+    letter-spacing: 1px;
+    
+}
+
+header hr
+{
+    margin-top: 1.5%;
+    width: 70%;
+}
