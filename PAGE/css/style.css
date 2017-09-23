@@ -31,6 +31,47 @@ header a
 
 header hr
 {
-    margin-top: 1.5%;
+    margin-right: 2%;
+    margin-top: 2%;
     width: 70%;
+    align: right;
+}
+
+nav
+{
+    margin-top: -1%;
+    width: 15%;
+    height: 400px;
+ #   border: 1px solid black;
+    float: left;
+    letter-spacing: 5px;
+}
+
+.item
+{
+    border-bottom: 1px solid rgba(0,0,0,.3);
+    height: 60px;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 10px;
+}
+
+.item:hover
+{
+    color: #f5f5f5;
+    background-color: rgba(0,0,0,.3);
+}
+
+#menu a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+article
+{
+    border: 1px solid red;
+    height: 500px;
+    width: 84%;
+    float: left;
 }
