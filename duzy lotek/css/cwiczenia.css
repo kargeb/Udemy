@@ -1,0 +1,52 @@
+body {
+    margin-left: 1em;
+}
+
+h1 {
+    color: cadetblue
+}
+
+.line {
+   # border: 1px solid blue;
+    margin-bottom: 0.5em;
+}
+
+.subject {
+    margin-bottom: 1em;
+    color: darkslategray;
+    font-size: 1.5em;
+    font-weight: bold;
+#    border: 1px solid black;
+}
+
+.label {
+    color: chocolate;
+    font-size: 1.5em;
+    border: 1px solid black;
+    display: inline-block;
+    width: 8em;
+}
+
+#filmy {
+    white-space: pre;
+    line-height: 1.5em;
+}
+
+input, #poka{
+    color: crimson;
+    font-size: 1.5em;
+    border: 1px solid red;
+    display: inline-block;
+    width: 4em;
+    text-align: right;
+}
+
+button {
+    background-color: white;
+    border: 1px solid red;
+    font-weight: bold;
+    color: crimson;
+    margin: 1em 0em 1em 5em;
+    width: 8em;
+    height: 2em;
+}
