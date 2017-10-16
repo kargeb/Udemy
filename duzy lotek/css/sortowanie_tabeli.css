@@ -1,0 +1,27 @@
+.container {
+    margin: 3em;
+}
+
+#myTable {
+    margin: 4em;
+    width: 50%;
+}
+
+thead {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+thead tr {
+    height: 3em;
+}
+
+tbody tr {
+    height: 3em;
+}
+
+tbody tr:nth-child(even) {
+    background-color: burlywood;
+}
+
