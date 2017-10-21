@@ -27,7 +27,7 @@ h1 {
 .label {
     color: chocolate;
     font-size: 1.5em;
-    border: 1px solid black;
+ #   border: 1px solid black;
     display: inline-block;
     width: 8em;
 }

@@ -1,35 +1,18 @@
 console.log("bulin");
 
-var dupa = "null";
-var cos = "12";
-var ktos = null;
-var pies = "sra";
+var button = document.querySelector("button");
 
-var zm = Boolean(dupa);
-var zm2 = Boolean(cos);
-var zm3 = Boolean(ktos);
-var zm4 = Boolean(pies);
+button.onclick = function() {
+    
+    var input = prompt("Podaj co:");
 
-var bool = true;
+    function toBoolean(data) {
+        return Boolean(data);
+    }
 
-console.log(typeof bool);
+    console.log(toBoolean(input));
+    
+    var dupa = null;
+    console.log(toBoolean(dupa));
+}
 
-console.log(zm, zm2, zm3, zm4);
-
-var _in = document.querySelector('input[name="in"]');
-console.log(_in);
-console.log(_in.value);
-
-var myValue = _in.value;
-
-console.log(myValue);
-
-console.log(myValue == bool);
-
-var isTrueSet = (Boolean(myValue) == true);
-
-console.log(isTrueSet);
-
-var napis = String(isTrueSet);
-
-console.log(napis);
