@@ -16,12 +16,22 @@ h1 {
     color: darkslategray;
     font-size: 1.5em;
     font-weight: bold;
-#    border: 1px solid black;
+ #   border: 1px solid black;
 }
 
-#ukryty {
-    #display: none;
-    
+#hiden_element {
+    color: aquamarine;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 900;
+    line-height: 5em;
+    background-color: black;
+    width: 20em;
+    height: 5em;
+}
+
+.ukryj {
+    display: none;
 }
 
 .label {
@@ -37,7 +47,17 @@ h1 {
     line-height: 1.5em;
 }
 
-input, #poka{
+textarea {
+    color: crimson;
+    font-size: 1.5em;
+    border: 1px solid red;
+  #  display: inline-block;
+    width: 14em;
+    height: 4em;
+    text-align: right;
+}
+
+input, #poka {
     color: crimson;
     font-size: 1.5em;
     border: 1px solid red;

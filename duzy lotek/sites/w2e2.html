@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>W2E2</title>
+    <link rel="stylesheet" type="text/css" href="../css/cwiczenia.css" >
+</head>
+<body>
+
+    <h1>Cw 2:  Formularz walidacyjny</h1>
+    
+    <div class="subject">Formularz wypelniony zeby wyslac musi byc</div>
+    <form novalidate>
+        <div class="line">
+            <span class="label">Imię: </span>
+            <input type="text" name="userName">
+        </div>
+        <div class="line">
+            <span class="label">Email: </span>
+            <input type="email" name="userEmail" >
+            <!--<span class="value" id="amount">5</span>-->
+        </div>
+        <div class="line">
+            <span class="label">Numer: </span>
+            <input type="number" name="userNumber">
+            <!--<span class="value" id="amount">5</span>-->
+        </div>
+        <div class="line">
+            <span class="label">Treść: </span>
+            <textarea name="userText"></textarea>
+            <!--<span class="value" id="amount">5</span>-->
+        </div>
+        <div class="line">
+            <button type="submit">Wyslij</button>
+        </div>
+    </form>
+
+    <div id="pies"></div>
+<script src="../js/w2e2.js"></script>
+</body>    
+</html>
