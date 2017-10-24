@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font: 14px/18px Tahoma, Arial, sans-serif
+}
+
+.container {
+    width: 80%;
+    margin: 30px auto;
+    overflow: hidden
+}
+
+h1 {
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    border-bottom: 1px #d8d8d8 solid;
+    
+    line-height: 1;
+    font-weight: normal;
+    color: #666666;
+}
+
+ul.errors {
+    width: 600px;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #ffd4de;
+}
+
+ul.errors li {
+    list-style: none;
+    line-height: 30px;
+    color: #f70053
+}
+
+form {
+    width: 640px;
+    overflow: hidden
+}
+
+form * {
+    box-sizing: border-box
+}
+
+form input[type="text"],
+form input[type="email"],
+select,
+textarea {
+    border: 1px #c5c5c5 solid;
+    background: #fff;
+    
+    font: 14px/35px, Tahoma, Arial, sans-serif;
+    color: #8a8a8a
+}
+
+form input[type="text"].error,
+form input[type="email"].error,
+select.error,
+textarea.error {
+    border-color: #ffa9c7
+}
+
+form input[type="text"],
+form input[type="email"] {
+    display: block;
+    width: 200px;
+    height: 35px;
+    padding: 0 15px;
+    margin: 0 20px 20px 0;
+    float: left
+}
+
+form select {
+    width: 200px;
+    height: 35px;
+    padding: 0 15px;
+    border-radius: 0;
+    
+    cursor: pointer
+}
+
+form textarea {
+    clear: both;
+    display: block;
+    width: 100%;
+    height: 150px;
+    padding: 10px 15px 0 15px;
+    margin-bottom: 20px;
+    
+    resize: none;
+    
+    line-height: 22px
+}
+
+form button[type='submit'] {
+    padding: 0 30px;
+    height: 40px;
+    float: right;
+    border: none;
+    background: #00c2f1;
+    
+    cursor: pointer;
+    
+    font: 14px/35px Tahoma, Arial, sans-serif;
+    color: #00566b
+}
