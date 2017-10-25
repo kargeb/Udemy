@@ -10,24 +10,28 @@
     <h1>Cw 2:  Formularz walidacyjny</h1>
     
     <div class="subject">Formularz wypelniony zeby wyslac musi byc</div>
-    <form novalidate>
+    <form id="entryForm" novalidate>
         <div class="line">
             <span class="label">Imię: </span>
             <input type="text" name="userName">
+            <span>Podaj imię</span>
         </div>
         <div class="line">
             <span class="label">Email: </span>
             <input type="email" name="userEmail" >
+            <span>Zły adres e-mail</span>
             <!--<span class="value" id="amount">5</span>-->
         </div>
         <div class="line">
             <span class="label">Numer: </span>
             <input type="number" name="userNumber">
+            <span>Podaj wartość liczbową</span>
             <!--<span class="value" id="amount">5</span>-->
         </div>
         <div class="line">
             <span class="label">Treść: </span>
             <textarea name="userText"></textarea>
+            <span>Wpisz mininum 2 znaki</span>
             <!--<span class="value" id="amount">5</span>-->
         </div>
         <div class="line">
