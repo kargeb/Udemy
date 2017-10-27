@@ -47,7 +47,7 @@ h1 {
     line-height: 1.5em;
 }
 
-#zygor {
+#interval, #timeout {
     color: dodgerblue;
     font-weight: bold;
     font-size: 2em;
