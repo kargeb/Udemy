@@ -47,6 +47,16 @@ h1 {
     line-height: 1.5em;
 }
 
+#url {
+    color: green;
+    width: 40em;
+    text-align: left
+}
+
+#content {
+    white-space: pre
+}
+
 #interval, #timeout {
     color: dodgerblue;
     font-weight: bold;
