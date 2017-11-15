@@ -95,3 +95,24 @@ button {
     width: 8em;
     height: 2em;
 }
+
+.jquery_subject {
+    border: 1px solid green;
+    margin-bottom: 0.5em;
+    margin-top: 0;
+    padding-left: 0.5em;
+    font-size: 1.5em;
+    color: black;
+}
+
+.jquery_button {
+    background-color: white;
+    border: 1px solid;
+    border-color: darkgreen;
+    font-weight: bold;
+    background-color: darkseagreen;
+    color: floralwhite;
+    margin: 1em 0em 1em 5em;
+    width: 8em;
+    height: 2em;
+}
