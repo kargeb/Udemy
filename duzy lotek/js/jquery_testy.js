@@ -7,6 +7,7 @@ var p = $("P"),
     klasa = $(".line"),
     button = $("button"),
     pierw = $(".pierw");
+    
 
 console.log(p);
 console.log(klasa);
@@ -14,3 +15,6 @@ console.log(button);
 console.log(pierw);
 console.log($(pierw));
 
+var pierszy = $(".pierw p + p");
+
+console.log(pierszy);
