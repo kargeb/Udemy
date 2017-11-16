@@ -110,13 +110,25 @@ button {
     border: 1px solid;
     border-color: darkgreen;
     font-weight: bold;
-    background-color: darkseagreen;
+    background-color: darkolivegreen;
     color: floralwhite;
     margin: 1em 0em 1em 5em;
     width: 8em;
     height: 2em;
 }
 
+.jquery_button:disabled {
+    background-color: darkseagreen;
+}
+
 .pierw {
     margin-left: 10em;
+}
+
+.hl {
+    background-color: cornflowerblue;
+}
+
+.hl_button {
+    background-color: black;
 }
