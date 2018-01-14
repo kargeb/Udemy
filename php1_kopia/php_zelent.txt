@@ -1,0 +1,105 @@
+Ucz sie backendu bo tam le¿u pini¹dz !!!
+
+tworzymny plik php1 w htdocs
+
+Wszystko co w znacznikach <?php   ?> jest znane tylko serwerowi a jedynie jego odpowiediedz trafia do uzytkownika i on nawet nie wie jaka czesc zostala wygenerowana przez php !
+
+$zmienna   -  od dolara
+
+napisy zawsze w "cudzyslowiach"
+
+Pomiedzy '' nie dajemy zmiennych ! Mozna tylko miedzy ""
+
+jak cos to za pomoca . mozna loaczyc zmienne z tekstem  $imie.'.witaj swiecie !' !
+
+----------------------
+
+INPUT w html - CZYLI TO CO WYCHODZI OD UZYTKOWNIKA ! ZAPAMIETAJ !!!
+
+SUBMIT w html - TO CO MA ZSOTAÆ DOSTARECZONE !!
+
+UWAGA !!! WSZYSTKIE POLA WYSYLANE KONRETNYM JEDNYM SUBMITEM PAKUJEMY W "FORM" !!! I wlasnie kurwa ten FORM oddziela jedne formularze od drugich i TYM rozdzielamy co chcemy wyslac w jednej czesci strony a co w drugiej !!
+
+CZYLI SUBMIT powoduje wyslanie wszystkich list wyborow, checkboxow, i pol i chuj wie czego WLASNIE MIEDZY <form> a </form> !
+
+No i w chuj wazne zeby otwierajacy FORM mial 2 atrybuty ! DWA !! 
+
+	1 atrybut ACTION ! Czyli w naszym przypadku action="order.php"
+	2 atrybut to metoda przesylania method="post"
+
+	POST nie widac w adresie, GET widac w chuj pod taka postacia =>  order.php?paczkow=1&grzebieni=10
+
+	Im wiecej danych do przeslania tym lepiej uzyc metody POST 
+		
+No i jeszcze w chuj wazne NAME przy kazdym inpucie ZEBY PHP wiedzial CZEGO dotyczy konkretna zmienna
+		Ile p¹czków (0,99 PLN/szt):
+		<input type="text" name="paczkow"/>
+
+---- strona serwera  -  order.php !!
+
+ZMIENNE PRZESLANE PRZEZ FORMULARZ ODBIERAMY =>  $_POST[] !!!  chyba ze byloby by GET no to  $_GET[] !!
+
+	$paczkow = $_POST['paczkow'];			(oczywiscie zmienne moga sie roznic nazwami)
+	$grzebieni = $_POST['grzebieni'];
+
+
+	echo "<h2>$paczkow $grzebieni</h2>"
+
+kurwa dziala : wlacza sie od razu ta strona order.php  wypisujaca 2 przeslane liczby
+
+UWAGA ! Wielopoziomowe ECHO !!:  #######
+
+echo<<<END		NIE MOZE BYC ZADNEGO BIALEGO ZNAKU ANI PRZED "echo" ANI PRZED "END" na koncu
+	
+	<h2>Pdsumowanie zamówienia</h2>
+	<table border="1" cellpadding="10" cellspacing="0">
+	
+	</table>
+
+END;
+
+################  to jest zajebiste bo nie musimy uzywac cudzylowiow ani apostrofow !!!!!
+
+CALY PLIK order.php
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8"/>
+	<title>Podsumowanie zamówienia</title>
+	
+</head>
+<body>
+
+<?php 
+
+	$paczkow = $_POST['paczkow'];
+	$grzebieni = $_POST['grzebieni'];
+	$suma = 0.99*$paczkow + 1.29*$grzebieni;
+	
+echo<<<END
+	
+	<h2>Pdsumowanie zamówienia</h2>
+	<table border="1" cellpadding="10" cellspacing="0">
+	<tr> 
+		<td>P¹czek(0,99PLN/szt)</td><td>$paczkow</td>
+	</tr>
+	<tr> 
+		<td>Grzebieñ(1,29PLN/szt)</td><td>$grzebieni</td>
+	</tr>
+	<tr> 
+		<td>Suma</td><td>$suma PLN</td>
+	</tr>
+	</table>
+	<br /> <a href="index.php">Powrót do strony g³ównej</a>
+
+END;
+	
+?>
+
+</body>
+</html>
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+
