@@ -1,0 +1,1 @@
+console.log("tydzien 4 nadupcanie")
