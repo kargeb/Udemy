@@ -37,26 +37,28 @@
            
             var inputs = $("input[type='radio']:not(:checked), input[type='checkbox']:not(:checked)"); 
  
-            console.log(inputs);
+            console.log($(inputs[0]).next());
             
-           // var zmien = inputs[0].innerHTML();
+            if($(inputs[0]).prev().text()== "--->") {
+                inputs.prev().remove();
+            } else {
+                inputs.before('<span style="color:blue;">---></span>');
+            }                        
             
+//            $(inputs[0]).before('<span style="color:blue;">---></span>');
             
-            
-            
-//            inputs[0].nextSibling
-            console.log(inputs[0].nextSibling.nextSibling);
-//            
-//            inputs[0].nextSibling.innerText = "dupa";
-//            
-//            console.log(inputs[0].nextSibling);
-            
-            
-//            if($(grids[0]).css("background-color") == "rgb(255, 255, 255)") {
-//                grids.css("background-color", "");
+//            if($(inputs[0]).prev().text() == "--->") {
+//                console.log("zgadza sie");
 //            } else {
-//                grids.css("background-color", "#fff");
+//                console.log("dupa");
 //            }
+//            
+//            console.log($(inputs[0]).prev().text());
+//            
+//            setTimeout(function(){
+//                $(inputs[0]).prev().remove();
+//            }, 3000);
+            
             
         });
         
