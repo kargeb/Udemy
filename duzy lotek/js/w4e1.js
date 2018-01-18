@@ -8,6 +8,7 @@
         
         console.log(buttons[2]);     
         console.log(buttons);
+        
 
         
         $(buttons[0]).on("click", function(){
@@ -37,32 +38,41 @@
            
             var inputs = $("input[type='radio']:not(:checked), input[type='checkbox']:not(:checked)"); 
  
-            console.log($(inputs[0]).next());
+//            var popper = new Popper(inputs[1], onPopper, {
+//            placement: 'right'
+//});
             
             if($(inputs[0]).prev().text()== "--->") {
-                inputs.prev().remove();
+                inputs.removeAttr("disabled").prev().remove();
             } else {
-                inputs.before('<span style="color:blue;">---></span>');
+                inputs.attr("disabled", true).before('<span style="color:blue;">---></span>');
             }                        
-            
-//            $(inputs[0]).before('<span style="color:blue;">---></span>');
-            
-//            if($(inputs[0]).prev().text() == "--->") {
-//                console.log("zgadza sie");
-//            } else {
-//                console.log("dupa");
-//            }
-//            
-//            console.log($(inputs[0]).prev().text());
-//            
-//            setTimeout(function(){
-//                $(inputs[0]).prev().remove();
-//            }, 3000);
-            
             
         });
         
-        
+        $(buttons[3]).on("click", function(){
+            console.log("dupad upda"); 
+
+            
+            var paragrapf = $("#text p:not(:has(*))").first();
+            
+            
+            if($(paragrapf).css("background-color") === "rgb(124, 252, 0)") {
+                paragrapf.css("background-color", "");
+                console.log("dtuta jest kolor juz")
+            } else {
+                paragrapf.css("background-color", "lawngreen");
+                 console.log("dtuta nie ma koloru juz")
+            }
+            
+         // $("p:pirst(p:not(p *))")
+        //   $("#text p:not(:has(*))")
+            
+//            var popper = new Popper(paragrapf, bubble, {
+//                placement: "top"
+//            }); 
+  
+        }); 
     });
     
 })(jQuery);
