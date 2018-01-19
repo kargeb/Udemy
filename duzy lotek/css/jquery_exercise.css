@@ -1,0 +1,11 @@
+.menu_animated {
+    border: 1px solid red   
+}
+
+.menu_animated_hidden {
+    display: none
+}
+
+#main_site {
+    border: 2px dotted black
+}
