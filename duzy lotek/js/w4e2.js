@@ -1,20 +1,34 @@
 (function($) {
 
     $(document).ready(function() {
-        
-        console.log("dupa");
     
-        var bar = $(".fa-bars");
-        var menu = $(".menu_animated");
+        var hamburger_left = $("#ham_left"),
+            hamburger_middle = $("#ham_middle"),
+            hamburger_right = $("#ham_right"),
+            menu_middle = $("#middle_menu"),
+            menu_left =$("#left_menu"),
+            menu_right = $("#right_menu");
         
-        $(bar).on("click", function(){
-           
-            console.log("cos cosa cos");
-            
-           // $(menu).toggleClass("menu_animated_hidden");
-            
-            menu.slideToggle();
-            
+        $(menu_left).addClass("menu_animated_hidden");
+        $(menu_middle).addClass("menu_animated_hidden");
+        $(menu_right).addClass("menu_animated_hidden");
+        
+        
+        $(hamburger_left).on("click", function(){
+            menu_left.fadeToggle();
+        });
+        
+        $(hamburger_middle).on("click", function(){
+            menu_middle.slideToggle();
+        });        
+        
+        $(hamburger_right).on("click", function(){
+            menu_right.animate({
+                "witdh": "100%",
+                "width": "toggle",
+                "height": "100%",
+                "height": "toggle"  
+            },200);
         });
         
     });

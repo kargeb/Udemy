@@ -1,11 +1,26 @@
-.menu_animated {
+/* Cwiczenie 2 - ukrywanie menu */
+
+#left_menu {
     border: 1px solid red   
+}
+
+#hamburgers {
+    border: 2px dotted black
+}
+
+#middle_menu {
+    border: 2px double brown
+}
+
+#right_menu {
+    border: 1px solid red
 }
 
 .menu_animated_hidden {
     display: none
 }
 
-#main_site {
-    border: 2px dotted black
-}
+/*Cwiczenie 3 - dyanmicze dodawanie i usuwanie elementow */
+
+/*Cwiczenie 4 - dyanmicze dodawanie i usuwanie elementow */
+
