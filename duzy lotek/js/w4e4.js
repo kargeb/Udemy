@@ -6,27 +6,27 @@
         
         var btn = $(".btn"),
             output = $("#output"),
-            names = "";
+            snip1, snip2;
         
         
         
         btn.on("click", function(){
             
-                $.getJSON("http://code.eduweb.pl/bootcamp/users/", function(data){
+            $.getJSON("http://code.eduweb.pl/bootcamp/users/", function(data){
+                
+            $(data).each(function(i, elem){
 
-                $(data).each(function(i, elem){
+                snip2 = "username: " + elem.username + "   |  email: " + elem.email + '   |  tel.: ' + elem.phone;    
 
-                $("<li></li>", {
-                    text: elem.name
-                }).appendTo(output);    
+                snip1 = document.createElement("li");
 
-                    
-                    
+                snip1.innerHTML = "<b>" + elem.name + "</b><br>" + snip2;    
+
+                output.append(snip1);  
+         
             });
                 
-            //output.html(names);
-                
-            })
+           })
             
         })
 
