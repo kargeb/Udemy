@@ -14,14 +14,29 @@
                     <hr>
                     <br>
             <div class="row">
-                <div class="col-md-2">
+                <div id="btn_basic" class="col-md-6 text-center">
                     <button class="btn btn-primary">Załaduj</button>    
                 </div>
-                <div class="col-md-10">
-                    <ul id="output"></ul>
+                <div id="btn_advanced" class="col-md-6 text-center">
+                    <button class="btn btn-primary">Załaduj</button>
                 </div>
             </div>
+            <br><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul id="output1"></ul>    
+                </div>
+                <div class="col-md-6">
+                    
+                    <script id="tpl" type="text/x-handlebars-template">
+                        <p> {{imie}} {{nazwisko}} </p>
+                    </script>
+                    
+                    <ul id="output2"></ul>
+                </div>
+            </div>            
         </div>
+        <script src="../js/handlebars-v4.0.11.js"></script>
         <script src="../js/jquery-3.2.1.js"></script>
         <script src="../js/bootstrap.js"></script>    
         <script src="../js/w4e4.js"></script>
