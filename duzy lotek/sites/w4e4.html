@@ -14,26 +14,60 @@
                     <hr>
                     <br>
             <div class="row">
-                <div id="btn_basic" class="col-md-6 text-center">
-                    <button class="btn btn-primary">Załaduj</button>    
+                <div id="btn_basic" class="col-md-4 text-center">
+                    <button class="btn btn-info">Załaduj zwykły</button>    
                 </div>
-                <div id="btn_advanced" class="col-md-6 text-center">
-                    <button class="btn btn-primary">Załaduj</button>
+                <div id="btn_advanced" class="col-md-4 text-center">
+                    <button class="btn btn-primary">Załaduj handlebars list</button>
                 </div>
+                <div id="btn_list" class="col-md-4 text-center">
+                    <button class="btn btn-primary">Załaduj handlebars table</button>
+                </div>                
             </div>
             <br><br>
             <div class="row">
-                <div class="col-md-6">
-                    <ul id="output1"></ul>    
-                </div>
-                <div class="col-md-6">
+
+                <div class="col-md-12">
                     
                     <script id="tpl" type="text/x-handlebars-template">
-                        <p> {{imie}} {{nazwisko}} </p>
+                        {{#each pracownicy}}
+                        <li> <b>{{name}} </b><br>
+                            {{username}} | {{ email }} | {{ phone }} | {{ website }} </li>
+                            <hr>
+                        {{/each}}
                     </script>
                     
-                    <ul id="output2"></ul>
-                </div>
+                    <script id="tpl2" type="text/x-handlebars-template">
+                        
+                        <table class="table table-hover">
+                            <caption>Optional table caption.</caption>
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Person</th>
+                                    <th>Login</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Website</th>
+                                </tr>
+                            </thead>
+                        <tbody>
+                            {{#each pracownicy}}
+                                <tr>
+                                    <th scope="row">{{ id }}</th>
+                                    <td>{{name}} </td>
+                                    <td>{{username}}</td>
+                                    <td>{{ email }}</td>
+                                    <td>{{ phone }}</td>
+                                    <td>{{ website }}</td>                                
+                                </tr>
+                            {{/each}}     
+                    </tbody>
+                    </table>                       
+                    </script>
+                    
+                    <ul id="output"></ul>
+                </div>             
             </div>            
         </div>
         <script src="../js/handlebars-v4.0.11.js"></script>
