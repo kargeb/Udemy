@@ -52,7 +52,7 @@
         });
         
     function show(source, data) {
-
+        
         var template = Handlebars.compile(source);
 
         var dane  = {
