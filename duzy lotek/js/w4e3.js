@@ -21,7 +21,13 @@
                         
             input.val("");
             }
+            
+            console.log($("li"));
+            
+//            $("li").highlight();
         })
+        
+        
         
     });
     

@@ -1,0 +1,1 @@
+// Tutaj stwórz kod całego pluginu
