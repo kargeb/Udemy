@@ -1,3 +1,5 @@
+// 2. NOWE SLOWA LET I CONST
+
 (function() {
     console.log("2 Nowe słowa let i const"); 
 // ES6 wprowadza DWA NOWE slowa CONST i LET 
