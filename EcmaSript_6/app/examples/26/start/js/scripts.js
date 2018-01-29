@@ -1,3 +1,7 @@
+// 29. Ciekawostki odnosnie klas
+
+// DO DOKOŃCZENIA ........
+
 function Person(firstName, lastName) {
     this.firstName = firstName;
     this.lastName = lastName;
