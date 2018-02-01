@@ -1,0 +1,3 @@
+// 38. Przekazywanie wartośći
+
+// DO GENERATORÓW MOŻNA PRZEKAZWYAĆ WARTOŚCI PRZY KAŻDYM UŻYCIU NEXT
