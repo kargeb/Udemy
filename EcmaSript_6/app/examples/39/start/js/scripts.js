@@ -67,7 +67,7 @@ $("#btn-39").onclick = function() {
 
 // No i chodzi o to ze ta dolna linijka NAM TERAZ (bez promise) NIE ZADZIAŁA ! Bo zauwarz że nasza funkcja getJSON NIC NIE ZWRACA ! Czyli nie mamy na czym odwołać się po . i wywołać THEN !  Trzeba więc zwrócić coś z getJSON co będzie zawierało metodę THEN NO I WŁAŚNIE BĘDZIE TO PROMISE !    
 // POD json W THEN jest to co PRZESŁALIŚMY W RESOLVE !!! a pod err JEST TO CO W REJECT !   
-    getJSON("htp://code.eduweb.pl/kurs-es6/json/")
+    getJSON("http://code.eduweb.pl/kurs-es6/json/")
         .then(
             json => $("#pre-39").textContent = json,
             err => $("#pre-39").textContent = err.message
