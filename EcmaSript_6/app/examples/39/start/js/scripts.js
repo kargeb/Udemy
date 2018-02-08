@@ -67,9 +67,30 @@ $("#btn-39").onclick = function() {
 
 // No i chodzi o to ze ta dolna linijka NAM TERAZ (bez promise) NIE ZADZIAŁA ! Bo zauwarz że nasza funkcja getJSON NIC NIE ZWRACA ! Czyli nie mamy na czym odwołać się po . i wywołać THEN !  Trzeba więc zwrócić coś z getJSON co będzie zawierało metodę THEN NO I WŁAŚNIE BĘDZIE TO PROMISE !    
 // POD json W THEN jest to co PRZESŁALIŚMY W RESOLVE !!! a pod err JEST TO CO W REJECT !   
-    getJSON("htp://code.eduweb.pl/kurs-es6/json/")
+    getJSON("http://code.eduweb.pl/kurs-es6/json/")
         .then(
             json => $("#pre-39").textContent = json,
             err => $("#pre-39").textContent = err.message
         );
 };
+
+// I OTO CAŁE PROMISE !!!!!!!!!!!!
+// JESZCZE RAZ:
+/*
+                let p = new Promise(function(resolve, reject)
+zwaraca nam jakjis nowy obiekt, który my zwracamy z danej funkcji   
+            return p;   
+Ten nowy obiekt zawiera w sobie metode THEN dlatego mozna z niej skorzystac, POW WYWOLANIU getJSON     
+            getJSON("http://code.eduweb.pl/kurs-es6/json/")
+                .then(
+                    json => $("#pre-39").textContent = json,
+                    err => $("#pre-39").textContent = err.message
+                );
+No i PIEWRSZY PARAMETR THEN wywola sie w momencie wywołania RESOLVE w funkcji z PROMISAMI
+                resolve(xhr.responseText);
+Czyli ASYNCHRONICZNIE, niezaleznie od pozostalego kodu i przebiegu programu, czeka sobie spokojnie na sygnal
+No i mówię mu, temu THENowi
+ "wywolaj mi funckję THEN z PARAMETREM json A PARAMETREM TYM JEST TO CO PRZEKAZANE JEST RESOLVE czyli xhr.responseText
+No i jest tez DRUGI PARAMETR THEN który robie dokładnie to co RESOLVE tylko PRZYJMUJE JAKO PARAMTER TO CO JEST PRZEKAZYWANE W REJECT !
+ a więc u nas   err   jest tym ->  new Error("Wystapił błąd")
+*/
