@@ -1,44 +1,32 @@
 console.log("ES6 - Dekompozycja JSON");
 
 const btn = document.querySelector(".btn"),
-      output = document.querySelector("p"),
+      output = document.querySelector(".table-hover"),
       url = "http://code.eduweb.pl/bootcamp/json/";
 
 let data;
       
-
-
-
 btn.onclick = function(){
-    console.log(btn);
-    console.log(output);
-    
+
     getJSON(url);
-    
     format(data, output);
 }
 
 function getJSON(url) {
-    
-    console.log("get jeson start");
     
     let xhr = new XMLHttpRequest();
     
     xhr.open("GET", url, false);
     
     xhr.onreadystatechange = function(e){
-        
         if( this.readyState === 4 && this.status === 200 ) {
-             
              data = JSON.parse(xhr.response);
         }        
     }
 
-    
-   xhr.setRequestHeader("Accept", "application/json");    
+    xhr.setRequestHeader("Accept", "application/json");    
     
     xhr.onerror = function(e) {
-        
         fnFail("Zjebało się");
     }    
     
@@ -48,10 +36,24 @@ function getJSON(url) {
 function format(data, output) {
     console.log(data);
 
-            let text = "";
+            let text = "",
+                header = "";
+    
+            header = `<thead"> 
+            <tr> 
+            <th>#</th> 
+            <th>Imię</th> 
+            <th>Nick</th> 
+            <th>Email</th>
+            <th>Strona</th>
+            <th>firma</th>
+            <th>Mapka</th> 
+            </tr> 
+            </thead>
+            <tbody>`;    
     
             for(let key of data) {
-//                console.log(key.name);
+                
                 let { 
                     id, 
                     name,
@@ -67,16 +69,18 @@ function format(data, output) {
                 } = key || {};
                 
                 let template = 
-                    `Nr: ${id}, <br>
-Imię: ${name},<br> 
-<strong>Username: ${username},</strong> 
-Email: ${email}, website, ${companyName},
-<a href=“http://bing.com/maps/default.aspx?cp=${first}~${second}”>Pokaż na mapie</a><br>`;
+                    `<tr>
+                    <th scope="row">${id}</th>
+                    <td>${name}</td>
+                    <td>${username}</td>
+                    <td>${email}</td>
+                    <td>${website}</td>
+                    <td>${companyName}</td>
+                    <td><a href=“http://bing.com/maps/default.aspx?cp=${first}~${second}”>Pokaż na mapie</a></td>
+                    </tr>`;
                 
                 console.log( template);
-                text += template;
+                text += template + `</tbody>`;
             }
-            
-            output.innerHTML = text;    
-    
+            output.innerHTML = header + text;    
 }
