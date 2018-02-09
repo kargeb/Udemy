@@ -34,7 +34,6 @@ function getJSON(url) {
 }
 
 function format(data, output) {
-    console.log(data);
 
             let text = "",
                 header = "";
@@ -78,8 +77,7 @@ function format(data, output) {
                     <td>${companyName}</td>
                     <td><a href=“http://bing.com/maps/default.aspx?cp=${first}~${second}”>Pokaż na mapie</a></td>
                     </tr>`;
-                
-                console.log( template);
+
                 text += template + `</tbody>`;
             }
             output.innerHTML = header + text;    
