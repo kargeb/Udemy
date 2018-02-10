@@ -76,10 +76,7 @@
             "http://code.eduweb.pl/kurs-jquery/images/photo-8.jpg"
         ];
         
-/// STara funckja przez ktora widac wczytywanie obrazkow na strone        
-//        $.each(imgs, function(i, url){
-//               appendImage(url);
-//            });
+
     
         preload(imgs).then(
             function(imgs) {
