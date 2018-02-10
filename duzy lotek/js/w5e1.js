@@ -4,33 +4,42 @@ const btn = document.querySelector(".btn"),
       output = document.querySelector(".table-hover"),
       url = "http://code.eduweb.pl/bootcamp/json/";
 
-let data;
+//let data;
       
 btn.onclick = function(){
 
-    getJSON(url);
-    format(data, output);
+    getJSON(url)        // PRMISE !!
+        .then(
+            data => format(data, output),
+            err => console.log( err.message )
+        );
 }
 
 function getJSON(url) {
     
     let xhr = new XMLHttpRequest();
     
-    xhr.open("GET", url, false);
+    xhr.open("GET", url, true);
     
-    xhr.onreadystatechange = function(e){
-        if( this.readyState === 4 && this.status === 200 ) {
-             data = JSON.parse(xhr.response);
-        }        
-    }
+    let p = new Promise(function(resolve, reject){      // PROMISE !!
+    
+        xhr.onreadystatechange = function(e){
+            if( this.readyState === 4 && this.status === 200 ) {
+                resolve(JSON.parse(xhr.response)); 
+//                data = JSON.parse(xhr.response);
+            }        
+        }
 
-    xhr.setRequestHeader("Accept", "application/json");    
-    
-    xhr.onerror = function(e) {
-        fnFail("Zjebało się");
-    }    
+        xhr.setRequestHeader("Accept", "application/json");    
+
+        xhr.onerror = function(e) {
+            reject( new Error("Wystąpił błąd") );
+        }  
+    });
     
     xhr.send();  
+    
+    return p;
 }
 
 function format(data, output) {
